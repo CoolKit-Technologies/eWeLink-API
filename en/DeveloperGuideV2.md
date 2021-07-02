@@ -196,26 +196,6 @@ The APP will receive：
 ```json
 {"bssid":"*********","inetAddress":"172.10.0.163"}
 ```
-For the device, the response is：an 11-digit hexadecimal array, data[0]is the ssid of the：target route, and the character length of the password plus 9; data[1]-data[6]is the mac address of the device; data[7]-data[10]is the allocated ip address of the device.
-
-```举例：
-// ssid: touch
-// pw: 12345678
-// device_mac: 01:02:03:04:05:06
-// device_ip: 172.168.11.11
-
-data[0]=0x15
-data[1]=0x01
-data[2]=0x02
-data[3]=0x03
-data[4]=0x04
-data[5]=0x05
-data[6]=0x06
-data[7]=0xac
-data[8]=0xa8
-data[9]=0x0b
-data[10]=0x0b
-```
 
 4. The device builds a TCP Server (HTTP Server)
 5. The mobile phone sends a request to the device (to obtain device information):
