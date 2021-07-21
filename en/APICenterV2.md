@@ -441,6 +441,29 @@ List item description for deviceList:
 | params       | Object                            | Y                | Status attributes of device                                                                               |
 | gsmInfoData  | Object                            | Y                | Sim card status object of GSM device                                                                      |
 
+extra description：
+
+| **Name** | **Type** | **Allows empty** | **Description**           |
+|:----|:----|:----|:----|
+| model   | String   | N   | Firmware name   |
+| ui   | String   | N   | UI name   |
+| uiid   | | Int   | Int   | N   | UI ID   |
+| description   | String   | N   | Factory notes   |
+| manufacturer   | String   | N   | manufacturer   |
+| mac   | String   | N   | mac   |
+| apmac   | String   | N   | ap mac   |
+| modelInfo   | String   | N   | Product model ID   |
+| brandId   | String   | N   | Brand ID   |
+| chipid   | String   | N   | Chip ID   |
+
+settings description:
+
+| **Name**    | **Type** | **Allows empty** | **Description**                                                                            |
+|:----------- |:-------- |:---------------- |:------------------------------------------------------------------------------------------ |
+| opsNotify   | Int      | Y                | Whether to notify the user of device status change  (default 0) 0=no 1=yes                 |
+| opsHistory  | Int      | Y                | Whether to save activity logs of the device (default 1) 0=no 1=yes                         |
+| alarmNotify | Int      | Y                | Whether to send alerts from sensors or alarms to the user (default 1) 0=Do not send 1=Send |
+
 devGroups description:
 
 | **Name** | **Type** | **Allows empty** | **Description**           |

@@ -2,13 +2,14 @@
  * @Author: Carl
  * @Date: 2020-08-05 17:16:26
  * @LastEditors: Carl
- * @LastEditTime: 2021-04-16 10:46:29
+ * @LastEditTime: 2021-07-21 14:30:25
 -->
 
 # Change log
 
 | Time | Change log | Author |
 | :--- | :--- | :--- |
+| 2021.07.21 | Add extra parameter description in equipment information (factory information) | Carl |
 | 2021.04.16 | Symmetric encryption for "shareTo.apikey" | Carl |
 | 2021.04.08 | The parameter "updatedthinglist" returned by the "/v2/device/share" interface is modified to "updatedthing" | Carl |
 | 2021.02.20 | "Content-Type" parameter supports filling in "application/json; charset-utf-8" | Carl |
