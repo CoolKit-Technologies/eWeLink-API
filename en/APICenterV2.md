@@ -513,6 +513,8 @@ family description：
 
 ### Get Thing List
 
+**Note: when the user equipment ('total' parameter) exceeds 30, the 'beginindex' parameter needs to be set for paging acquisition. Otherwise, if too much data is obtained, the server will return timeout errors such as 500.**
+
 URL: /v2/device/thing
 
 Request method: get
