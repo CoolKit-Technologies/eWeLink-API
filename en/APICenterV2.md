@@ -1888,6 +1888,7 @@ Example:
 | 406            | Access denied. You do not have the permission to take this action or access this resource.                                                                 |
 | 407            | The appid has no permission for this action.                                                                                                               |
 | 500            | Internal server error, usually due to errors on server programs.                                                                                           |
+|4002 | the equipment is offline (the old error code is not changed temporarily to avoid affecting customers who have used the updated equipment status interface), which will appear in the updated equipment status|
 
 ### [User] error codes
 
@@ -1925,4 +1926,5 @@ Example:
 | 30016          | The appid could not be found when a device is being added.                                                    |
 | 30017          | This appid is not allowed to add the devices of the current brand.                                            |
 | 30018          | No device can be found with current deviceid.                                                                 |
-| 30019          | The product model of factory data cannot be found.                                                            | 
+| 30019          | The product model of factory data cannot be found.                                                            |
+|30022 | the device is offline and the operation fails. It will appear in batch updating the device status|
