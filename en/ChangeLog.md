@@ -9,6 +9,7 @@
 
 | Time       | Change log                                                                                                                | Author |
 | :--------- | :------------------------------------------------------------------------------------------------------------------------ | :----- |
+| 2021.10.22 | Add 'Get Region' interface                                                                                                | Carl   |
 | 2021.10.21 | Add a description of the authorization parameter in the request header and supplement the description in some interfaces  | Carl   |
 | 2021.07.21 | Add extra parameter description in equipment information (factory information)                                            | Carl   |
 | 2021.04.16 | Symmetric encryption for "shareTo.apikey"                                                                                 | Carl   |

@@ -68,6 +68,28 @@ Example 2: Error response
 
 ## User
 
+### Get Region
+
+This interface is a global interface, and the URL when all regions call this interface is the same URL: https://apia.coolkit.cn/v2/utils/get-region
+
+Request method: GET
+
+Authorization parameter: Sign
+
+Request parameters:
+
+| **Name**    | **Type** | **Allows empty** | **Description**                    |
+| :---------- | :------- | :--------------- | ---------------------------------- | --- |
+| :---------- | :------- | :-----------     | :-----------------------------     | --- |
+| countryCode | String   | N                | Area Code starting with "+", such as "+86" |     |
+
+Response data parameters:
+
+| **Name** | **Type** | **Allows empty** | **Description** |
+| :--------------- | :------- | :--------------- | |
+| :------- | :------- | :----------- | :------------------------------------------------------------------------------ |
+| region | String | N | The region corresponding to the telephone area code selected by the user has the following conditions: as: Asia; cn: Inland China; us: Americas; eu: European Region |
+
 ### Create account
 
 URL: /v2/user/register
@@ -80,7 +102,7 @@ Request parameters:
 
 | **Name**         | **Type** | **Allows empty** | **Description**                                                                                                                                                          |
 | :--------------- | :------- | :--------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| countryCode      | String   | N                | Country code starting with "+", such as "+86"                                                                                                                            |
+| countryCode      | String   | N                | Area Code starting with "+", such as "+86"                                                                                                                               |
 | email            | String   | Y                | Email address, case-insensitive (as the system automatically saves lowercase).                                                                                           |
 | phoneNumber      | String   | Y                | Mobile phone number（checked in priority）which starts with country code such as "+8618023456789". Either email or phoneNumber is required. Otherwise, error will occur. |
 | verificationCode | String   | N                | SMS/email verification code                                                                                                                                              |
@@ -99,7 +121,7 @@ user:
 
 | **Name**       | **Type** | **Allows empty** | **Description**                                                                                                                                                                                                                                                                                                                                                |
 | :------------- | :------- | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| countryCode    | String   | Y                | Country code starting with "+", such as "+86"                                                                                                                                                                                                                                                                                                                  |
+| countryCode    | String   | Y                | Area Code starting with "+", such as "+86"                                                                                                                                                                                                                                                                                                                     |
 | phoneNumber    | String   | Y                | User mobile number with country code such as +8615815725225                                                                                                                                                                                                                                                                                                    |
 | email          | String   | Y                | User email. Either mobile number or email is required.                                                                                                                                                                                                                                                                                                         |
 | apikey         | String   | N                | User ID                                                                                                                                                                                                                                                                                                                                                        |
@@ -130,7 +152,7 @@ Request parameters:
 | **Name**    | **Type** | **Allows empty** | **Description**                                                                                                                                                          |
 | :---------- | :------- | :--------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | lang        | String   | Y                | cn returns Chinese, and en returns English, default en                                                                                                                   |
-| countryCode | String   | N                | Country code starting with "+", such as "+86"                                                                                                                            |
+| countryCode | String   | N                | Area Code starting with "+", such as "+86"                                                                                                                               |
 | email       | String   | Y                | Email address, case-insensitive                                                                                                                                          |
 | phoneNumber | String   | Y                | Mobile phone number（checked in priority）which starts with country code such as "+8618023456789". Either email or phoneNumber is required. Otherwise, error will occur. |
 | password    | String   | N                | Password                                                                                                                                                                 |
@@ -168,7 +190,7 @@ Request parameters:
 
 | **Name**         | **Type** | **Allows empty** | **Description**                                                          |
 | :--------------- | :------- | :--------------- | :----------------------------------------------------------------------- |
-| countryCode      | String   | N                | Country code starting with "+", such as "+86"                            |
+| countryCode      | String   | N                | Area Code starting with "+", such as "+86"                               |
 | lang             | String   | Y                | cn returns Chinese, and en returns English, default en                   |
 | phoneNumber      | String   | N                | Mobile phone number starting with country code, such as "+8618023456789" |
 | verificationCode | String   | N                | SMS Verification Code                                                    |
@@ -1096,7 +1118,7 @@ user description：
 
 | **Name**    | **Type** | **Allows empty** | **Description**                                                                                 |
 | :---------- | :------- | :--------------- | :---------------------------------------------------------------------------------------------- |
-| countryCode | String   | Y                | Country code, which is required when phoneNumber is used.                                       |
+| countryCode | String   | Y                | Area Code, which is required when phoneNumber is used.                                          |
 | phoneNumber | String   | Y                | The user’s mobile number must start with the country code, such as "+86".                       |
 | email       | String   | Y                | User email. Either phone number or email is required. Phone number will be checked in priority. |
 
