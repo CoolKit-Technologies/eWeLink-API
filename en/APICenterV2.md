@@ -78,17 +78,15 @@ Authorization parameter: Sign
 
 Request parameters:
 
-| **Name**    | **Type** | **Allows empty** | **Description**                    |
-| :---------- | :------- | :--------------- | ---------------------------------- | --- |
-| :---------- | :------- | :-----------     | :-----------------------------     | --- |
-| countryCode | String   | N                | Area Code starting with "+", such as "+86" |     |
+| **Name**    | **Type** | **Allows empty** | **Description**                            |
+| :---------- | :------- | :--------------- | ------------------------------------------ |
+| countryCode | String   | N                | Area Code starting with "+", such as "+1" |
 
 Response data parameters:
 
-| **Name** | **Type** | **Allows empty** | **Description** |
-| :--------------- | :------- | :--------------- | |
-| :------- | :------- | :----------- | :------------------------------------------------------------------------------ |
-| region | String | N | The region corresponding to the telephone area code selected by the user has the following conditions: as: Asia; cn: Inland China; us: Americas; eu: European Region |
+| **Name** | **Type** | **Allows empty** | **Description**                                                                                                                                                      |
+| :------- | :------- | :--------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| region   | String   | N                | The region corresponding to the telephone area code selected by the user has the following conditions: as: Asia; cn: Inland China; us: Americas; eu: European Region |
 
 ### Create account
 
