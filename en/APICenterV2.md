@@ -78,8 +78,8 @@ Authorization parameter: Sign
 
 Request parameters:
 
-| **Name**    | **Type** | **Allows empty** | **Description**                            |
-| :---------- | :------- | :--------------- | ------------------------------------------ |
+| **Name**    | **Type** | **Allows empty** | **Description**                           |
+| :---------- | :------- | :--------------- | ----------------------------------------- |
 | countryCode | String   | N                | Area Code starting with "+", such as "+1" |
 
 Response data parameters:
@@ -1594,7 +1594,7 @@ MessageList items:
 
 Response data parameter: None
 
-## Manage and Control Device
+## Real Time Control Device
 
 Complete process description:
 
