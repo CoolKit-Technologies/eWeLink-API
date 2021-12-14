@@ -4,7 +4,14 @@
 
 The APIs in this document applies HTTPS protocol, in which the client sends data with UTF-8 encoding and in json format.
 
-**Please consider using ‘Get device or group status’ endpoint instead of ‘Homepage’ endpoint to get single device resource.**
+**Please consider using 'Get device or group status' endpoint instead of ‘Homepage’ endpoint to get single device resource.**
+
+### Requirements of Calling Interface and Description of APPID Permission (Important):
+
+- The interval of a single IP calling the same Interface should be greater than or equal to 500ms, with no more than 300 calls in 5 minutes. If you control our devices via WebSocket, please keep in mind that every user is not allowed to log in and log out repeatedly for a short period of time (Send userOnline command). Otherwise, your IP will be blocked and terminated by the server if the userOnline command are sent too many times for a short period.
+- Partners who has the business certification and enterprises that purchased the APPID have the access to [Paid APPID] to call all Interfaces without limitations for the total number of calls now but there are the same regulations for calling frequency as the above first point.
+- Developers who log in via eWeLink Developer Platform and complete the certification can use the [ Free APPID] to call OAuth2.0's relevant interface, and the total number of calls for all Interfaces is limited to around 50,000. If you reach the limit, the Interface returns the HTTP status code of 403 ERROR (not the parameters returned). If you want to remove the limit, please purchase the paid APPID and you can contact [BD@coolkit.cn](mailto:BD@coolkit.cn) by email.
+- For APPID applied by enterprises and personal developers, you have only access to Coolkit, Sonoff, or your own brands' devices by default. Other brands' devices are not available until they have been authorized. The types of devices supported are subject to the online documents (which will be released in batches soon, please stay tuned). If you have demand for other complex device types or new device types, please contact our relevant staff or email us via [BD@coolkit.cn](mailto:BD@coolkit.cn).
 
 ### General parameters
 
@@ -375,6 +382,11 @@ Response data parameter: None
 
 ### Get home page information
 
+Note:
+
+- When the user device (total parameter) exceeds 30, you need to set the beginIndex parameter to get it in pages, otherwise too much data will be acquired and the server will return timeout errors such as 500.
+- The total parameter returned may be greater than the total amount of device data returned, which indicates that not all device data has been obtained. Please refer to [Description of Calling Interface and APPID Permission (Important)] for more details.
+
 URL: /v2/homepage
 
 Request method: POST
@@ -491,10 +503,10 @@ List item description for deviceList:
 extra description：
 
 | **Name**     | **Type** | **Allows empty** | **Description**  |
-| :----------- | :------- | :--------------- | :--------------- | --- | ----- |
+| :----------- | :------- | :--------------- | :--------------- |
 | model        | String   | N                | Firmware name    |
 | ui           | String   | N                | UI name          |
-| uiid         |          | Int              | Int              | N   | UI ID |
+| uiid         | Int      | N                | UI ID            |
 | description  | String   | N                | Factory notes    |
 | manufacturer | String   | N                | manufacturer     |
 | mac          | String   | N                | mac              |
@@ -560,7 +572,10 @@ family description：
 
 ### Get Thing List
 
-**Note: when the user equipment ('total' parameter) exceeds 30, the 'beginindex' parameter needs to be set for paging acquisition. Otherwise, if too much data is obtained, the server will return timeout errors such as 500.**
+Note:
+
+- When the user device (total parameter) exceeds 30, you need to set the beginIndex parameter to get it in pages, otherwise too much data will be acquired and the server will return timeout errors such as 500.
+- The total parameter returned may be greater than the total amount of device data returned, which indicates that not all device data has been obtained. Please refer to [Description of Calling Interface and APPID Permission (Important)] for more details.
 
 URL: /v2/device/thing
 

@@ -3,7 +3,7 @@
  * @Descripttion: Do not edit
  * @Date: 2021-11-19 16:18:42
  * @LastEditors: Carl
- * @LastEditTime: 2021-12-09 15:10:34
+ * @LastEditTime: 2021-12-14 19:21:50
  * @FilePath: \eWeLink-API\en\OAuth2.0.md
 -->
 
@@ -18,8 +18,9 @@ Before starting, you should provide us with the following information:
 - Redirect address (URL address to which users will redirect after successfully logging into their eWeLink account)
 - Project Profile (a brief description of your project)
 
-Login to [eWeLink Developer Platform](https://dev.ewelink.cn), submit the certification data and wait for the audit to be completed.
-After the audit, create a new application in the console application management, and then you can use the relevant services and call the corresponding interface. Note: at present, only one application can be created without charge.
+Log in [eWeLink Developer Center] (https://dev.ewelink.cn), submit your information for certification, and wait for the review result. Please note that the free APPID has some limitations, please refer to the [Requirements of Calling Interface and Description of APPID Permission (Important)] and [Standard of Charges] for more details.
+
+After a successful review, create an application in Platform -> App Management, and you could use the relevant service and call the corresponding interface. Please note that it's only allowed to create one application now.
 
 ## Access Process
 
@@ -107,16 +108,19 @@ Code is valid for 3 minutes. When it expires, it returns:
 
     {"error": 405, "MSG": "invalid code", "data": {}}
 
-After the accessing party gets the code, requesting the 'Post@/v2/user/oauth/token' interface of corresponding area to get the accessToken to complete the binding process, which can then be used to get the user's device information and control the device.
+After the accessing party gets the code, requesting the 'POST@/v2/user/oauth/token' interface of corresponding area to get the accessToken to complete the binding process, which can then be used to get the user's device information and control the device.
 
 ## v2 Interface Description
 
 The APIs in this document applies HTTPS protocol, in which the client sends data with UTF-8 encoding and in json format.
 
-**Interface request specification(important):**
+### Requirements of Calling Interface and Description of APPID Permission (Important):
 
-- After the user logs in to the eWeLink account and is authorized successfully, your platform should first call the "get things list" interface (GET@/v2/device/thing) to synchronize the device list and display the device type normally according to the uiid.
-- The call interval of the same interface should be greater than or equal to 500ms, and the number of calls within an hour should not exceed 7200. If you use websocket to control our equipment, please note that you should not repeatedly go online in a short time (send useronline instruction), such as going online once a second. If you report too many times in a short time, the IP will be blocked and disabled by the server.
+- Once the user has successfully logged into the eWeLink account authorization page, your platform should call [Get Thing List] Interface (GET@/v2/device/thing) one time, sync the device list, and display the correct device type according to the UIID(UI's ID).
+- The interval of a single IP calling the same Interface should be greater than or equal to 500ms, with no more than 300 calls in 5 minutes. If you control our devices via WebSocket, please keep in mind that every user is not allowed to log in and log out repeatedly for a short period of time (Send userOnline command). Otherwise, your IP will be blocked and terminated by the server if the userOnline command are sent too many times for a short period.
+- Partners who has the business certification and enterprises that purchased the APPID have the access to [Paid APPID] to call all Interfaces without limitations for the total number of calls now but there are the same regulations for calling frequency as the above second point.
+- Developers who log in via eWeLink Developer Platform and complete the certification can use the [ Free APPID] to call OAuth2.0's relevant interface, and the total number of calls for all Interfaces is limited to around 50,000. If you reach the limit, the Interface returns the HTTP status code of 403 ERROR (not the parameters returned). If you want to remove the limit, please purchase the paid APPID and you can contact [BD@coolkit.cn](mailto:BD@coolkit.cn) by email.
+- For APPID applied by enterprises and personal developers, you have only access to Coolkit, Sonoff, or your own brands' devices by default. Other brands' devices are not available until they have been authorized. The types of devices supported are subject to the online documents (which will be released in batches soon, please stay tuned). If you have demand for other complex device types or new device types, please contact our relevant staff or email us via [BD@coolkit.cn](mailto:BD@coolkit.cn).
 
 ### v2 Interface domain name
 
@@ -180,7 +184,7 @@ Use the "app secret" as the key to generate the HMAC-SHA256 signature of the sig
 
 [https://1024tools.com/hmac](https://1024tools.com/hmac)
 
-![calculateSignature](https://coolkit-carl.gitee.io/apidocs/zh-cmn/img/calculateSignature.png)
+![calculateSignature](./img/calculateSignature.png)
 
 - Digital Signature Algorithm Demo ①: Take the login interface as an example (Method: POST).
 
@@ -373,7 +377,10 @@ RoomList item description:
 
 ### Get Thing list
 
-Note: When the user device (total parameter) exceeds 30, you need to set the beginIndex parameter to get it in pages, otherwise too much data will be acquired and the server will return timeout errors such as 500.
+Note:
+
+- When the user device (total parameter) exceeds 30, you need to set the beginIndex parameter to get it in pages, otherwise too much data will be acquired and the server will return timeout errors such as 500.
+- The total parameter returned may be greater than the total amount of device data returned, which indicates that not all device data has been obtained. Please refer to [Description of Calling Interface and APPID Permission (Important)] for more details.
 
 URL: /v2/device/thing
 
@@ -435,10 +442,10 @@ item description:
 extra description:
 
 | **Name**     | **Type** | **Allows Empty** | **Description**                                        |
-| :----------- | :------- | :--------------- | :----------------------------------------------------- | --- | ----- |
+| :----------- | :------- | :--------------- | :----------------------------------------------------- | --- |
 | model        | String   | N                | Firmware name                                          |
 | ui           | String   | N                | UI name                                                |
-| uiid         |          | Int              | Int                                                    | N   | UI ID |
+| uiid         | Int      | N                | UI ID                                                  |
 | description  | String   | N                | Notes on factory information, usually the order number |
 | manufacturer | String   | N                | Manufacturer                                           |
 | mac          | String   | N                | mac address                                            |

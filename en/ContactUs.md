@@ -3,13 +3,13 @@
  * @Descripttion: Do not edit
  * @Date: 2021-07-19 10:40:46
  * @LastEditors: Carl
- * @LastEditTime: 2021-11-07 17:20:55
+ * @LastEditTime: 2021-12-14 19:31:26
  * @FilePath: \eWeLink-API\en\ContactUs.md
 -->
 
 # Contact us
 
-Email: support@ewelink.zendesk.com
+Email: BD@coolkit.cn
 
 Service Hotline: 0755-26404901
 

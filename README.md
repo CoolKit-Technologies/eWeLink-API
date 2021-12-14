@@ -2,18 +2,18 @@
  * @Author: Carl
  * @Date: 2020-05-25 19:50:00
  * @LastEditors: Carl
- * @LastEditTime: 2020-11-18 18:00:29
+ * @LastEditTime: 2021-12-10 18:13:08
 -->
 
 # eWeLink-API
 
-酷宅开放平台4.0（国外访问）：https://coolkit-technologies.github.io/eWeLink-API/
+酷宅开放平台 4.1（国外访问）：https://coolkit-technologies.github.io/eWeLink-API/
 
-酷宅开放平台4.0（国内访问）：https://coolkit-carl.gitee.io/apidocs
+酷宅开放平台 4.1（国内访问）：https://coolkit-carl.gitee.io/apidocs
 
 ---
 
-本对外接口文档由Carl维护，发现任何错误都可以反馈。
+本对外接口文档由 Carl 维护，发现任何错误都可以反馈。
 
 如需本地运行，请进行下面的步骤。
 
@@ -25,7 +25,7 @@
 
     npm i docsify-cli -g
 
-在当前目录（/eWeLink-API上层目录），输入命令：
+在当前目录（/eWeLink-API 上层目录），输入命令：
 
     docsify serve eWeLink-API
 
