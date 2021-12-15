@@ -29,7 +29,7 @@
 
 ### 完整流程图
 
-![完整流程图](./img/01-Oauth2.0_FlowChart.png)
+![完整流程图](./img/01-OAuth2.0_FlowChart.png)
 
 ### 授权页说明
 
