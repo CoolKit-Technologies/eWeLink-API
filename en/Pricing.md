@@ -2,7 +2,7 @@
  * @Author: Carl
  * @Date: 2020-10-30 15:08:40
  * @LastEditors: Carl
- * @LastEditTime: 2021-12-15 09:41:06
+ * @LastEditTime: 2021-12-16 10:06:02
 -->
 
 # Pricing
@@ -13,4 +13,4 @@
 
 Tips:
 
-For APPID applied by enterprises and personal developers, you have only access to Coolkit, Sonoff, or your own brands' devices by default. Other brands' devices are not available until they have been authorized. The types of devices supported are subject to the online documents (which will be released in batches soon, please stay tuned). If you have demand for other complex device types or new device types, please contact our relevant staff or email us via [BD@coolkit.cn](mailto:BD@coolkit.cn).
+For APPID applied by enterprises and personal developers, Currently open some authorized brands of equipment, as well as mainstream equipment types (which will be released in batches soon, please stay tuned). If you have demand for other complex device types or new device types, please contact our relevant staff or email us via [BD@coolkit.cn](mailto:BD@coolkit.cn).

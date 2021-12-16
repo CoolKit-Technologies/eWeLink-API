@@ -18,7 +18,7 @@ Before starting, you should provide us with the following information:
 - Redirect address (URL address to which users will redirect after successfully logging into their eWeLink account)
 - Project Profile (a brief description of your project)
 
-Log in [eWeLink Developer Center] (https://dev.ewelink.cn), submit your information for certification, and wait for the review result. Please note that the free APPID has some limitations, please refer to the [Requirements of Calling Interface and Description of APPID Permission (Important)] and [Standard of Charges] for more details.
+Log in [eWeLink Developer Center] (https://dev.ewelink.cc), submit your information for certification, and wait for the review result. Please note that the free APPID has some limitations, please refer to the [Requirements of Calling Interface and Description of APPID Permission (Important)] and [Standard of Charges] for more details.
 
 After a successful review, create an application in Platform -> App Management, and you could use the relevant service and call the corresponding interface. Please note that it's only allowed to create one application now.
 
@@ -120,7 +120,7 @@ The APIs in this document applies HTTPS protocol, in which the client sends data
 - The interval of a single IP calling the same Interface should be greater than or equal to 500ms, with no more than 300 calls in 5 minutes. If you control our devices via WebSocket, please keep in mind that every user is not allowed to log in and log out repeatedly for a short period of time (Send userOnline command). Otherwise, your IP will be blocked and terminated by the server if the userOnline command are sent too many times for a short period.
 - Partners who has the business certification and enterprises that purchased the APPID have the access to [Paid APPID] to call all Interfaces without limitations for the total number of calls now but there are the same regulations for calling frequency as the above second point.
 - Developers who log in via eWeLink Developer Platform and complete the certification can use the [ Free APPID] to call OAuth2.0's relevant interface, and the total number of calls for all Interfaces is limited to around 50,000. If you reach the limit, the Interface returns the HTTP status code of 403 ERROR (not the parameters returned). If you want to remove the limit, please purchase the paid APPID and you can contact [BD@coolkit.cn](mailto:BD@coolkit.cn) by email.
-- For APPID applied by enterprises and personal developers, you have only access to Coolkit, Sonoff, or your own brands' devices by default. Other brands' devices are not available until they have been authorized. The types of devices supported are subject to the online documents (which will be released in batches soon, please stay tuned). If you have demand for other complex device types or new device types, please contact our relevant staff or email us via [BD@coolkit.cn](mailto:BD@coolkit.cn).
+- For APPID applied by enterprises and personal developers, Currently open some authorized brands of equipment, as well as mainstream equipment types (which will be released in batches soon, please stay tuned). If you have demand for other complex device types or new device types, please contact our relevant staff or email us via [BD@coolkit.cn](mailto:BD@coolkit.cn).
 
 ### v2 Interface domain name
 
