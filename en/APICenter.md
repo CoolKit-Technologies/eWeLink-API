@@ -239,7 +239,7 @@ Success: no error returned
                 "os":"android"
             }
         ],
-        "nickname":"eWelink",
+        "nickname":"eWeLink",
         "createdAt":"2019-03-25T03:36:51.335Z",
         "apikey":"95da0fea-5692-469a-c562-4dd5ee9a51f1"
     },
@@ -583,7 +583,7 @@ Error code:
                 "os":"android"
             }
         ],
-        "nickname":"eWelink",
+        "nickname":"eWeLink",
         "createdAt":"2019-03-25T03:36:51.335Z",
         "apikey":"95da0fea-5692-469a-c562-4dd5ee9a51f1"
     },

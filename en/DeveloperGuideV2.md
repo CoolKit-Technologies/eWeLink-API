@@ -170,7 +170,7 @@ You can put the parameters of the demo in your own signature algorithm. If the c
 
 Note:
 
-- The pairing process is only applicable to applications that do not pair devices through the eWelink APP.
+- The pairing process is only applicable to applications that do not pair devices through the eWeLink APP.
 - Devices added by the eWeLink APP does not need to implement the pairing process.
 - The IP and various data in the document are just examples.
 - Device pairing have two pairing modes: Touch and AP.
@@ -245,7 +245,7 @@ Cache-Control: no-store
 Body：
 
 ```json
-{"port":443,"serverName":"device long connection Dispatchdomain name","password":"12345678","ssid":"eWelink"}
+{"port":443,"serverName":"device long connection Dispatchdomain name","password":"12345678","ssid":"eWeLink"}
 ```
 
 Notes：This step can be retried multiple times. eWeLink will retry 5 times with a total interval of 70 seconds, which can be fine-tuned to adapt to the device.
@@ -288,6 +288,6 @@ After the pairing is completed, the app should request the "Get Home Page " or "
 
 ### Encryption Rules
 
-To ensure the security of the eWeLink platform, eWelink has set encryption rules for the Touch pairing to refuse illegal clients to add our device.
+To ensure the security of the eWeLink platform, eWeLink has set encryption rules for the Touch pairing to refuse illegal clients to add our device.
 
 Please contact the CoolKit salesperson or technical support for the document of the encryption rules.

@@ -688,7 +688,7 @@ Cache-Control: no-store
 ```
 
 ```json
-{"port":443,"serverName": "{region}-disp.coolkit.cc","password": "12345678","ssid": "eWelink"}
+{"port":443,"serverName": "{region}-disp.coolkit.cc","password": "12345678","ssid": "eWeLink"}
 ```
 
 Note: {region}-disp.coolkit.cc, region can be as, us, eu, for example: eu-disp.coolkit.cc
