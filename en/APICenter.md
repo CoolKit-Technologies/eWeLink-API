@@ -1,4 +1,6 @@
-# API Center (Disuse)
+# API Center (v1)
+
+**It is only for reference by developers of the original v1 version of the interface. It is no longer maintained and will be removed in January 2022.**
 
 ## API Overview
 
