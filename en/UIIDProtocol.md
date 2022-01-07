@@ -4,7 +4,7 @@
  * @Author: Carl
  * @Date: 2021-12-23 13:58:08
  * @LastEditors: Carl
- * @LastEditTime: 2022-01-06 11:43:15
+ * @LastEditTime: 2022-01-07 10:40:19
 -->
 
 # CoolKit UIID Protocol (Basic Version)
@@ -135,7 +135,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                                 Zigbee Smoke Sensor                                  |                                 Zigbee Smoke Sensor                                  | 5026 |
 |                         Zigbee Human Body Sensor_Support OTA                         |                         Zigbee Human Body Sensor_Support OTA                         | 7002 |
 |                            Zigbee Door Magnet_Support OTA                            |                            Zigbee Door Magnet_Support OTA                            | 7003 |
-|                      Zigbee Single-Channel Switch ­_Support OTA                      |                    Zigbee Single-Channel Switch ­\_Support OTA                     | 7004 |
+|                      Zigbee Single-Channel Switch ­_Support OTA                      |                      Zigbee Single-Channel Switch ­_Support OTA                      | 7004 |
 
 </div>
 
@@ -264,7 +264,9 @@ For specific instructions on timers, see below:
 
 ## Timer Rules
 
-Note: All times need to be converted to UTC time for transmission, for example, if the phone time is 18:00, the transmission to the server should be changed to 10:00.
+Note: All times need to be converted to UTC time for transmission.
+
+The app converts according to the time zone of the user's mobile phone. For example, if the time zone of Washington, D.C. is GMT-5, set a 10 a.m. timer. The transmission parameter is, and the at parameter needs + 5 hours.
 
 ### Timer Parameters
 
@@ -2349,7 +2351,7 @@ Parameter Description:
 | timers         | Array\<Object> |                                       | Timer, the current dual-color cold and warm light's timer and delay action only supports on and off                                                                                   |
 | ops_mode       | String         | DIY, ewelink                          | This field is common in long connection and DIY mode; DIY enters DIY mode; eweLink returns to eweLink mode                                                                            |
 | switch         | String         | on,off                                | Light Switch: turn on (on), turn off (off)                                                                                                                                            |
-| ltype          | Int            | white,bright,read,computer,nightLight | Light Mode|
+| ltype          | Int            | white,bright,read,computer,nightLight | Light Mode                                                                                                                                                                            |
 
 WhiteObject Parameter Description:
 
@@ -2460,7 +2462,7 @@ Parameter Description:
 | -------------- | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | switch         | String         | on,off                                                                   | Light switch, turn on (on), turn off (off)                                                                                                                                                 |
 | pVer           | String         |                                                                          | Current protocol version number, capability negotiation. Consistent with the last version of the current protocol, e.g. {"pVer":"2.0"}.Once the device is online, it needs to be uploaded. |
-| ltype          | String         | white,color,bright,goodNight,read,nightLight,party,leisure,soft,colorful | Light|
+| ltype          | String         | white,color,bright,goodNight,read,nightLight,party,leisure,soft,colorful | Light                                                                                                                                                                                      |
 | white          | WhiteObject    |                                                                          | Value in white light mode                                                                                                                                                                  |
 | color          | ColorObject    |                                                                          | Value in color light mode                                                                                                                                                                  |
 | bright         | ModeObject     |                                                                          | Scene cannot be edited                                                                                                                                                                     |
