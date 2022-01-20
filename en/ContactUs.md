@@ -9,7 +9,7 @@
 
 # Contact us
 
-Email: BD@coolkit.cn
+Email: bd@coolkit.cn
 
 Service Hotline: 0755-26404901
 
