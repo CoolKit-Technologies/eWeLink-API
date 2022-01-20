@@ -5,7 +5,7 @@
  * @Author: Carl
  * @Date: 2021-07-30 16:27:12
  * @LastEditors: Carl
- * @LastEditTime: 2021-12-29 09:06:43
+ * @LastEditTime: 2021-12-15 18:23:42
    -->
 
 # OAuth 2.0
@@ -117,8 +117,8 @@ code 有效期 3 分钟，到期返回：{ "error": 405, "msg": "invalid code", 
 - 当用户登录易微联账号授权成功后，您的平台应当先调用一次「获取 Thing 列表」接口（GET@/v2/device/thing），同步设备列表，根据 UIID（UI 的 ID） 正常显示设备的类型。
 - 单个 IP 对相同接口调用时间间隔应尽量大于等于 500ms，5 分钟内调用次数不超过 300 次，如果使用 WebSocket 方式控制我们的设备，请注意单个用户不应该短时间内反复上线（发送 userOnline 指令），短时间内上报次数过多会被服务器封锁 IP 和停用。
 - 经过商务认证的合作伙伴和付费购买 APPID 的企业，使用「付费 APPID」请求所有接口总调用次数暂无限制，但对调用频次的限制和上述第二点保持一致。
-- 通过易微联开发者平台登录完成认证的开发者使用的「免费 APPID」请求 OAuth2.0 相关接口，所有接口的总请求次数限制约 5 万次，超出限额，接口返回 HTTP 状态码为 403 错误（不是返回的参数）。如需解除限制需要购买付费 APPID，请邮件联系 bd@coolkit.cn。
-- 对于企业或者个人开发者申请的 APPID，目前开放 部分已授权品牌的设备、以及主流设备类型（文档即将分批次发布，敬请期待），如需接入其他复杂设备类型或支持新设备类型，请直接联系对接业务人员或邮件联系 bd@coolkit.cn。
+- 通过易微联开发者平台登录完成认证的开发者使用的「免费 APPID」请求 OAuth2.0 相关接口，所有接口的总请求次数限制约 5 万次，超出限额，接口返回 HTTP 状态码为 403 错误（不是返回的参数）。如需解除限制需要购买付费 APPID，请邮件联系 BD@coolkit.cn。
+- 对于企业或者个人开发者申请的 APPID，目前开放 部分已授权品牌的设备、以及主流设备类型（文档即将分批次发布，敬请期待），如需接入其他复杂设备类型或支持新设备类型，请直接联系对接业务人员或邮件联系 BD@coolkit.cn。
 
 ### v2 接口域名
 
@@ -654,8 +654,6 @@ App 使用的长连接分配地址接口
 - 美洲: [https://us-dispa.coolkit.cc/dispatch/app](https://us-dispa.coolkit.cc/dispatch/app)
 - 欧洲: [https://eu-dispa.coolkit.cc/dispatch/app](https://eu-dispa.coolkit.cc/dispatch/app)
 - 亚洲: [https://as-dispa.coolkit.cc/dispatch/app](https://as-dispa.coolkit.cc/dispatch/app)
-
-中国境内微信使用的长连接分配地址接口：https://wx-disp.coolkit.cn:8080/dispatch/app
 
 请求方法：GET
 
