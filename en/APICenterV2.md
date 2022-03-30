@@ -87,7 +87,7 @@ Request parameters:
 
 | **Name**    | **Type** | **Allows empty** | **Description**                           |
 | :---------- | :------- | :--------------- | ----------------------------------------- |
-| countryCode | String   | N                | Area Code starting with "+", such as "+1" |
+| countryCode | String   | N                | Telephone area code, without "+", such as "1" |
 
 Response data parameters:
 
