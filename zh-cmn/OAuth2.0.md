@@ -104,7 +104,7 @@ print(sign)
 
 示例：{Your redirectUrl}?code=95bcf41b-3397-46da-886f-fdc852de84ca&region=as&state=10011
 
-code 有效期 3 分钟，到期返回：{ "error": 405, "msg": "invalid code", "data": {} }
+**code 有效期 30秒，到期返回：{ "error": 405, "msg": "invalid code", "data": {} }**
 
 接入方拿到 code 之后，请求对应区域的 POST@/v2/user/oauth/token 接口，获取 acessToken，完成绑定流程，后续可以使用该 Token 获取用户的设备信息，控制设备。
 
@@ -115,9 +115,9 @@ code 有效期 3 分钟，到期返回：{ "error": 405, "msg": "invalid code", 
 ### 接口调用规范与 APPID 权限说明（重要）：
 
 - 当用户登录易微联账号授权成功后，您的平台应当先调用一次「获取 Thing 列表」接口（GET@/v2/device/thing），同步设备列表，根据 UIID（UI 的 ID） 正常显示设备的类型。
-- 单个 IP 对相同接口调用时间间隔应尽量大于等于 500ms，5 分钟内调用次数不超过 300 次，如果使用 WebSocket 方式控制我们的设备，请注意单个用户不应该短时间内反复上线（发送 userOnline 指令），短时间内上报次数过多会被服务器封锁 IP 和停用。
+- 单个 IP 对所有接口调用时间间隔应尽量大于等于 500ms，5 分钟内调用次数不超过 300 次，如果使用 WebSocket 方式控制我们的设备，请注意单个用户不应该短时间内反复上线（发送 userOnline 指令），短时间内上报次数过多会被服务器封锁 IP 和停用。
 - 经过商务认证的合作伙伴和付费购买 APPID 的企业，使用「付费 APPID」请求所有接口总调用次数暂无限制，但对调用频次的限制和上述第二点保持一致。
-- 通过易微联开发者平台登录完成认证的开发者使用的「免费 APPID」请求 OAuth2.0 相关接口，所有接口的总请求次数限制约 5 万次，超出限额，接口返回 HTTP 状态码为 403 错误（不是返回的参数）。如需解除限制需要购买付费 APPID，请邮件联系 bd@coolkit.cn。
+- 通过易微联开发者平台登录完成认证的开发者使用的「免费 APPID」请求 OAuth2.0 相关接口，所有接口的总请求次数限制 5 万次，超出限额，接口返回 HTTP 状态码为 403 错误（不是返回的参数）。如需解除限制需要购买付费 APPID，请邮件联系 bd@coolkit.cn。
 - 对于企业或者个人开发者申请的 APPID，目前开放 部分已授权品牌的设备、以及主流设备类型（文档即将分批次发布，敬请期待），如需接入其他复杂设备类型或支持新设备类型，请直接联系对接业务人员或邮件联系 bd@coolkit.cn。
 
 ### v2 接口域名
@@ -278,7 +278,12 @@ if __name__ == "__main__":
 | 4002       | 设备已离线（旧的错误码，为避免对已使用更新设备状态接口的客户造成影响，暂时先不改），更新设备状态中会出现 |
 | 30022      | 设备已离线，操作失败，批量更新设备状态中会出现                                                           |
 
+
 ## v2 接口清单
+
+**Postman 示例下载：[点击下载](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_OAuth2.0_Postman_Demo.zip)**
+
+导入[Postman](https://www.postman.com/downloads/)，在环境变量中填写自己的应用信息即可使用。
 
 ### 申请第三方授权凭证
 
@@ -322,8 +327,8 @@ redirectUrl
 
 | **名称** | **类型** | **允许为空** | **说明**      |
 | :------- | :------- | :----------- | :------------ |
-| at       | String   | N            | Access Token  |
-| rt       | String   | N            | Refresh Token |
+| at       | String   | N            | Access Token，有效期30天|
+| rt       | String   | N            | Refresh Token，有效期60天 |
 
 ### 取消第三方账号绑定
 

@@ -12,8 +12,6 @@
 - [Developer Guide v2](/en/DeveloperGuideV2)
 - [API Reference v2](/en/APIReferenceV2)
 - [API Center v2](/en/APICenterV2)
-- [~~Developer Guide v1~~](/en/DeveloperGuide)
-- [~~API Center v1~~](/en/APICenter)
 - [UIID Protocol](/en/UIIDProtocol)
 - [FAQ](/en/FAQ)
 - [Data Security](/en/DataSecurity)

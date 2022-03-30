@@ -104,9 +104,9 @@ After the user fills in the account password and clicks login successfully, the 
 
 Example：{Your redirectUrl}?code=95bcf41b-3397-46da-886f-fdc852de84ca&region=as&state=10011
 
-Code is valid for 3 minutes. When it expires, it returns:
+**Code is valid for 30 second.** When it expires, it returns:
 
-    {"error": 405, "MSG": "invalid code", "data": {}}
+    {"error": 405, "msg": "invalid code", "data": {}}
 
 After the accessing party gets the code, requesting the 'POST@/v2/user/oauth/token' interface of corresponding area to get the accessToken to complete the binding process, which can then be used to get the user's device information and control the device.
 
@@ -117,9 +117,9 @@ The APIs in this document applies HTTPS protocol, in which the client sends data
 ### Requirements of Calling Interface and Description of APPID Permission (Important):
 
 - Once the user has successfully logged into the eWeLink account authorization page, your platform should call [Get Thing List] Interface (GET@/v2/device/thing) one time, sync the device list, and display the correct device type according to the UIID(UI's ID).
-- The interval of a single IP calling the same Interface should be greater than or equal to 500ms, with no more than 300 calls in 5 minutes. If you control our devices via WebSocket, please keep in mind that every user is not allowed to log in and log out repeatedly for a short period of time (Send userOnline command). Otherwise, your IP will be blocked and terminated by the server if the userOnline command are sent too many times for a short period.
+- The interval of a single IP calling the all Interface should be greater than or equal to 500ms, with no more than 300 calls in 5 minutes. If you control our devices via WebSocket, please keep in mind that every user is not allowed to log in and log out repeatedly for a short period of time (Send userOnline command). Otherwise, your IP will be blocked and terminated by the server if the userOnline command are sent too many times for a short period.
 - Partners who has the business certification and enterprises that purchased the APPID have the access to [Paid APPID] to call all Interfaces without limitations for the total number of calls now but there are the same regulations for calling frequency as the above second point.
-- Developers who log in via eWeLink Developer Platform and complete the certification can use the [ Free APPID] to call OAuth2.0's relevant interface, and the total number of calls for all Interfaces is limited to around 50,000. If you reach the limit, the Interface returns the HTTP status code of 403 ERROR (not the parameters returned). If you want to remove the limit, please purchase the paid APPID and you can contact [bd@coolkit.cn](mailto:bd@coolkit.cn) by email.
+- Developers who log in via eWeLink Developer Platform and complete the certification can use the [ Free APPID] to call OAuth2.0's relevant interface, and the total number of calls for all Interfaces is limited to 50,000. If you reach the limit, the Interface returns the HTTP status code of 403 ERROR (not the parameters returned). If you want to remove the limit, please purchase the paid APPID and you can contact [bd@coolkit.cn](mailto:bd@coolkit.cn) by email.
 - For APPID applied by enterprises and personal developers, Currently open some authorized brands of equipment, as well as mainstream equipment types (which will be released in batches soon, please stay tuned). If you have demand for other complex device types or new device types, please contact our relevant staff or email us via [bd@coolkit.cn](mailto:bd@coolkit.cn).
 
 ### v2 Interface domain name
@@ -282,6 +282,10 @@ Example 2: Error response
 
 ## v2 Interface list
 
+**Postman Demo download：[Click download](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_OAuth2.0_Postman_Demo.zip)**
+
+Import [Postman](https://www.postman.com/downloads/) and fill in your application information in the environment file.
+
 Interface call frequency limit: the recommended interval is greater than or equal to 1 second
 
 ### Apply for third-party authorization credentials interface
@@ -323,8 +327,8 @@ Response data parameters:
 
 | **Name** | **Type** | **Allows Empty** | **Description** |
 | :------- | :------- | :--------------- | :-------------- |
-| at       | String   | N                | Access Token    |
-| rt       | String   | N                | Refresh Token   |
+| at       | String   | N                | Access Token, valid for 30 days|
+| rt       | String   | N                | Refresh Token, valid for 60 days|
 
 ### Unbind third party accounts
 
