@@ -7442,7 +7442,6 @@
 
   function renderName(vm) {
     var el = getNode(".app-name-link");
-    var nameLink = vm.config.nameLink;
     var name = vm.config.name;
     var path = vm.route.path;
     if (!el) {

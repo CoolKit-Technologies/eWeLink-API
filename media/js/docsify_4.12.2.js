@@ -2401,10 +2401,13 @@
         }
       });
 
+    // Carl 新增
     if (autoTitle) {
       $.title = target
-        ? target.title || ((target.innerText) + " - " + title)
+        ? ((target.innerText) + " - " + title)
         : title;
+      // console.info(target.title);
+      // console.info(title);
     }
 
     return target;
@@ -8542,7 +8545,6 @@
   // Carl 新增
   function renderName(vm) {
     var el = getNode(".app-name-link");
-    var nameLink = vm.config.nameLink;
     var name = vm.config.name;
     var path = vm.route.path;
     if (!el) {
