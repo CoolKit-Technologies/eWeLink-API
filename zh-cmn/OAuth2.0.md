@@ -288,8 +288,11 @@ if __name__ == "__main__":
 ### 申请第三方授权凭证
 
 URL：/v2/user/oauth/token
+
 认证参数：Sign
+
 请求方法：POST
+
 请求参数：
 
 | **名称**    | **类型** | **允许空** | **说明**                          |
@@ -298,7 +301,6 @@ URL：/v2/user/oauth/token
 | redirectUrl | String   | N          | 回调地址                          |
 | grantType   | String   | N          | 目前暂时固定为 authorization_code |
 
-redirectUrl
 
 响应 data 参数：
 
