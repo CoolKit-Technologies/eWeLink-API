@@ -114,7 +114,7 @@ After the accessing party gets the code, requesting the 'POST@/v2/user/oauth/tok
 
 The APIs in this document applies HTTPS protocol, in which the client sends data with UTF-8 encoding and in json format.
 
-### Requirements of Calling Interface and Description of APPID Permission (Important):
+### Requirements of Calling Interface (Important):
 
 - Once the user has successfully logged into the eWeLink account authorization page, your platform should call [Get Thing List] Interface (GET@/v2/device/thing) one time, sync the device list, and display the correct device type according to the UIID(UI's ID).
 - The interval of a single IP calling the all Interface should be greater than or equal to 500ms, with no more than 300 calls in 5 minutes. If you control our devices via WebSocket, please keep in mind that every user is not allowed to log in and log out repeatedly for a short period of time (Send userOnline command). Otherwise, your IP will be blocked and terminated by the server if the userOnline command are sent too many times for a short period.

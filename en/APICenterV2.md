@@ -6,7 +6,7 @@ The APIs in this document applies HTTPS protocol, in which the client sends data
 
 **Please consider using 'Get device or group status' endpoint instead of ‘Homepage’ endpoint to get single device resource.**
 
-### Requirements of Calling Interface and Description of APPID Permission (Important):
+### Requirements of Calling Interface (Important):
 
 - The interval of a single IP calling the same Interface should be greater than or equal to 500ms, with no more than 300 calls in 5 minutes. If you control our devices via WebSocket, please keep in mind that every user is not allowed to log in and log out repeatedly for a short period of time (Send userOnline command). Otherwise, your IP will be blocked and terminated by the server if the userOnline command are sent too many times for a short period.
 - Partners who has the business certification and enterprises that purchased the APPID have the access to [Paid APPID] to call all Interfaces without limitations for the total number of calls now but there are the same regulations for calling frequency as the above first point.
