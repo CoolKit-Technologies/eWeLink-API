@@ -9,7 +9,7 @@
 
 | Time                  | Change log                                                                                                                                                            | Author |
 | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- |
-| March 30, 2022 | Deleted the content of the v1 API document; updated the UIID protocol document; added 20 document contents; added OAuth2.0 and regular login authorization Postman test case download; Fixed some document content errors| Carl   |
+| March 30, 2022 | Deleted the content of the v1 API document; updated the UIID protocol document; added 20 document contents; added OAuth2.0 and regular login authorization Postman test case downloads; the validity period of the Code obtained by the OAuth2.0 authorization method was changed to 30 seconds; UIID document revision format; Fixed some document content errors| Carl   |
 | Jan 06, 2022           | Add UIID protocol document                                                                                                                                            | Carl   |
 | Dec 14, 2021           | Add OAuth2.0 mode authorization scheme description, add the detailed service description of paid purchase of APPID, and add the description of interface restrictions | Carl   |
 | Oct 22, 2021           | Add 'Get Region' interface                                                                                                                                            | Carl   |
