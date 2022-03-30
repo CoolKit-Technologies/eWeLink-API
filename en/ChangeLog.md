@@ -9,22 +9,23 @@
 
 | Time                  | Change log                                                                                                                                                            | Author |
 | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- |
-| Jan 06,2022           | Add UIID protocol document                                                                                                                                            | Carl   |
-| Dec 14,2021           | Add OAuth2.0 mode authorization scheme description, add the detailed service description of paid purchase of APPID, and add the description of interface restrictions | Carl   |
-| Oct 22,2021           | Add 'Get Region' interface                                                                                                                                            | Carl   |
-| Oct 21,2021           | Add a description of the authorization parameter in the request header and supplement the description in some interfaces                                              | Carl   |
-| Jul 21,2021           | Add extra parameter description in equipment information (factory information)                                                                                        | Carl   |
+| March 30, 2022 | Deleted the content of the v1 API document; updated the UIID protocol document; added 20 document contents; added OAuth2.0 and regular login authorization Postman test case download; Fixed some document content errors| Carl   |
+| Jan 06, 2022           | Add UIID protocol document                                                                                                                                            | Carl   |
+| Dec 14, 2021           | Add OAuth2.0 mode authorization scheme description, add the detailed service description of paid purchase of APPID, and add the description of interface restrictions | Carl   |
+| Oct 22, 2021           | Add 'Get Region' interface                                                                                                                                            | Carl   |
+| Oct 21, 2021           | Add a description of the authorization parameter in the request header and supplement the description in some interfaces                                              | Carl   |
+| Jul 21, 2021           | Add extra parameter description in equipment information (factory information)                                                                                        | Carl   |
 | arrow.get("2021.04.16 | Symmetric encryption for "shareTo.apikey"                                                                                                                             | Carl   |
-| Apr 08,2021           | The parameter "updatedthinglist" returned by the "/v2/device/share" interface is modified to "updatedthing"                                                           | Carl   |
-| Feb 20,2021           | "Content-Type" parameter supports filling in "application/json; charset-utf-8"                                                                                        | Carl   |
-| Jan 18,2021           | Important: change of charging standard                                                                                                                                | Carl   |
-| Dec 18,2020           | Supplement the parameter transfer situation when querying or updating the device status shared by other users (WebSocket)                                             | Carl   |
-| Oct 30,2020           | Update the user information returned in the user-related interface and add the ipCountry field                                                                        | Carl   |
-| Jul 09,2020           | Update [/v2/user/register] interface content, add additional push channel fields, and add [/v2/user/extra-push] interface                                             | Carl   |
-| Jul 02,2020           | Add [/v2/device/thing/batch-status] and [/v2/device/group/update] interface                                                                                           | Carl   |
-| Jul 01,2020           | Update interface [/v2/device/tags], add modification type field                                                                                                       | Carl   |
-| Jun 12,2020           | [/v2/user/close-account] Change the request method to post                                                                                                            | Carl   |
-| May 12,2020           | Open v2 interface document                                                                                                                                            | Carl   |
-| May 06,2020           | Supplement apikey parameter for [/api/user/device/]                                                                                                                   | Carl   |
-| Apr 15,2020           | Modify the document cover and update the original signature calculation example diagram                                                                               | Carl   |
-| Mar 05,2020           | Unified document format and content                                                                                                                                   | Carl   |
+| Apr 08, 2021           | The parameter "updatedthinglist" returned by the "/v2/device/share" interface is modified to "updatedthing"                                                           | Carl   |
+| Feb 20, 2021           | "Content-Type" parameter supports filling in "application/json; charset-utf-8"                                                                                        | Carl   |
+| Jan 18, 2021           | Important: change of charging standard                                                                                                                                | Carl   |
+| Dec 18, 2020           | Supplement the parameter transfer situation when querying or updating the device status shared by other users (WebSocket)                                             | Carl   |
+| Oct 30, 2020           | Update the user information returned in the user-related interface and add the ipCountry field                                                                        | Carl   |
+| Jul 09, 2020           | Update [/v2/user/register] interface content, add additional push channel fields, and add [/v2/user/extra-push] interface                                             | Carl   |
+| Jul 02, 2020           | Add [/v2/device/thing/batch-status] and [/v2/device/group/update] interface                                                                                           | Carl   |
+| Jul 01, 2020           | Update interface [/v2/device/tags], add modification type field                                                                                                       | Carl   |
+| Jun 12, 2020           | [/v2/user/close-account] Change the request method to post                                                                                                            | Carl   |
+| May 12, 2020           | Open v2 interface document                                                                                                                                            | Carl   |
+| May 06, 2020           | Supplement apikey parameter for [/api/user/device/]                                                                                                                   | Carl   |
+| Apr 15, 2020           | Modify the document cover and update the original signature calculation example diagram                                                                               | Carl   |
+| Mar 05, 2020           | Unified document format and content                                                                                                                                   | Carl   |
