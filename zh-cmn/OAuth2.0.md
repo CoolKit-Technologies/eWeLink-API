@@ -281,9 +281,9 @@ if __name__ == "__main__":
 
 ## v2 接口清单
 
-**Postman 示例下载：[点击下载](https://gitee.com/coolkit-carl/apiDocs/raw/main/media/files/CoolKit_OAuth2.0_Postman_Demo.zip)**
+**Postman 示例下载：[点击下载](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_OAuth2.0_Postman_Demo.zip)**
 
-导入[Postman](https://www.postman.com/downloads/)，在环境变量中填写自己的应用信息即可使用。
+导入 [Postman](https://www.postman.com/downloads/)，在环境变量中填写自己的应用信息即可使用。
 
 ### 申请第三方授权凭证
 
