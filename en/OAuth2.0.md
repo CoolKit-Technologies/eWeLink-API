@@ -384,7 +384,7 @@ RoomList item description:
 Note:
 
 - When the user device (total parameter) exceeds 30, you need to set the beginIndex parameter to get it in pages, otherwise too much data will be acquired and the server will return timeout errors such as 500.
-- The total parameter returned may be greater than the total amount of device data returned, which indicates that not all device data has been obtained. Please refer to [Description of Calling Interface and APPID Permission (Important)] for more details.
+- The total parameter returned may be greater than the total amount of device data returned, which indicates that not all device data has been obtained. The specific reason is: at present, we only authorize the brands of Sonoff and CoolKit. The brands of other manufacturers can only be used after signing a letter of authorization with the help of our business colleagues. See the chapter "Requirements of Calling Interface (Important)" for details.
 
 URL: /v2/device/thing
 
