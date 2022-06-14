@@ -134,7 +134,7 @@ print(sign)
 | X-CK-Appid      | 【用户】分类下的接口不允许为空 | APPID，APP 的标识，需要付费购买的凭证                                                                                            |
 | X-CK-Nonce      | 允许为空                       | 长度 8 的大小写字母和数字，客户端应尽量使用随机字符串，方便和服务端联调                                                          |
 | Authorization   | 不允许为空                     | API 调用凭证，计算方法见下方 **签名规则**                                                                                        |
-| Content-Type    | PUT 和 POST 的请求不允许为空   | 固定为 "application/json" or "application/json; charset-utf-8"                                                                   |
+| Content-Type    | PUT 和 POST 的请求不允许为空   | 固定为 "application/json" or "application/json; charset=utf-8"                                                                   |
 | Host            | 不允许为空                     | 大部分 HTTP 客户端会自动添加此字段，如果没有，必须代码明确指定，值为对应的接口域名，比如: cn-apia.coolkit.cn, us-apia.coolkit.cc |
 
 ### v2 接口签名规则

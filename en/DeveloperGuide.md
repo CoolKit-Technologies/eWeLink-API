@@ -653,7 +653,7 @@ Note:
 GET /device HTTP/1.1
 Host: 172.10.0.163
 Accept: application/json
-Content-Type: application/json;charset=UTF-8
+Content-Type: application/json; charset=utf-8
 Package-Name: com.coolkit
 Cache-Control: no-store
 ```
@@ -684,7 +684,7 @@ Content-Length: 99
 POST /ap HTTP/1.1
 Host: 172.10.0.163
 Accept: application/json
-Content-Type: application/json;charset=UTF-8
+Content-Type: application/json; charset=utf-8
 Package-Name: com.coolkit
 Cache-Control: no-store
 ```
