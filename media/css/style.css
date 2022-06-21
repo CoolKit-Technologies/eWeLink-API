@@ -7,12 +7,15 @@ body {
 .markdown-section h1 {
   font-weight: 400;
 }
-.markdown-section a {
+/* .markdown-section a {
   font-weight: 300;
-}
+} */
 /* .search .input-wrap input{
   font-family: "SimSun";
 } */
+.sidebar > h1{
+  font-weight: normal;
+}
 
 .table-center {
   width: 100%;
@@ -21,4 +24,8 @@ body {
 
 .table-center table {
   display: table;
+}
+
+.app-nav a {
+  color: #333;
 }
