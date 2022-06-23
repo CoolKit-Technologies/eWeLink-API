@@ -9,7 +9,8 @@
 
 | Time                  | Change log                                                                                                                                                            | Author |
 | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- |
-| April 19, 2022           | Update of Requirements of Calling Interface (Important): the total number of calls of all interfaces in all region is changed to 50000 times per month and reset the next month| Carl   |
+| June 23, 2022           | Update of Requirements of Calling Interface (Important): the number of free application interface requests is limited to 50000 times per month in each region, and there is no limit for paid applications; Add postman example of V2 interface   |
+| April 19, 2022           | Update of Requirements of Calling Interface (Important): The total number of calls to all interfaces in all areas of the free application is changed to 50000 times a month and reset the next month| Carl   |
 | March 30, 2022 | Deleted the content of the v1 API document; updated the UIID protocol document; added 20 document contents; added OAuth2.0 and regular login authorization Postman test case downloads; the validity period of the Code obtained by the OAuth2.0 authorization method was changed to 30 seconds; UIID document revision format; Fixed some document content errors| Carl   |
 | Jan 06, 2022           | Add UIID protocol document                                                                                                                                            | Carl   |
 | Dec 14, 2021           | Add OAuth2.0 mode authorization scheme description, add the detailed service description of paid purchase of APPID, and add the description of interface restrictions | Carl   |
