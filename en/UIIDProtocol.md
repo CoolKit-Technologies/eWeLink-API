@@ -887,9 +887,10 @@ App needs to send the command to activate UI again within 60s activation period,
 
 ```json
 {
-    "power":"300.00",
-    "voltage":"220.00",
-    "current":"5.00"},
+  "power":"300.00",
+  "voltage":"220.00",
+  "current":"5.00"
+}
 ```
 
 3. Start counting the current electricity consumption, start counting (start), stop counting (stop).
