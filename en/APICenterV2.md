@@ -152,7 +152,7 @@ const lanClient = new eWeLink.Lan({
   logObj: eWeLink.createLogger('lan'),
 })
 
-lanClient.discovery(undefined, (server) => {
+lanClient.discovery((server) => {
   console.log('server:', server)
 }) // Start Discovery Service
 try {
