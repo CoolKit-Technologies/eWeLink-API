@@ -1037,6 +1037,8 @@ Consistent with UIID1.
 }
 ```
 
+The temperature accuracy (reporting threshold) is 0.5 degrees, the humidity accuracy (reporting threshold) is 5 percent, the temperature resolution is 0.1 degrees, and the humidity resolution is 1 percent. Whether it conforms to the data upload strategy is judged every 5S. Each time the temperature value and humidity value are uploaded together, and the detection interval is shared. At the same time, upload the temperature and humidity when online.
+
 4. Turn on auto control mode
 
 ```json

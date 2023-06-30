@@ -11,7 +11,7 @@
 
 Email: bd@coolkit.cn
 
-Service Hotline: 0755-26404901
+Telephone: 0755-86967464 / 18165721994
 
 Operating Hours: 9:30-18:30(Week days)
 

@@ -74,12 +74,108 @@ Example 2: Error response
 
 ### Postman Example
 
-
 **Postman Demo Download：[Click download](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_API_Postman_Demo.zip)**
 
 Import [Postman](https://www.postman.com/downloads/) and fill in your application information in the environment file.
 
 General tutorial: [Click Me](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/)
+
+### JavaScript Example
+
+It is recommended to use pnpm and download `ewelink-api-next`(node >= 16.16)
+
+```bash
+pnpm i ewelink-api-next
+# or npm install ewelink-api-next
+```
+
+#### Code Example
+
+```typescript
+// eWeLink v2 API
+
+import eWeLink from 'ewelink-api-next'
+
+const client = new eWeLink.WebAPI({
+  appId: 'xxx',
+  appSecret: 'xxx',
+  region: 'us',
+  logObj: eWeLink.createLogger('us'), // or console
+})
+
+client.syncLocalToken((region = 'us'), (account = 'xxx@xxx.net'))
+try {
+  const response = await client.user.login({
+    account: 'xxx@xxx.com',
+    password: '12345678',
+    areaCode: '+1',
+  })
+  const userInfo = response.error === 0 ? response.data.user : {}
+  console.log('userInfo：', userInfo)
+} catch (err) {
+  console.log('Failed to get user information:', err.message)
+}
+```
+
+```typescript
+// eWeLink WebSocket API
+
+import eWeLink from 'ewelink-api-next'
+
+const wsClient = new eWeLink.Ws({
+  appId: 'xxx',
+  appSecret: 'xxx',
+  region: 'us',
+})
+wsClient.syncLocalToken((region = 'us'), (account = 'xxx@xxx.net'))
+
+let ws = await wsClient.Connect.create({
+  appId: wsClient?.appId || '',
+  at: wsClient.at,
+  region: 'us',
+  userApiKey: wsClient.userApiKey,
+})
+
+setTimeout(() => {
+  wsClient.Connect.updateState('xxxx', {
+    switch: 'on',
+  })
+}, 5000)
+```
+
+```typescript
+// eWeLink Lan Control
+import eWeLink from 'ewelink-api-next'
+
+const lanClient = new eWeLink.Lan({
+  selfApikey: 'xxx',
+  logObj: eWeLink.createLogger('lan'),
+})
+
+lanClient.discovery(undefined, (server) => {
+  console.log('server:', server)
+}) // Start Discovery Service
+try {
+  const res = await lanClient.zeroconf.switches({
+    data: {
+      switch: 'on',
+    },
+    deviceId: 'xxx',
+    secretKey: 'xxx',
+  })
+  console.info('Request result:：', res)
+  const res2 = await lanClient.zeroconf.switches({
+    data: {
+      switch: 'off',
+    },
+    deviceId: 'xxx',
+    secretKey: 'xxx',
+  })
+  console.info('Request result:：', res2)
+} catch (error: any) {
+  console.info(error.message)
+}
+```
 
 ## User
 
@@ -93,8 +189,8 @@ Authorization parameter: Sign
 
 Request parameters:
 
-| **Name**    | **Type** | **Allows empty** | **Description**                           |
-| :---------- | :------- | :--------------- | ----------------------------------------- |
+| **Name**    | **Type** | **Allows empty** | **Description**                               |
+| :---------- | :------- | :--------------- | --------------------------------------------- |
 | countryCode | String   | N                | Telephone area code, without "+", such as "1" |
 
 Response data parameters:
@@ -809,6 +905,7 @@ Note:
 
 - When the user device (total parameter) exceeds 30, you need to set the beginIndex parameter to get it in pages, otherwise too much data will be acquired and the server will return timeout errors such as 500.
 - The total parameter returned may be greater than the total amount of device data returned, which indicates that not all device data has been obtained. The specific reason is: at present, we only authorize the brands of Sonoff and CoolKit. The brands of other manufacturers can only be used after signing a letter of authorization with the help of our business colleagues. See the chapter "APICenterV2 - > Requirements of Calling Interface (Important)" for details.
+- If multiple eWeLink accounts need to be used because of business relationships, but there are no resources to establish multiple long connections, it is recommended to share the devices of other accounts with a specific eWeLink account, and then establish a WebSocket connection for this account to passively receive messages and reduce interface call polling.
 
 URL: /v2/device/thing
 
@@ -874,6 +971,8 @@ Response data parameters:
 
 ### Get Device or Group Status
 
+It is recommended to use WebSocket connect passive receiving device status update. Reduce polling and avoid frequent requests for this interface.
+
 URL: /v2/device/thing/status
 
 Request method: GET
@@ -906,6 +1005,8 @@ Response data parameters:
 | params   | Object   | N                | Device or group status attributes |
 
 ### Update the Status of a Device or Group
+
+It is recommended to use WebSocket connect to issue control commands.
 
 URL: /v2/device/thing/status
 
@@ -1274,50 +1375,6 @@ Request parameters:
 | params   | Object   | N                | Group status. This interface only saves data without processing |
 
 Response data parameter: None
-
-### Add Devices to a Group
-
-URL: /v2/device/group/add
-
-Request method: POST
-
-Authorization parameter: Token
-
-Note: The UIID of the devices to be added must be the same as that of the main device of the group.
-
-Request parameters:
-
-| **Name**     | **Type** | **Allows empty** | **Description**                                                     |
-| :----------- | :------- | :--------------- | :------------------------------------------------------------------ |
-| id           | String   | N                | Group ID                                                            |
-| deviceidList | Array    | N                | Device ID list. Its minimum number of items is 1 and maximum is 30. |
-
-Response data parameters:
-
-| **Name**         | **Type** | **Allows empty** | **Description**                        |
-| :--------------- | :------- | :--------------- | :------------------------------------- |
-| updatedThingList | Array    | N                | The thing list of the updated devices. |
-
-### Delete Devices from Group
-
-URL: /v2/device/group/delete
-
-Request method: POST
-
-Authorization parameter: Token
-
-Request parameters:
-
-| **Name**     | **Type**        | **Allows empty** | **Description**                                                     |
-| :----------- | :-------------- | :--------------- | :------------------------------------------------------------------ |
-| id           | String          | N                | Group ID                                                            |
-| deviceidList | Array\<String\> | N                | Device ID list. Its minimum number of items is 1 and maximum is 30. |
-
-Response data parameters:
-
-| **Name**         | **Type** | **Allows empty** | **Description**                        |
-| :--------------- | :------- | :--------------- | :------------------------------------- |
-| updatedThingList | Array    | N                | The thing list of the updated devices. |
 
 ### Update the Device List of a Group
 

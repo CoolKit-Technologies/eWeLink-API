@@ -134,7 +134,7 @@ print(sign)
 | X-CK-Appid      | 【用户】分类下的接口不允许为空 | APPID，APP 的标识，需要付费购买的凭证                                                                                            |
 | X-CK-Nonce      | 允许为空                       | 长度 8 的大小写字母和数字，客户端应尽量使用随机字符串，方便和服务端联调                                                          |
 | Authorization   | 不允许为空                     | API 调用凭证，计算方法见下方 **签名规则**                                                                                        |
-| Content-Type    | PUT 和 POST 的请求不允许为空   | 固定为 "application/json" or "application/json; charset=utf-8"                                                                   |
+| Content-Type    | PUT 和 POST 的请求不允许为空   | 固定为 "application/json" 或者 "application/json; charset=utf-8"                                                                   |
 | Host            | 不允许为空                     | 大部分 HTTP 客户端会自动添加此字段，如果没有，必须代码明确指定，值为对应的接口域名，比如: cn-apia.coolkit.cn, us-apia.coolkit.cc |
 
 ### v2 接口签名规则
@@ -389,6 +389,7 @@ roomList 列表 item 说明:
 
 - 当用户设备（total 参数）超过 30，需要设置 beginIndex 参数分页获取，否则获取数据过多，服务端会返回 500 等超时错误。
 - 返回的 total 参数可能大于返回的设备数据总额，说明未获取到所有设备数据，具体原因是：目前我们只授权了松诺和酷宅的品牌，其他厂商的品牌需要在我们业务同事的帮助下签订授权书才能使用，详见「接口中心_v2->调用规范（重要）」章节。
+- 如果因为业务关系，需要用到多个易微联账号，但没有资源建立多个长连接，建议把其他账号的设备都分享到一个特定易微联账号，然后建立这个账号的长连接，被动接收消息，减少接口调用轮询。
 
 接口：/v2/device/thing
 
@@ -548,6 +549,8 @@ thingList item 说明:
 
 ### 获取设备或群组的状态
 
+建议使用长连接被动接收设备状态更新。减少轮询，避免频繁请求本接口。
+
 接口：/v2/device/thing/status
 
 认证参数：accessToken
@@ -580,6 +583,8 @@ thingList item 说明:
 | params   | Object   | N            | 设备或群组的状态属性 |
 
 ### 更新设备或群组的状态
+
+建议使用长连接下发控制指令。
 
 URL: /v2/device/thing/status
 
