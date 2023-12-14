@@ -34,7 +34,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                                Three-Speed Smart Fan                                 |                                Three-Speed Smart Fan                                 |  17  |
 |                                      Sensor Hub                                      |        With temperature, humidity, brightness, noise, air quality sensor data        |  18  |
 |                                Three-Speed Humidifier                                |                                Three-Speed Humidifier                                |  19  |
-|                                RGB 5-Color Bulb Light                                |                                RGB 5-Color Bulb Light                                |  22  |
+|                               RGBCW LED Bulb Light                               |                               RGBCW LED Bulb Light                              |  22  |
 |                                          -                                           |                                          -                                           |  23  |
 |                              GSM/4G Single-Channel Switch                               |                              GSM/4G Single-Channel Switch                               |  24  |
 |                                    Aroma Diffuser                                    |                                    Aroma Diffuser                                    |  25  |
@@ -51,7 +51,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                                 Single Dimmer Light                                  |                 Single dimmer light based on PSF-BLD module protocol                 |  44  |
 |                            Downlight & New Ceiling Light                             |                            Downlight & New Ceiling Light                             |  45  |
 |                       Dimmable Color Temperature Ceiling Light                       |                       Dimmable Color Temperature Ceiling Light                       |  52  |
-|                                RGB 4-Color Bulb Light                                |                                RGB 4-Color Bulb Light                                |  56  |
+|                                RGBC LED Bulb Light                                  |                                RGBC LED Bulb Light Light                                |  56  |
 |                               Single-Color Bulb Light                                |                               Single-Color Bulb Light                                |  57  |
 |                                     Light Strip                                      |                                     Light Strip                                      |  59  |
 |                                     Smart Router                                     |                                     Smart Router                                     |  61  |
@@ -1419,7 +1419,7 @@ None, all by Device Report.
 }
 ```
 
-### UIID22 RGB 5-Color Bulb Light
+### UIID22 RGBCW LED Bulb Light
 
 #### Parameter Description:
 
