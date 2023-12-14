@@ -77,7 +77,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                                 RF Doorbell Gateway                                  |                                 RF Doorbell Gateway                                  |  98  |
 |                                   WiFi Door Magnet                                   |                                   WiFi Door Magnet                                   | 102  |
 |            Dual-Color Cold and Warm Light_Support with tuning and scenes             |            Dual-Color Cold and Warm Light_Support with tuning and scenes             | 103  |
-|                 RGB Five-Color Light_Support with tuning and scenes                  |                 RGB Five-Color Light_Support with tuning and scenes                  | 104  |
+|                 RGBCW LED Light_Support with tuning and scenes                  |                 RGBCW LED Light_Support with tuning and scenes                  | 104  |
 |                 GSM Single-Channel Plug - Multi-channel protocols                  |      GSM Single-Channel Plug - Multi-channel protocol with traffic device use      | 107  |
 |                              eWelink WiFi to IR Gateway                              |                              eWelink WiFi to IR Gateway                              | 109  |
 |                          GSM Electricity Statistics Plug                           |                                       GSB-D67                                        | 110  |
@@ -90,7 +90,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                   Switch Station Four-Channel Switching Sub-Device                   |                   Switch Station Four-Channel Switching Sub-Device                   | 130  |
 |                                   HMI Wall Switch                                    |                                   HMI Wall Switch                                    | 133  |
 |              Dual-Color Cold and Warm Light_Support 2.4G eWeLink-Remote              |              Dual-Color Cold and Warm Light_Support 2.4G eWeLink-Remote              | 135  |
-|                   RGB Five-Color Light_Support 2.4G eWeLink-Remote                   |                   RGB Five-Color Light_Support 2.4G eWeLink-Remote                   | 136  |
+|                   RGBCW LED Light_Support 2.4G eWeLink-Remote                   |                   RGBCW LED Light_Support 2.4G eWeLink-Remote                   | 136  |
 |                                Light Strip-Bluetooth                                 |                                Light Strip-Bluetooth                                 | 137  |
 |                  Single-Channel Plug_Support 2.4G eWeLink-Remote                   |                  Single-Channel Plug_Support 2.4G eWeLink-Remote                   | 138  |
 |                   Dual-Channel Plug_Support 2.4G eWeLink-Remote                    |                   Dual-Channel Plug_Support 2.4G eWeLink-Remote                    | 139  |
@@ -101,7 +101,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                                eWeLink-Remote Gateway                                |                                eWeLink-Remote Gateway                                | 149  |
 |                                 New WiFi Door Magnet                                 |                                 New WiFi Door Magnet                                 | 154  |
 |                                          -                                           |                                          -                                           | 156  |
-|                Rhythmic Five-Color Light_Support 2.4G eWeLink-Remote                 |                Rhythmic Five-Color Light_Support 2.4G eWeLink-Remote                 | 157  |
+|                Rhythmic RGBCW LED Light_Support 2.4G eWeLink-Remote                 |                Rhythmic RGBCW LED Light_Support 2.4G eWeLink-Remote                 | 157  |
 |                                          -                                           |                                          -                                           | 158  |
 |                             Illumination Strip-Bluetooth                             |                             Illumination Strip-Bluetooth                             | 159  |
 |                  Single-Channel Switch_Support 2.4G eWeLink-Remote                   |                  Single-Channel Switch_Support 2.4G eWeLink-Remote                   | 160  |
@@ -129,7 +129,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                              Zigbee Dual-Channel Switch                              |                              Zigbee Dual-Channel Switch                              | 2256 |
 |                            Zigbee Door and Window Sensor                             |                            Zigbee Door and Window Sensor                             | 3026 |
 |                             Zigbee Three-Channel Switch                              |                             Zigbee Three-Channel Switch                              | 3256 |
-|                               Zigbee Five-Color Light                                |                               Zigbee Five-Color Light                                | 3258 |
+|                               Zigbee RGBCW LED Light                                |                               Zigbee RGBCW LED Light                                | 3258 |
 |                              Zigbee Water Flood Sensor                               |                              Zigbee Water Flood Sensor                               | 4026 |
 |                              Zigbee Four-Channel Switch                              |                              Zigbee Four-Channel Switch                              | 4256 |
 |                                 Zigbee Smoke Sensor                                  |                                 Zigbee Smoke Sensor                                  | 5026 |
@@ -3061,7 +3061,7 @@ The sub-device management process is not listed here, please contact technical s
 | key            | Number         | [0,2]       | Key triggering on behalf of wireless keys, 0 Click, 1 Double click, 2 Long press                                                                                                                      |
 | switches       | Array\<Object> | [1-4]       | The set of switch states of all channels, in the range of the number of elements[1-4]                                                                                                                 |
 | brightness     | Number         | [1-100]     | Brightness, the range of values expressed as a percentage of brightness                                                                                                                               |
-| rgbBrightness  | Number         | [1-100]     | Brightness percentage in five-color light color light mode                                                                                                                                            |
+| rgbBrightness  | Number         | [1-100]     | Brightness percentage in RGBCW LED Light color light mode                                                                                                                                            |
 | cctBrightness  | Number         | [1-100]     | Brightness percentage in white light mode of five-color lamp                                                                                                                                          |
 | colorTemp      | Number         | [1-100]     | Color temperature, the range of values expressed as a percentage of the color temperature range that can be supported by the sub device (0: warm yellow minimum; 100: white light maximum)            |
 | hue            | Number         | [0-359]     | Hue, using the standard hue ring, 3 o'clock direction is 0 (red), counterclockwise by 1° increments                                                                                                   |
@@ -3432,7 +3432,7 @@ Set Timer:
 
 Similar to UIID2256 with one additional channel control parameter.
 
-#### UIID3258 Zigbee Five-Color Light
+#### UIID3258 Zigbee RGBCW LED Light
 
 Turn on/off light
 
@@ -3891,7 +3891,7 @@ Set the light to turn off at 17:10 on May 29, 2020 with a delay of 6 minutes at 
 }
 ```
 
-### UIID104 RGB Five-Color Light_Support with tuning and scenes
+### UIID104 RGBCW LED Light_Support with tuning and scenes
 
 #### Parameter Description:
 
@@ -3911,7 +3911,7 @@ Set the light to turn off at 17:10 on May 29, 2020 with a delay of 6 minutes at 
 | soft           | ModeObject     |                                                                          | Scene can be edited                                                                                                                                                                        |
 | colorful       | ModeObject     |                                                                          | Scene can be edited                                                                                                                                                                        |
 | ops_mode       | String         | DIY, ewelink                                                             | This field is common in long connection and DIY mode; DIY enters DIY mode; eweLink returns to eweLink mode                                                                                 |
-| timers         | Array\<Object> |                                                                          | Timer, the current RGB five-color light's timer and delay action only supports on and off                                                                                                  |
+| timers         | Array\<Object> |                                                                          | Timer, the current RGBCW LED Light's timer and delay action only supports on and off                                                                                                  |
 
 WhiteObject Parameter Description:
 
