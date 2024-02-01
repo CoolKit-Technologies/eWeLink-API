@@ -2070,6 +2070,7 @@ Parameters:
 | :-------- | :----- | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | action    | string | N            | Fixed parameter: update                                                                                                                                                                     |
 | apikey    | string | N            | Current user apikey (available from the login interface) or the apikey of the master account (available from the interface for obtaining Thing list)                                        |
+| selfApikey    | string | Y       | Receiver's apikey. Required when the receiver updates its device status. It cannot be empty. |
 | deviceid  | string | N            | Device ID                                                                                                                                                                                   |
 | params    | object | N            | The server applies transparent transmission for the params, which may be an object or an array of objects. Just make sure you send the parameters of all the statuses you desire to change. |
 | userAgent | string | N            | app or device                                                                                                                                                                               |
@@ -2097,6 +2098,7 @@ If you update the device status shared by other users:
   "action": "update",
   "deviceid": "100000001",
   "apikey": "APIKEY of the master account",
+  "selfApikey":"Receiver's apikey",
   "userAgent": "app",
   "sequence": "1585297259553",
   "params": {

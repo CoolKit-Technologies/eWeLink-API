@@ -825,6 +825,7 @@ Config 说明:
 | :-------- | :----- | :------- | :------------------------------------------------------------------------------------------- |
 | action    | string | N        | 固定参数: update                                                                             |
 | apikey    | string | N        | 用户 apikey（可从登陆接口获取）或 主人账号的 apikey（可从获取 Thing 列表接口中获取）         |
+| selfApikey    | string | Y       | 接收方的 apikey ，接收方更新设备状态时，该字段必传，不允许为空 |
 | deviceid  | string | N        | 设备 ID                                                                                      |
 | params    | object | N        | 服务端对于 params 参数采用透传方式，可能是对象也可能是对象数组。只需要发送期望改变的状态参数 |
 | userAgent | string | N        | app 或者 device                                                                              |
@@ -852,6 +853,7 @@ Config 说明:
   "action": "update",
   "deviceid": "100000001",
   "apikey": "主人账号的APIKEY",
+  "selfApikey":"接收方账号的APIKEY",
   "userAgent": "app",
   "sequence": "1585297259553",
   "params": {
