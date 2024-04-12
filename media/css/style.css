@@ -1,0 +1,31 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.markdown-section h1 {
+  font-weight: 400;
+}
+/* .markdown-section a {
+  font-weight: 300;
+} */
+/* .search .input-wrap input{
+  font-family: "SimSun";
+} */
+.sidebar > h1{
+  font-weight: normal;
+}
+
+.table-center {
+  width: 100%;
+  text-align: center;
+}
+
+.table-center table {
+  display: table;
+}
+
+.app-nav a {
+  color: #333;
+}
