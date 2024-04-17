@@ -7,9 +7,9 @@
 
 # eWeLink-API
 
-酷宅开放平台 4.2（国外访问）：[https://coolkit-technologies.github.io/eWeLink-API/](https://coolkit-technologies.github.io/eWeLink-API/)
+酷宅开放平台 4.3（国外访问）：[https://coolkit-technologies.github.io/eWeLink-API/](https://coolkit-technologies.github.io/eWeLink-API/)
 
-酷宅开放平台 4.2（国内访问）：
+酷宅开放平台 4.3（国内访问）：
 
 ~~旧地址已废弃不再更新：https://coolkit-carl.gitee.io/apidocs/~~
 

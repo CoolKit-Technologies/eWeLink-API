@@ -9,7 +9,7 @@ The APIs in this document applies HTTPS protocol, in which the client sends data
 ### Requirements of Calling Interface (Important):
 
 - The interval of a single IP calling the same Interface should be greater than or equal to 500ms, with no more than 300 calls in 5 minutes. If you control our devices via WebSocket, please keep in mind that every user is not allowed to log in and log out repeatedly for a short period of time (Send userOnline command). Otherwise, your IP will be blocked and terminated by the server if the userOnline command are sent too many times for a short period.
-- Partners who has the business certification and enterprises that purchased the APPID have the access to [Paid APPID] to call all Interfaces without limitations for the total number of calls now but there are the same regulations for calling frequency as the above first point.
+- Partners who has the business certification and enterprises that purchased the APPID have the access to [Paid APPID] to call all Interfaces without limitations for the total number of calls now but there are the same regulations for calling frequency as the above first point.（According to the conversion between the number of connected devices and the number of users, if it exceeds the official usage, advance notice will be given, ignoring the possibility of being banned in the current month. The restrictions on the frequency of calls in the short term should be consistent with the first point mentioned above.）
 - For APPID applied by enterprises and personal developers, Currently open some authorized brands of equipment, as well as mainstream equipment types (which will be released in batches soon, please stay tuned). If you have demand for other complex device types or new device types, please contact our relevant staff or email us via [bd@coolkit.cn](mailto:bd@coolkit.cn).
 
 ### General parameters
@@ -74,7 +74,7 @@ Example 2: Error response
 
 ### Postman Example
 
-**Postman Demo Download：[Click download](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_API_Postman_Demo.zip)**
+**Postman Demo Download：[CoolKit_API_Postman_Demo.zip](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_API_Postman_Demo.zip)**
 
 Import [Postman](https://www.postman.com/downloads/) and fill in your application information in the environment file.
 

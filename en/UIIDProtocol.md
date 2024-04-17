@@ -943,6 +943,9 @@ Refresh electricity consumption:
 
 The device returns "hundredDaysKwhData": 100 days of daily electricity consumption in hexadecimal, expressed as an all lowercase string, 600 bytes, to two decimal places. Unit: KW.H. If the total daily electricity consumption for 100 days is: "25.11, 25.31, 0.00, 0.00 ................ (Total 100 days)" -> "190101190301000000000000 ..... The time order is that the current day is at the top, and the others go backwards.
 
+Parsing Example: [CoolKit_Analyze_Power_Consumption_Demo.zip](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_Analyze_Power_Consumption_Demo.zip)
+
+
 5. Turn on the switch of power detection single-channel Plug's indicator, turn on indicator light
 
 ```json

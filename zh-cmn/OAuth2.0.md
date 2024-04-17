@@ -31,6 +31,14 @@
 
 ![完整流程图](./img/01-OAuth2.0_FlowChart.png)
 
+### 代码示例与测试用例
+
+[NodeJS 获取 Token 示例](https://github.com/coolkit-carl/eWeLinkOAuthLoginDemo)
+
+[Postman 测试用例](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_OAuth2.0_Postman_Demo.zip)
+
+导入 [Postman](https://www.postman.com/downloads/)，在环境变量中填写自己的应用信息即可使用。
+
 ### 授权页说明
 
 URL：[https://c2ccdn.coolkit.cc/oauth/index.html](https://c2ccdn.coolkit.cc/oauth/index.html)
@@ -104,7 +112,7 @@ print(sign)
 
 示例：{Your redirectUrl}?code=95bcf41b-3397-46da-886f-fdc852de84ca&region=as&state=10011
 
-**code 有效期 30秒，到期返回：{ "error": 405, "msg": "invalid code", "data": {} }**
+**code 有效期 30 秒，到期返回：{ "error": 405, "msg": "invalid code", "data": {} }**
 
 接入方拿到 code 之后，请求对应区域的 POST@/v2/user/oauth/token 接口，获取 acessToken，完成绑定流程，后续可以使用该 Token 获取用户的设备信息，控制设备。
 
@@ -134,7 +142,7 @@ print(sign)
 | X-CK-Appid      | 【用户】分类下的接口不允许为空 | APPID，APP 的标识，需要付费购买的凭证                                                                                            |
 | X-CK-Nonce      | 允许为空                       | 长度 8 的大小写字母和数字，客户端应尽量使用随机字符串，方便和服务端联调                                                          |
 | Authorization   | 不允许为空                     | API 调用凭证，计算方法见下方 **签名规则**                                                                                        |
-| Content-Type    | PUT 和 POST 的请求不允许为空   | 固定为 "application/json" 或者 "application/json; charset=utf-8"                                                                   |
+| Content-Type    | PUT 和 POST 的请求不允许为空   | 固定为 "application/json" 或者 "application/json; charset=utf-8"                                                                 |
 | Host            | 不允许为空                     | 大部分 HTTP 客户端会自动添加此字段，如果没有，必须代码明确指定，值为对应的接口域名，比如: cn-apia.coolkit.cn, us-apia.coolkit.cc |
 
 ### v2 接口签名规则
@@ -278,12 +286,8 @@ if __name__ == "__main__":
 | 4002       | 设备已离线（旧的错误码，为避免对已使用更新设备状态接口的客户造成影响，暂时先不改），更新设备状态中会出现 |
 | 30022      | 设备已离线，操作失败，批量更新设备状态中会出现                                                           |
 
-
 ## v2 接口清单
 
-**Postman 示例下载：[点击下载](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_OAuth2.0_Postman_Demo.zip)**
-
-导入 [Postman](https://www.postman.com/downloads/)，在环境变量中填写自己的应用信息即可使用。
 
 ### 申请第三方授权凭证
 
@@ -300,7 +304,6 @@ URL：/v2/user/oauth/token
 | code        | String   | N          | 授权码                            |
 | redirectUrl | String   | N          | 回调地址                          |
 | grantType   | String   | N          | 目前暂时固定为 authorization_code |
-
 
 响应 data 参数：
 
@@ -327,10 +330,10 @@ URL：/v2/user/oauth/token
 
 响应 data 参数:
 
-| **名称** | **类型** | **允许为空** | **说明**      |
-| :------- | :------- | :----------- | :------------ |
-| at       | String   | N            | Access Token，有效期30天|
-| rt       | String   | N            | Refresh Token，有效期60天 |
+| **名称** | **类型** | **允许为空** | **说明**                    |
+| :------- | :------- | :----------- | :-------------------------- |
+| at       | String   | N            | Access Token，有效期 30 天  |
+| rt       | String   | N            | Refresh Token，有效期 60 天 |
 
 ### 取消第三方账号绑定
 
@@ -388,7 +391,7 @@ roomList 列表 item 说明:
 **注意：**
 
 - 当用户设备（total 参数）超过 30，需要设置 beginIndex 参数分页获取，否则获取数据过多，服务端会返回 500 等超时错误。
-- 返回的 total 参数可能大于返回的设备数据总额，说明未获取到所有设备数据，具体原因是：目前我们只授权了松诺和酷宅的品牌，其他厂商的品牌需要在我们业务同事的帮助下签订授权书才能使用，详见「接口中心_v2->调用规范（重要）」章节。
+- 返回的 total 参数可能大于返回的设备数据总额，说明未获取到所有设备数据，具体原因是：目前我们只授权了松诺和酷宅的品牌，其他厂商的品牌需要在我们业务同事的帮助下签订授权书才能使用，详见「接口中心\_v2->调用规范（重要）」章节。
 - 如果因为业务关系，需要用到多个易微联账号，但没有资源建立多个长连接，建议把其他账号的设备都分享到一个特定易微联账号，然后建立这个账号的长连接，被动接收消息，减少接口调用轮询。
 
 接口：/v2/device/thing
@@ -463,7 +466,6 @@ extra 说明：
 | apmac        | String   | N          | ap mac 地址（设备热点的地址） |
 | modelInfo    | String   | N          | 产品型号 ID                   |
 | brandId      | String   | N          | 品牌 ID                       |
-
 
 settings 说明:
 
@@ -821,15 +823,15 @@ Config 说明:
 
 参数:
 
-| 名称      | 类型   | 允许为空 | 说明                                                                                         |
-| :-------- | :----- | :------- | :------------------------------------------------------------------------------------------- |
-| action    | string | N        | 固定参数: update                                                                             |
-| apikey    | string | N        | 用户 apikey（可从登陆接口获取）或 主人账号的 apikey（可从获取 Thing 列表接口中获取）         |
-| selfApikey    | string | Y       | 接收方的 apikey ，接收方更新设备状态时，该字段必传，不允许为空 |
-| deviceid  | string | N        | 设备 ID                                                                                      |
-| params    | object | N        | 服务端对于 params 参数采用透传方式，可能是对象也可能是对象数组。只需要发送期望改变的状态参数 |
-| userAgent | string | N        | app 或者 device                                                                              |
-| sequence  | string | N        | 时间戳精确到毫秒                                                                             |
+| 名称       | 类型   | 允许为空 | 说明                                                                                         |
+| :--------- | :----- | :------- | :------------------------------------------------------------------------------------------- |
+| action     | string | N        | 固定参数: update                                                                             |
+| apikey     | string | N        | 用户 apikey（可从登陆接口获取）或 主人账号的 apikey（可从获取 Thing 列表接口中获取）         |
+| selfApikey | string | Y        | 接收方的 apikey ，接收方更新设备状态时，该字段必传，不允许为空                               |
+| deviceid   | string | N        | 设备 ID                                                                                      |
+| params     | object | N        | 服务端对于 params 参数采用透传方式，可能是对象也可能是对象数组。只需要发送期望改变的状态参数 |
+| userAgent  | string | N        | app 或者 device                                                                              |
+| sequence   | string | N        | 时间戳精确到毫秒                                                                             |
 
 示例：
 
@@ -853,7 +855,7 @@ Config 说明:
   "action": "update",
   "deviceid": "100000001",
   "apikey": "主人账号的APIKEY",
-  "selfApikey":"接收方账号的APIKEY",
+  "selfApikey": "接收方账号的APIKEY",
   "userAgent": "app",
   "sequence": "1585297259553",
   "params": {

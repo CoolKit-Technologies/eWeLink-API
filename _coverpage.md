@@ -7,7 +7,7 @@
 
 ![logo](./media/img/icon.png)
 
-# 酷宅开放平台<small>4.2</small>
+# 酷宅开放平台<small>4.3</small>
 
 > 开放共赢，优势互补
 

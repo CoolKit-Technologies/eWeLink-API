@@ -3,92 +3,104 @@
  * @Date: 2020-05-25 19:50:00
  * @LastEditors: Carl
  * @LastEditTime: 2021-12-13 14:21:38
---> 
+-->
 <!DOCTYPE html>
 <html lang="zh-Hans-CN">
-<head>
-  <meta charset="UTF-8">
-  <title>酷宅开放平台 4.2</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="酷宅推出的在线接口文档平台，为开发者免费提供：酷宅所有对外接口的详细介绍，Touch配网、AP配网的全流程说明，支持中英文，方便国内外开发者使用。">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="shortcut icon" href="./media/img/favicon.ico">
-  <link rel="stylesheet" href="./media/css/vue.css">
-  <link rel="stylesheet" href="./media/css/style.css">
-  <link rel="stylesheet" media="screen and (min-width:640px)" href="./media/css/phone.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>酷宅开放平台 4.3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="description"
+      content="酷宅推出的在线接口文档平台，为开发者免费提供：酷宅所有对外接口的详细介绍，Touch配网、AP配网的全流程说明，支持中英文，方便国内外开发者使用。"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="shortcut icon" href="./media/img/favicon.ico" />
+    <link rel="stylesheet" href="./media/css/vue.css" />
+    <link rel="stylesheet" href="./media/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:640px)"
+      href="./media/css/phone.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#/en/PlatformOverview">English</a>
+      <a href="#/zh-cmn/平台概述">简体中文</a>
+    </nav>
+    <div id="app"></div>
 
-
-
-</head>
-<body>
-  <nav>
-    <a href="#/en/PlatformOverview">English</a>
-    <a href="#/zh-cmn/平台概述">简体中文</a>
-  </nav>
-  <div id="app"></div>
-  
-  <script>
-    // TODO:兼容旧域名
-    // BUG: ok
-    // FIXME: 123
-    const my_href = new Set(['https://coolkit-technologies.github.io/apiDocs/index.html','https://coolkit-technologies.github.io/apiDocs/index.html#/', 'https://coolkit-technologies.github.io/apiDocs/', 'https://coolkit-technologies.github.io/apiDocs/#/']);
-    let my_url = window.location.href;
-    if(my_href.has(my_url) ){
-      window.location.href = 'https://coolkit-technologies.github.io/eWeLink-API/#/'
-    }
-    window.$docsify = {
-      name: {
-        '/zh-cmn/': '酷宅开放平台 4.2',
-        '/en/': 'CoolKit Open Platform 4.2'
-      },
-      nameLink: {
-        '/zh-cmn/': '#/zh-cmn/平台概述',
-        '/en/': '#/en/PlatformOverview'
-      },
-      repo: '',
-      coverpage: true,
-      onlyCover: true,
-      search: 'auto', // 默认值
-      search : [
-      '/zh-cmn',
-      '/en'            // => /README.md
-    ],
-    loadSidebar: true,
-    autoHeader: false,
-    subMaxLevel: 3,
-    notFoundPage: {
-      '/': 'zh-cmn/_404.md',
-      '/zh-cmn': 'zh-cmn/_404.md',
-      '/en': 'en/_404.md'
-    },
-    formatUpdated: '{MM}/{DD} {HH}:{mm}',
-    search: {
-        paths: 'auto',
-        placeholder: {
-          '/zh-cmn/': 'Search',
-          '/en/': 'Search'
-        },
-        noData: {
-          '/zh-cmn/': '找不到结果',
-          '/en/': 'No Results'
-        },
-      },
-    count:{
-        countable:true,
-        fontsize:'0.9em',
-        color:'rgb(90,90,90)',
-        language: "english"
+    <script>
+      // TODO:兼容旧域名
+      // BUG: ok
+      // FIXME: 123
+      const my_href = new Set([
+        'https://coolkit-technologies.github.io/apiDocs/index.html',
+        'https://coolkit-technologies.github.io/apiDocs/index.html#/',
+        'https://coolkit-technologies.github.io/apiDocs/',
+        'https://coolkit-technologies.github.io/apiDocs/#/',
+      ])
+      let my_url = window.location.href
+      if (my_href.has(my_url)) {
+        window.location.href =
+          'https://coolkit-technologies.github.io/eWeLink-API/#/'
       }
-
-  }
-    
-  </script>
-  <!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
-  <!-- <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script> -->
-  <script src="./media/js/docsify_4.12.2.js"></script>
-  <script src="./media/js/search.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-  <script src="./media/js/docsify-copy-code.min.js"></script>
-  <script src="./media/js/countable.js"></script>
-</body>
+      window.$docsify = {
+        name: {
+          '/zh-cmn/': '酷宅开放平台 4.3',
+          '/en/': 'CoolKit Open Platform 4.3',
+        },
+        nameLink: {
+          '/zh-cmn/': '#/zh-cmn/平台概述',
+          '/en/': '#/en/PlatformOverview',
+        },
+        repo: '',
+        coverpage: true,
+        onlyCover: true,
+        search: 'auto', // 默认值
+        search: [
+          '/zh-cmn',
+          '/en', // => /README.md
+        ],
+        loadSidebar: true,
+        autoHeader: false,
+        subMaxLevel: 3,
+        noEmoji: true,
+        notFoundPage: {
+          '/': 'zh-cmn/_404.md',
+          '/zh-cmn': 'zh-cmn/_404.md',
+          '/en': 'en/_404.md',
+        },
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        search: {
+          paths: 'auto',
+          placeholder: {
+            '/zh-cmn/': 'Search',
+            '/en/': 'Search',
+          },
+          noData: {
+            '/zh-cmn/': '找不到结果',
+            '/en/': 'No Results',
+          },
+        },
+        count: {
+          countable: true,
+          fontsize: '0.9em',
+          color: 'rgb(90,90,90)',
+          language: 'english',
+        },
+      }
+    </script>
+    <!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script> -->
+    <script src="./media/js/docsify_4.12.2.js"></script>
+    <script src="./media/js/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="./media/js/docsify-copy-code.min.js"></script>
+    <script src="./media/js/countable.js"></script>
+  </body>
 </html>

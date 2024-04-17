@@ -1,12 +1,3 @@
-<!--
- * @Author: Carl
- * @Descripttion: Do not edit
- * @Date: 2021-11-19 16:18:42
- * @LastEditors: Carl
- * @LastEditTime: 2021-12-14 19:21:50
- * @FilePath: \eWeLink-API\en\OAuth2.0.md
--->
-
 # OAuth 2.0
 
 ## Prepared Information
@@ -27,6 +18,16 @@ After a successful review, create an application in Platform -> App Management, 
 ### Complete Flow Chart
 
 ![Complete Flow Chart](./img/01-OAuth2.0_FlowChart.png)
+
+### Code examples and test cases
+
+[CoolKit OAuth Login Demo](https://github.com/coolkit-carl/eWeLinkOAuthLoginDemo)
+
+[CoolKit OAuth2.0 Postman Demo](https://raw.githubusercontent.com/CoolKit-Technologies/eWeLink-API/main/media/files/CoolKit_OAuth2.0_Postman_Demo.zip)
+
+Import [Postman](https://www.postman.com/downloads/) and fill in your application information in the environment file.
+
+Interface call frequency limit: the recommended interval is greater than or equal to 1 second
 
 ### Authorization Page Description
 
