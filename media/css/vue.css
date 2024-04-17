@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600');
 * {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: none;
   -webkit-touch-callout: none;
   box-sizing: border-box;
@@ -88,7 +88,7 @@ li input[type='checkbox'] {
   right: 0;
   text-align: right;
   z-index: 10;
-/* navbar dropdown */
+  /* navbar dropdown */
 }
 .app-nav.no-badge {
   margin-right: 25px;
@@ -172,7 +172,7 @@ li input[type='checkbox'] {
 }
 .github-corner:hover .octo-arm {
   -webkit-animation: octocat-wave 560ms ease-in-out;
-          animation: octocat-wave 560ms ease-in-out;
+  animation: octocat-wave 560ms ease-in-out;
 }
 .github-corner svg {
   color: #fff;
@@ -202,7 +202,7 @@ main.hidden {
   text-decoration: underline;
 }
 .sidebar {
-  border-right: 1px solid rgba(0,0,0,0.07);
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
   overflow-y: auto;
   padding: 40px 0 0;
   position: absolute;
@@ -261,14 +261,14 @@ main.hidden {
   border-radius: 4px;
 }
 .sidebar:hover::-webkit-scrollbar-thumb {
-  background: rgba(136,136,136,0.4);
+  background: rgba(136, 136, 136, 0.4);
 }
 .sidebar:hover::-webkit-scrollbar-track {
-  background: rgba(136,136,136,0.1);
+  background: rgba(136, 136, 136, 0.1);
 }
 .sidebar-toggle {
   background-color: transparent;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 0;
   outline: none;
   padding: 10px;
@@ -324,7 +324,7 @@ body.sticky .sidebar-toggle {
 }
 .markdown-section iframe {
   border: 1px solid #eee;
-/* fix horizontal overflow on iOS Safari */
+  /* fix horizontal overflow on iOS Safari */
   width: 1px;
   min-width: 100%;
 }
@@ -383,7 +383,7 @@ body.sticky .sidebar-toggle {
   color: #34495e;
 }
 .markdown-section p.warn {
-  background: rgba(66,185,131,0.1);
+  background: rgba(66, 185, 131, 0.1);
   border-radius: 2px;
   padding: 1rem;
 }
@@ -448,7 +448,7 @@ body.close .content {
     transform: translateX(300px);
   }
   body.close .sidebar-toggle {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     transition: 1s background-color;
     width: 284px;
     padding: 10px;
@@ -462,32 +462,38 @@ body.close .content {
   }
   .github-corner:hover .octo-arm {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
   .github-corner .octo-arm {
     -webkit-animation: octocat-wave 560ms ease-in-out;
-            animation: octocat-wave 560ms ease-in-out;
+    animation: octocat-wave 560ms ease-in-out;
   }
 }
 @-webkit-keyframes octocat-wave {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0);
   }
-  20%, 60% {
+  20%,
+  60% {
     transform: rotate(-25deg);
   }
-  40%, 80% {
+  40%,
+  80% {
     transform: rotate(10deg);
   }
 }
 @keyframes octocat-wave {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0);
   }
-  20%, 60% {
+  20%,
+  60% {
     transform: rotate(-25deg);
   }
-  40%, 80% {
+  40%,
+  80% {
     transform: rotate(10deg);
   }
 }
@@ -531,7 +537,7 @@ section.cover p {
 section.cover h1 {
   color: inherit;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: bold;
   margin: 0.625rem 0 2.5rem;
   position: relative;
   text-align: center;
@@ -573,7 +579,7 @@ section.cover .cover-main > p:last-child a {
 }
 section.cover .cover-main > p:last-child a:last-child {
   background-color: var(--theme-color, #42b983);
-  color: rgba(255, 255, 255, 0.800);
+  color: rgba(255, 255, 255, 0.8);
 }
 section.cover .cover-main > p:last-child a:last-child:hover {
   /* color: inherit; */
