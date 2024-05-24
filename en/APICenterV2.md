@@ -2314,9 +2314,10 @@ Example:
 | 403            | Cannot find the interface, usually because the interface url is wrong.                                                                                                                                        |
 | 405            | The resource cannot be found, usually because the required data cannot be found in the back-end database.                                                                                                     |
 | 406            | Access denied. You do not have the permission to take this action or access this resource.                                                                                                                    |
-| 407            | The appid has no permission for this action.                                                                                                                                                                  |
+| 407            | The appid has no permission for this action. |
+| 412        | APPID calls exceed the limit, you can upgrade to the enterprise version by contacting bd@coolkit.cn. |
 | 500            | Internal server error, usually due to errors on server programs.                                                                                                                                              |
-| 4002           | the equipment is offline (the old error code is not changed temporarily to avoid affecting customers who have used the updated equipment status interface), which will appear in the updated equipment status |
+| 4002       | Device control failure (Check control parameter transmission or device online status). |
 
 ### [User] error codes
 
