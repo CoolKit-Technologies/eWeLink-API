@@ -46,8 +46,9 @@ Query parameters：
 | authorization |            N |                                                                                                                          Signature, see below for specific algorithms                                                                                                                          |
 | redirectUrl   |            N |                                                                                                                      Redirect Url after obtaining the authorization code                                                                                                                       |
 | grantType     |            N |                                                                                      Authorization type, only one fixed parameter can be passed (That is, only authorization code is supported currently)                                                                                      |
-| state         |            N | Request ID, accessing parties use this variable to avoid cross-domain forgery problems, the server of eWeLink requires that the value must be passed, but does not check the specific value, you can pass the ID of the user of your own platform, and it will be passed back when redirecting |
-| nonce         |            Y |                                                                                                    8-digit alphanumeric random string(Both upper and lower case alphanumerics are allowed)                                                                                                     |
+| state         |            N | Request ID, accessing parties use this variable tNo avoid cross-domain forgery problems, the server of eWeLink requires that the value must be passed, but does not check the specific value, you can pass the ID of the user of your own platform, and it will be passed back when redirecting |
+| nonce         |            N |              8-digit alphanumeric random string(Both upper and lower case alphanumerics are allowed)           |
+| showQRCode    |            Y |    Whether to display the QR code pop-up window. If true, the QR code pop-up window is displayed; otherwise, the account password input box is displayed    |
 
 authorization signature calculation method within parameters:
 
@@ -99,7 +100,7 @@ Put the above parameters into the query to get the final authorization page addr
 
 The accessing party directs the user to open the authorization page address, for example:
 
-[https://c2ccdn.coolkit.cc/oauth/index.html?state=XXX&clientId=XXX&authorization=XXX&seq=123&redirectUrl=https://XXX.com/redirect.html&nonce=zt123456&grantType=authorization_code](https://c2ccdn.coolkit.cc/oauth/index.html?state=XXX&clientId=XXX&authorization=XXX&seq=123&redirectUrl=https://XXX.com/redirect.html&nonce=zt123456&grantType=authorization_code)
+[https://c2ccdn.coolkit.cc/oauth/index.html?state=XXX&clientId=XXX&authorization=XXX&seq=123&redirectUrl=https://XXX.com/redirect.html&nonce=zt123456&grantType=authorization_code&showQRCode=false](https://c2ccdn.coolkit.cc/oauth/index.html?state=XXX&clientId=XXX&authorization=XXX&seq=123&redirectUrl=https://XXX.com/redirect.html&nonce=zt123456&grantType=authorization_code&showQRCode=false)
 
 After the user fills in the account password and clicks login successfully, the page will jump to the redirect address URL you added before and carries the parameters code, regin, state, and the request method is GET.
 
