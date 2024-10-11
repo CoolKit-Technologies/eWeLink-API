@@ -671,7 +671,6 @@ App 使用的长连接分配地址接口
 - 欧洲: [https://eu-dispa.coolkit.cc/dispatch/app](https://eu-dispa.coolkit.cc/dispatch/app)
 - 亚洲: [https://as-dispa.coolkit.cc/dispatch/app](https://as-dispa.coolkit.cc/dispatch/app)
 
-中国境内微信使用的长连接分配地址接口：https://wx-disp.coolkit.cn:8080/dispatch/app
 
 请求方法：GET
 
