@@ -75,7 +75,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                                 Smart Roller Shutter                                 |                                 Smart Roller Shutter                                 |  91  |
 |                                          -                                           |                                          -                                           |  92  |
 |                                 RF Doorbell Gateway                                  |                                 RF Doorbell Gateway                                  |  98  |
-|                                   WiFi Door Magnet                                   |                                   WiFi Door Magnet                                   | 102  |
+|                                   WiFi Door Sensor                                   |                                   WiFi Door Sensor                                   | 102  |
 |            Dual-Color Cold and Warm Light_Support with tuning and scenes             |            Dual-Color Cold and Warm Light_Support with tuning and scenes             | 103  |
 |                 RGBCW LED Light_Support with tuning and scenes                  |                 RGBCW LED Light_Support with tuning and scenes                  | 104  |
 |                 GSM Single-Channel Plug - Multi-channel protocols                  |      GSM Single-Channel Plug - Multi-channel protocol with traffic device use      | 107  |
@@ -99,7 +99,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                                Midea Air Conditioner                                 |                                Midea Air Conditioner                                 | 142  |
 |             eWeLink-Remote Dual-Color Cold and Warm Light Remote Control             |             eWeLink-Remote Dual-Color Cold and Warm Light Remote Control             | 148  |
 |                                eWeLink-Remote Gateway                                |                                eWeLink-Remote Gateway                                | 149  |
-|                                 New WiFi Door Magnet                                 |                                 New WiFi Door Magnet                                 | 154  |
+|                                 New WiFi Door Sensor                                 |                                 New WiFi Door Sensor                                 | 154  |
 |                                          -                                           |                                          -                                           | 156  |
 |                Rhythmic RGBCW LED Light_Support 2.4G eWeLink-Remote                 |                Rhythmic RGBCW LED Light_Support 2.4G eWeLink-Remote                 | 157  |
 |                                          -                                           |                                          -                                           | 158  |
@@ -134,7 +134,7 @@ Please wait patiently as the documents are released and updated in succession.
 |                              Zigbee Four-Channel Switch                              |                              Zigbee Four-Channel Switch                              | 4256 |
 |                                 Zigbee Smoke Sensor                                  |                                 Zigbee Smoke Sensor                                  | 5026 |
 |                         Zigbee Human Body Sensor_Support OTA                         |                         Zigbee Human Body Sensor_Support OTA                         | 7002 |
-|                            Zigbee Door Magnet_Support OTA                            |                            Zigbee Door Magnet_Support OTA                            | 7003 |
+|                            Zigbee Door Sensor_Support OTA                            |                            Zigbee Door Sensor_Support OTA                            | 7003 |
 |                      Zigbee Single-Channel Switch ­_Support OTA                      |                    Zigbee Single-Channel Switch ­\_Support OTA                     | 7004 |
 
 </div>
@@ -468,7 +468,7 @@ Example:
 }
 ```
 
-4. Set the device to power down and come back on, turn on switch.
+4. Set the device to power cycle and turn on the switch 
 
 ```json
 {
@@ -538,32 +538,7 @@ pulses Parameter Description:
 }
 ```
 
-2. Turn on the switch of channel one
-
-```json
-{
-  "switches": [
-    {
-      "switch": "off",
-      "outlet": 0
-    },
-    {
-      "switch": "on",
-      "outlet": 1
-    },
-    {
-      "switch": "off",
-      "outlet": 2
-    },
-    {
-      "switch": "off",
-      "outlet": 3
-    }
-  ]
-}
-```
-
-3. Set the dual-channel Plug with channel one to open the switch when the power is turned on after a power failure, and channel two to keep the switch before the power failure when the power is turned on after a power failure.
+2. Set the dual-channel Plug with channel one to open the switch when the power is turned on after a power failure, and channel two to keep the switch before the power failure when the power is turned on after a power failure.
 
 ```json
 {
@@ -588,7 +563,7 @@ pulses Parameter Description:
 }
 ```
 
-4. Turn on the switch for the single-channel Plug's indicator, turn on indicator light.
+3. Turn on the switch for the single-channel Plug's indicator, turn on indicator light.
 
 ```json
 {
@@ -596,7 +571,7 @@ pulses Parameter Description:
 }
 ```
 
-5. Set each operation to turn on channel one of the dual-channel Plug and then automatically turn off for the next 2 seconds.
+4. Set each operation to turn on channel one of the dual-channel Plug and then automatically turn off for the next 2 seconds.
 
 ```json
 {
@@ -625,9 +600,9 @@ pulses Parameter Description:
 }
 ```
 
-6. Timer Settings
+5. Timer Settings
 
-6.1 Single Timer(UTC)
+5.1 Single Timer(UTC)
 
     // Year-Month-Date T Hour:Minute:Second.Millisecond Z
 
@@ -653,7 +628,7 @@ Example:
 }
 ```
 
-6.2 Repeat timer
+5.2 Repeat timer
 
 Minute Hour Day Month Week
 
@@ -687,7 +662,7 @@ Example:
 }
 ```
 
-6.3 Delay(UTC)
+5.3 Delay(UTC)
 
 
     // Year-Month-Date T Hour:Minute:Second.Millisecond Z
@@ -745,7 +720,7 @@ pulses Parameter Description:
 | Name       | Type   | Allows Empty                                                      | Description                                                                                                                                                          |
 | :--------- | :----- | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | pulse      | String | on,off                                                            | Inching switch: turn on (on), turn off (off)                                                                                                                         |
-| pulseWidth | Number | [500,3600000] (Unit:Millisecond,Supports setting integers of 500) | Inching Duration: Value Range 500-3600000(UnitMillisecond: 0.5s-3600s), only set values are supported 500 Milliseconds (That is, an integer multiple of 0.5 seconds) |
+| pulseWidth | Number | [500,3600000] (Unit:Millisecond,Supports setting integers of 500) | Inching Duration: Value Range 500-3600000 (Unit: milliseconds: 0.5s-3600s). Only supports setting an integer multiple of 500 milliseconds (i.e., 0.5 seconds).   |
 | outlet     | Number | [0,3]                                                             | Value Range 0-3, indicates channels 1-4 respectively, cannot be repeated                                                                                             |
 
 #### Control Command:
@@ -808,7 +783,7 @@ pulses Parameter Description:
 | Name       | Type   | Allows Empty                                                        | Description                                                                                                                                                            |
 | :--------- | :----- | :------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | pulse      | String | on,off                                                              | Inching switch, turn on (on), turn off (off)                                                                                                                           |
-| pulseWidth | Number | [500,3600000] (Unit: Millisecond, Supports setting integers of 500) | Inching Duration: Value Range 500-3600000(Unit: Millisecond: 0.5s-3600s), only set values are supported 500 Milliseconds (That is, an integer multiple of 0.5 seconds) |
+| pulseWidth | Number | [500,3600000] (Unit: Millisecond, Supports setting integers of 500) | Inching Duration: Value Range 500-3600000 (Unit: milliseconds: 0.5s-3600s). Only supports setting an integer multiple of 500 milliseconds (i.e., 0.5 seconds).   |
 | outlet     | Number | [0,3]                                                               | Value Range 0-3, indicates channels 1-4 respectively, cannot be repeated                                                                                               |
 
 #### Control Command:
@@ -998,7 +973,7 @@ Consistent with UIID1.
 | switch             | String    | on,off                                                             | Switches of channels, turn on (on), turn off (off)                                                                                                                                                                                                                                                     |
 | startup            | String    | on,stay,off                                                        | Settings of power-on state: power on(on), power on hold (stay), power off (off)                                                                                                                                                                                                                        |
 | pulse              | String    | on,off                                                             | Inching switch, turn on (on), turn off (off)                                                                                                                                                                                                                                                           |
-| pulseWidth         | Number    | [500,3600000] (Unit: Millisecond,Supports setting integers of 500) | Inching Duration:Value Range 500-3600000 (Unit: Millisecond, that is, 0.5s-3600s), only set values are supported 500 Milliseconds (That is, an integer of 0.5 seconds)                                                                                                                                 |
+| pulseWidth         | Number    | [500,3600000] (Unit: Millisecond,Supports setting integers of 500) | Inching Duration: Value Range 500-3600000 (Unit: milliseconds: 0.5s-3600s). Only supports setting an integer multiple of 500 milliseconds (i.e., 0.5 seconds).                                                                                                                                   |
 | mainSwitch         | String    | on,off                                                             | Thermostat switch                                                                                                                                                                                                                                                                                      |
 | deviceType         | String    | normal,temperature,humidity                                        | Control mode status of the device: temperature control (temperature), humidity control (humidity), normal (normal),that is, manual control of the switch state, disable inching function under automatic control function                                                                              |
 | sensorType         | String    | DHT11/DS18B20/AM2301/MS01/errorType                                | Sensor Model, DHT11:Humidity Range[20,90], Temperature Range[0,50]; DS18B20: Humidity unavailable, Temperature Range[-55,125]; AM2301: Humidity Range[0,100], Temperature Range[-40,80]; MS01: Soil moisture sensor,Humidity Range[0,100], Temperature unavailable; errorType: Unsupported Sensor Type |
@@ -1242,7 +1217,7 @@ After entering auto mode, the device will enter a temporary manual state when it
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "once",
+      " coolkit_timer_type": "once",
       "at": "2019-05-30T10:57:00.776Z",
       "type": "once",
       "do": {
@@ -1252,7 +1227,7 @@ After entering auto mode, the device will enter a temporary manual state when it
     },
     {
       "enabled": 1,
-      "coldkit_timer_type": "repeat",
+      " coolkit_timer_type": "repeat",
       "at": "7 15 * * 1,2,3,4,6,0",
       "type": "repeat",
       "do": {
@@ -1271,7 +1246,7 @@ After entering auto mode, the device will enter a temporary manual state when it
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "delay",
+      " coolkit_timer_type": "delay",
       "at": "2019-08-09T16:37:00.768Z",
       "period": "13530",
       "type": "once",
@@ -1286,7 +1261,7 @@ After entering auto mode, the device will enter a temporary manual state when it
 
 Note:
 
-- coldkit_timer_type: timer's type, delay is a type of delay, only single execution, can be enabled/disabled.
+-  coolkit_timer_type: timer's type, delay is a type of delay, only single execution, can be enabled/disabled.
 - do: The action that needs to be performed by the device, the action that can be performed by Cold and Warm Dual Tone Light delay is the light switch, state: turn on (on), turn off (off)
 
 ### UIID17 Three-Speed Smart Fan
@@ -1400,7 +1375,7 @@ None, all by Device Report.
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "once",
+      " coolkit_timer_type": "once",
       "at": "2019-05-30T10:57:00.776Z",
       "type": "once",
       "do": {
@@ -1410,7 +1385,7 @@ None, all by Device Report.
     },
     {
       "enabled": 1,
-      "coldkit_timer_type": "repeat",
+      " coolkit_timer_type": "repeat",
       "at": "7 15 * * 1,2,3,4,6,0",
       "type": "repeat",
       "do": {
@@ -1673,7 +1648,7 @@ do: The action that needs to be performed by the device, the action that can be 
 | switch     | String         | on,off                                           | Switch: turn on (on), turn off (off)                                                                                   |
 | startup    | String         | on,stay,off                                      | Settings of power-on state: power on(on), power on hold (stay), power off (off)                                                                |
 | pulse      | String         | on,off                                           | Settings of inching: turn on (on), turn off (off)                                                                                 |
-| pulseWidth | Number         | [500,3600000] (Unit: millisecond,Supports setting integers of 500) | Duration of Inching, Value Range: 500-3600000 (Unit: milliseconds: 0.5 s-3600 s), Only supports setting an integer multiple of 500 millisecond (i.e., 0.5 seconds) |
+| pulseWidth | Number         | [500,3600000] (Unit: millisecond,Supports setting integers of 500) | Inching Duration: Value Range 500-3600000 (Unit: milliseconds: 0.5s-3600s). Only supports setting an integer multiple of 500 milliseconds (i.e., 0.5 seconds).   |
 | timers     | Array\<Object> |                                                  | Timer object, the execution action will be different for each device type                                                                        |
 
 #### Control Command:
@@ -1695,7 +1670,7 @@ do: The action that needs to be performed by the device, the action that can be 
 }
 ```
 
-3. Set the device to power down and come back on, Turn on device
+3.Set the device to power cycle and turn on the switch 
 
 ```json
 {
@@ -1835,7 +1810,7 @@ Set Aroma Diffuser to turn on at 14:31 on May 21, 2019, without repeating in a s
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "once",
+      " coolkit_timer_type": "once",
       "at": "2019-05-21T06:31:00.795Z",
       "type": "once",
       "do": {
@@ -1856,7 +1831,7 @@ Delay in turning off the Aroma Diffuser at 14:54 on May 21, 2019, without repeat
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "delay",
+      " coolkit_timer_type": "delay",
       "at": "2019-05-21T06:54:00.589Z",
       "period": "1",
       "type": "once",
@@ -1871,7 +1846,7 @@ Delay in turning off the Aroma Diffuser at 14:54 on May 21, 2019, without repeat
 
 Note:
 
-- coldkit_timer_type: timer's type, delay is a type of delay, only single execution, can be enabled/disabled.
+-  coolkit_timer_type: timer's type, delay is a type of delay, only single execution, can be enabled/disabled.
 - do: The action that needs to be performed by the device, the action that can be performed by Aroma Diffuser delay is the light switch,  state: turn on (on), turn off (off)
 
 10. Indicator's Always-off Switch Setting
@@ -2214,7 +2189,7 @@ Set light strip to turn on at 15:32 on July 2, 2019, without repeating in a sing
   "timers":[
             {
                 "enabled":1,
-                "coldkit_timer_type":"once",
+                " coolkit_timer_type":"once",
                 "at":"2019-07-02T07:32:00.689Z",
                 "type":"once",
                 "do":{
@@ -2228,7 +2203,7 @@ Set light strip to turn on at 15:32 on July 2, 2019, without repeating in a sing
 
 Note:
 
-- coldkit_timer_type: timer's type, delay is a type of delay, only single execution, can be enabled/disabled.
+-  coolkit_timer_type: timer's type, delay is a type of delay, only single execution, can be enabled/disabled.
 - do: The action that needs to be performed by the device, the action that can be performed by RGB Strip Controller is the light switch,  state: turn on (on), turn off (off)
 
 Set light strip to turn off at 15:40 on July 2, 2019, with an 8 minute delay at 15:32, without repeating in a single execution
@@ -2240,7 +2215,7 @@ Set light strip to turn off at 15:40 on July 2, 2019, with an 8 minute delay at 
   "timers":[
             {
                 "enabled":1,
-                "coldkit_timer_type":"delay",
+                " coolkit_timer_type":"delay",
                 "at":"2019-07-02T07:40:00.057Z",
                 "period":"8",
                 "type":"once",
@@ -2425,7 +2400,7 @@ Set the light to turn on at 19:10 on May 31, 2019, turn on channel 1, without re
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "once",
+      " coolkit_timer_type": "once",
       "at": "2019-05-31T11:10:00.297Z",
       "type": "once",
       "do": {
@@ -2440,7 +2415,7 @@ Set the light to turn on at 19:10 on May 31, 2019, turn on channel 1, without re
 
 Note:
 
-- coldkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
+-  coolkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
 - do: The action that needs to be performed by the device, the action that can be performed by fan light delay is the light switch, turn on (on), turn off (off)
 
 8. Delay Setting
@@ -2452,7 +2427,7 @@ Set the light to turn off at 19:11 on May 31, 2019, turn off channel 1, without 
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "delay",
+      " coolkit_timer_type": "delay",
       "at": "2019-05-31T11:11:00.856Z",
       "period": "1",
       "type": "once",
@@ -2512,7 +2487,7 @@ Note: With the lights off, only the lights can be turned on and the color temper
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "once",
+      " coolkit_timer_type": "once",
       "at": "2019-06-18T04:06:00.102Z",
       "type": "once",
       "do": {
@@ -2526,7 +2501,7 @@ Note: With the lights off, only the lights can be turned on and the color temper
 
 Note:
 
-- coldkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
+-  coolkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
 - do: The action that needs to be performed by the device, the action that can be performed by Single Dimmer Switch delay is the light switch, turn on (on), turn off (off)
 
 5. Set the single dimmer switch to close at 12.11 pm on 18 June 2019, with a delay of 5 minutes at 12.06 pm, without repeating in a single execution
@@ -2536,7 +2511,7 @@ Note:
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "delay",
+      " coolkit_timer_type": "delay",
       "at": "2019-06-18T04:11:00.268Z",
       "period": "5",
       "type": "once",
@@ -2607,7 +2582,7 @@ If you need to adjust the ceiling light as a night light, adjust the ceiling lig
 "timers":[
             {
                 "enabled":1,
-                "coldkit_timer_type":"once",
+                " coolkit_timer_type":"once",
                 "at":"2019-05-29T09:08:00.315Z",
                 "type":"once",
                 "do":{
@@ -2620,7 +2595,7 @@ If you need to adjust the ceiling light as a night light, adjust the ceiling lig
 
 Note:
 
-- coldkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
+-  coolkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
 - do: The action that needs to be performed by the device, the action that can be performed by Ceiling Light delay is the light switch, turn on (on), turn off (off)
 
 6. Set the ceiling light to turn off at 17:16 on 29 May 2019, with a delay of 6 minutes at 17:10, without repeating in a single execution
@@ -2630,7 +2605,7 @@ Note:
 "timers":[
             {
                 "enabled":1,
-                "coldkit_timer_type":"delay",
+                " coolkit_timer_type":"delay",
                 "at":"2019-05-29T09:16:00.384Z",
                 "period":"1",
                 "type":"once",
@@ -2679,7 +2654,7 @@ Note: With the lights off, only the lights can be switched on and the color temp
   "timers":[
             {
                 "enabled":1,
-                "coldkit_timer_type":"once",
+                " coolkit_timer_type":"once",
                 "at":"2019-06-14T09:45:00.495Z",
                 "type":"once",
                 "do":{
@@ -2693,7 +2668,7 @@ Note: With the lights off, only the lights can be switched on and the color temp
 
 Note:
 
-- coldkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
+-  coolkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
 - do: The action that needs to be performed by the device, the action that can be performed by Single-Color Bulb Light delay is the light switch, turn on (on), turn off (off)
 
 4. Set the Single-Color Bulb Light to turn off at 17:50 on June 14, 2019, with a delay of 5 minutes at 17:45, without repeating in a single execution
@@ -2703,7 +2678,7 @@ Note:
 "timers":[
             {
                 "enabled":1,
-                "coldkit_timer_type":"delay",
+                " coolkit_timer_type":"delay",
                 "at":"2019-06-14T09:50:00.959Z",
                 "period":"5",
                 "type":"once",
@@ -3008,7 +2983,7 @@ Press and hold the "Music Visualization" button to enter editing mode, use the d
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "once",
+      " coolkit_timer_type": "once",
       "at": "2019-07-02T04:15:00.278Z",
       "type": "once",
       "do": {
@@ -3022,7 +2997,7 @@ Press and hold the "Music Visualization" button to enter editing mode, use the d
 
 Note:
 
-- coldkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
+-  coolkit_timer_type: timer's type, once in timer type means single execution, repeat is repeat execution, can be enabled/disabled.
 - do: The action that needs to be performed by the device, the action that can be performed by light strip delay is the light switch, turn on (on), turn off (off)
 
 18. Set the light strip to turn off at 12:21 pm on July 2, 2019, with a 6 minute delay of 12:15 pm, without repeating in a single execution
@@ -3032,7 +3007,7 @@ Note:
   "timers": [
     {
       "enabled": 1,
-      "coldkit_timer_type": "delay",
+      " coolkit_timer_type": "delay",
       "at": "2019-07-02T04:21:00.934Z",
       "period": "6",
       "type": "once",
@@ -3108,7 +3083,7 @@ switch: Channel Status, String type. Take value: on/off, Indicates channel on/of
 Usage Scenario:
 
 - Device updates its own status;
-- APP Set device status
+- Set device state via the app
 
 Set timer:
 
@@ -3338,7 +3313,7 @@ Parameter Description:
 Usage Scenario:
 
 - Device updates its status
-- APP sets device status
+- Set device state via the app
 
 Set Timer:
 
@@ -3429,7 +3404,7 @@ Parameter Description:
 Usage Scenario:
 
 - Device updates its status
-- APP sets device status
+- Set device state via the app
 
 Set Timer:
 
@@ -3451,7 +3426,7 @@ switch: Channel status, String type. Take value on/off, indicates channel on/off
 
 Usage Scenario:
 
-- APP Set sub device channel status
+- Set sub device channel device state via the app
 - Report when a change is created in the local status of the sub-device
 - Synchronize sub-device channel status to APP when the device is online
 
@@ -3593,7 +3568,7 @@ Parameter Description:
 Usage Scenario:
 
 - Device updates its status
-- APP sets device status
+- Set device state via the app
 
 Set Timer:
 
@@ -3635,7 +3610,7 @@ Usage Scenario: Report status changes when sub-device detects a change in status
 
 The protocol and functions are basically the same as UIID2026, but with the addition of OTA support.
 
-#### UIID7003 Zigbee Door Magnet_Support OTA
+#### UIID7003 Zigbee Door Sensor_Support OTA
 
 The protocol and functions are basically the same as UIID3026, but with the addition of OTA support.
 
@@ -3673,7 +3648,7 @@ pulses Parameter Description:
 | Name       | Type   | Allows Empty                                                      | Description                                                                                                                                                                 |
 | :--------- | :----- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | pulse      | String | on,off                                                            | Inching switch,turn on (on), turn off (off)                                                                                                                                 |
-| pulseWidth | Number | [500,3600000] (Unit:Millisecond,Supports setting integers of 500) | Inching Duration: Value Range 500-3600000(UnitMillisecond, that is, 0.5s-3600s),Only set values are supported 500 Millisecond (That is, an integer multiple of 0.5 seconds) |
+| pulseWidth | Number | [500,3600000] (Unit:Millisecond,Supports setting integers of 500) | Inching Duration: Value Range 500-3600000 (Unit: milliseconds: 0.5s-3600s). Only supports setting an integer multiple of 500 milliseconds (i.e., 0.5 seconds).   |
 | outlet     | Number | [0,3]                                                             | Value Range 0-3, indicates channels 1-4 respectively, cannot be repeated                                                                                                    |
 
 #### Control Command:
@@ -3746,7 +3721,7 @@ Consistent with UIID3
 
 Consistent with UIID4
 
-### UIID102 WiFi Door Magnet
+### UIID102 WiFi Door Sensor
 
 This device does not support timers.
 
@@ -3754,8 +3729,8 @@ Function Description:
 
 | Serial No. | Function             | Function (Description)                                                        | APP Support | Applet Support |
 | ---------- | -------------------- | ----------------------------------------------------------------------------- | ----------- | -------------- |
-| 1          | Power Display        | Displays the status of the door magnetic power, sufficient power or low power | √           | √              |
-| 2          | Door Magnetic Status | Display door magnetic status, open or closed                                  | √           | √              |
+| 1          | Power Display        | Displays the status of the Door Sensor power, sufficient power or low power | √           | √              |
+| 2          | Door Sensor Status | Display Door Sensor status, open or closed                                  | √           | √              |
 | 3          | OTA Upgrade          | Upgradeable when new firmware is available on the device side                 | √           | √              |
 
 #### Parameter Description:

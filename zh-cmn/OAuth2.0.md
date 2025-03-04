@@ -58,8 +58,8 @@ Query 参数：
 | grantType     |          N |          授权类型，目前这个参数内容暂时固定填「authorization_code」（即暂时只支持使用授权码的方式来进行授权操作）           |
 | state         |          N | 请求标识，接入方用该变量避免跨域伪造问题，易微联服务端要求该值必传，但不校验具体值，可以传自己平台的用户的 ID，跳转时会回传 |
 | nonce         |          N |                                              8 位随机字符(大小写英文数字均可)  |
-
 | showQRCode    |          Y |                  如果 true 则显示二维码弹窗，否则显示账号密码输入框                              |
+
 authorization 参数内签名计算方式：
 
 算法：HMAC（Hash-based Message Authentication Code）SHA256
