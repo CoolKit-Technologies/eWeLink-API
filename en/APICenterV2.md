@@ -486,7 +486,7 @@ Request parameters:
 
 | **Name**    | **Type** | **Allows empty** | **Description**                                                                                                                                                          |
 | :---------- | :------- | :--------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| lang        | String   | Y                | cn returns Chinese, and en returns English, default en                                                                                                                   |
+| lang        | String   | Y                | For APP push notification copywriting, cn represents Chinese copywriting, en represents English content., default cn                                                                                                                   |
 | countryCode | String   | N                | Area Code starting with "+", such as "+86"                                                                                                                               |
 | email       | String   | Y                | Email address, case-insensitive                                                                                                                                          |
 | phoneNumber | String   | Y                | Mobile phone number（checked in priority）which starts with country code such as "+8618023456789". Either email or phoneNumber is required. Otherwise, error will occur. |
@@ -526,7 +526,7 @@ Request parameters:
 | **Name**         | **Type** | **Allows empty** | **Description**                                                          |
 | :--------------- | :------- | :--------------- | :----------------------------------------------------------------------- |
 | countryCode      | String   | N                | Area Code starting with "+", such as "+86"                               |
-| lang             | String   | Y                | cn returns Chinese, and en returns English, default en                   |
+| lang             | String   | Y                | For APP push notification copywriting, cn represents Chinese copywriting, en represents English content., default cn                   |
 | phoneNumber      | String   | N                | Mobile phone number starting with country code, such as "+8618023456789" |
 | verificationCode | String   | N                | SMS Verification Code                                                    |
 
@@ -727,7 +727,7 @@ Request parameters:
 
 | **Name**   | **Type** | **Allows empty** | **Description**                                                                                                                                   |
 | :--------- | :------- | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| lang       | String   | Y                | cn returns Chinese, and en returns English, default en                                                                                            |
+| lang       | String   | Y                | For APP push notification copywriting, cn represents Chinese copywriting, en represents English content., default cn                                                                                            |
 | clientInfo | Object   | Y                | Client information                                                                                                                                |
 | getUser    | Object   | Y                | If you want to get user information, fill in this field                                                                                           |
 | getFamily  | Object   | Y                | If you want to get homes, fill in this field to get the information of all your homes.                                                            |
@@ -923,7 +923,7 @@ Request parameters:
 
 | **Name**   | **Type** | **Allows empty** | **Description**                                                                                            |
 | :--------- | :------- | :--------------- | :--------------------------------------------------------------------------------------------------------- |
-| lang       | String   | Y                | cn returns Chinese, and en returns English, default en                                                     |
+| lang       | String   | Y                | For APP push notification copywriting, cn represents Chinese copywriting, en represents English content., default cn                                                     |
 | familyid   | String   | Y                | Home ID. Default is the current home                                                                       |
 | num        | Int      | Y                | The number of things to get. The default value, 30 will be used if not offered. 0 means to get all things. |
 | beginIndex | Int      | Y                | The index of the item to begin to get. The default value,-9999999, will be used if not offered.            |
@@ -1262,7 +1262,7 @@ Request parameters:
 
 | **Name** | **Type** | **Allows empty** | **Description**                                        |
 | :------- | :------- | :--------------- | :----------------------------------------------------- |
-| lang     | String   | Y                | cn returns Chinese, and en returns English, default en |
+| lang     | String   | Y                | For APP push notification copywriting, cn represents Chinese copywriting, en represents English content., default cn |
 
 Response data parameters:
 
@@ -1632,7 +1632,7 @@ Request parameters:
 
 | **Name** | **Type** | **Allows empty** | **Description**                                        |
 | :------- | :------- | :--------------- | :----------------------------------------------------- |
-| lang     | String   | Y                | cn returns Chinese, and en returns English, default en |
+| lang     | String   | Y                | For APP push notification copywriting, cn represents Chinese copywriting, en represents English content., default cn |
 
 Response data parameters:
 

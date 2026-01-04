@@ -355,7 +355,7 @@ Request parameters:
 
 | **Name** | **Type** | **Allows Empty** | **Description**                                        |
 | :------- | :------- | :--------------- | :----------------------------------------------------- |
-| lang     | String   | Y                | cn returns Chinese, and en returns English, default en |
+| lang     | String   | Y                | For APP push notification copywriting, cn represents Chinese copywriting, en represents English content., default cn |
 
 Response data parameters:
 
@@ -402,7 +402,7 @@ Request parameters:
 
 | **Name**   | **Type** | **Allows Empty** | **Description**                                                                                            |
 | :--------- | :------- | :--------------- | :--------------------------------------------------------------------------------------------------------- |
-| lang       | String   | Y                | cn returns Chinese, and en returns English, default en                                                     |
+| lang       | String   | Y                | For APP push notification copywriting, cn represents Chinese copywriting, en represents English content., default cn                                                     |
 | familyid   | String   | Y                | Home ID. Default is the current home                                                                       |
 | num        | Int      | Y                | The number of things to get. The default value, 30 will be used if not offered. 0 means to get all things. |
 | beginIndex | Int      | Y                | The index of the item to begin to get. The default value,-9999999, will be used if not                     |
