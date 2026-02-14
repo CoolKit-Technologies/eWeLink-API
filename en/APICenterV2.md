@@ -790,7 +790,7 @@ Client call example：
 
 ## Device
 
-### Get the list of all devices (Please refer to get the ting list, get the specified Ting list and home page interface)
+### Get the list of all devices (Please refer to get the thing list, get the specified Thing list and home page interface)
 
 URL: None
 
@@ -1617,6 +1617,105 @@ When the device confirms that the file is fine, it will respond (based on differ
 ```
 
 Then the app prompts "Upgrade in progress" (unable to confirm the real OTA progress) and save the information of the original firmware version. In the process of device OTA upgrade, the device will reboot. After rebooting, it will report the new firmware version. When the app receives the new version, it compares with the original version. If the new is greater than the old, then firmware upgrade is successful, otherwise failure occured.
+
+### Change device settings
+
+Note: Only send the fields that need to be modified or added. Fields that do not change will remain unchanged on the server.
+
+URL：/v2/device/settings
+
+Request method：POST
+
+Authorization parameter：accessToken
+
+Request parameters：
+
+| **Name**     | **Type** | Allows empty | Description     |
+| :----------- | :------- | :----------- | --------------- |
+| deviceidList | String[] | N            | deviceid list   |
+| settings     | Object   | N            | device settings |
+
+settings Description：
+
+| Name                              | Type   | Allows empty | Description                                                  |
+| :-------------------------------- | :----- | :----------- | :----------------------------------------------------------- |
+| opsNotify                         | Int    | Y            | Whether to push notifications to the app: `0`: No `1`: Yes (The same applies below) Allowed values: `0`, `1` |
+| opsHistory                        | Int    | Y            | Whether to record operation history. Allowed values: `0`, `1` |
+| alarmNotify                       | Int    | Y            | Whether to push alarm notifications to the App. Allowed values: `0`, `1` |
+| wxAlarmNotify                     | Int    | Y            | Whether to push alarm notifications to WeChat. Allowed values: `0`, `1` |
+| wxOpsNotify                       | Int    | Y            | Whether to push operation notifications to WeChat. Allowed values: `0`, `1` |
+| wxDoorbellNotify                  | Int    | Y            | Whether to push doorbell notifications to WeChat. Allowed values: `0`, `1` |
+| appDoorbellNotify                 | Int    | Y            | Whether to push doorbell notifications to the App. Allowed values: `0`, `1` |
+| doorOnNotify                      | Int    | Y            | Whether to push door open notifications to the App. Allowed values: `0`, `1` |
+| doorOffNotify                     | Int    | Y            | Whether to push door close notifications to the App. Allowed values: `0`, `1` |
+| wxDoorOffNotify                   | Int    | Y            | Whether to push door close notifications to WeChat. Allowed values: `0`, `1` |
+| wxDoorOnNotify                    | Int    | Y            | Whether to push door open notifications to WeChat. Allowed values: `0`, `1` |
+| removeNotify                      | Int    | Y            | Whether to push device tamper/removal alarm notifications to the App. Allowed values: `0`, `1` |
+| wxRemoveNotify                    | Int    | Y            | Whether to push device tamper/removal alarm notifications to WeChat. Allowed values: `0`, `1` |
+| moveNotify                        | Int    | Y            | Whether to push motion detection alarm notifications to the App. Allowed values: `0`, `1` |
+| wxMoveNotify                      | Int    | Y            | Whether to push motion detection alarm notifications to WeChat. Allowed values: `0`, `1` |
+| lightNotify                       | Int    | Y            | Whether to push light detection notifications to the App. Allowed values: `0`, `1` |
+| wxLightNotify                     | Int    | Y            | Whether to push light detection notifications to WeChat. Allowed values: `0`, `1` |
+| armOnNotify                       | Int    | Y            | Whether to push arming notifications to the App. Allowed values: `0`, `1` |
+| armOffNotify                      | Int    | Y            | Whether to push disarming notifications to the App. Allowed values: `0`, `1` |
+| wxArmOnNotify                     | Int    | Y            | Whether to push arming notifications to WeChat Official Account. Allowed values: `0`, `1` |
+| wxArmOffNotify                    | Int    | Y            | Whether to push disarming notifications to WeChat Official Account. Allowed values: `0`, `1` |
+| temperatureNotify                 | Int    | Y            | Temperature notification switch. Allowed values: `0`, `1`    |
+| minTemperature                    | Double | Y            | Minimum temperature threshold for notifications. `-99999` means no value. Unit: °C |
+| maxTemperature                    | Double | Y            | Maximum temperature threshold for notifications. `99999` means no value. Unit: °C |
+| humidityNotify                    | Int    | Y            | Humidity notification switch. Allowed values: `0`, `1`       |
+| minHumidity                       | Double | Y            | Minimum humidity threshold for notifications. `-99999` means no value |
+| maxHumidity                       | Double | Y            | Maximum humidity threshold for notifications. `99999` means no value |
+| webOpsNotify                      | Int    | Y            | Whether to push operation notifications to eWeLink Web. Allowed values: `0`, `1` |
+| wxSubscriptionNotify              | Int    | Y            | Whether to send WeChat subscription messages when device status changes. Allowed values: `0`, `1` |
+| wxLowBatteryNotify                | Int    | Y            | Whether to send WeChat subscription messages when battery is low. Allowed values: `0`, `1` |
+| wxSubscriptionDoorOnNotify        | Int    | Y            | Whether to send WeChat subscription messages when the door opens. Allowed values: `0`, `1` |
+| powerFailureNotify                | Int    | Y            | Power failure alarm notification switch (Miracle IoT GSM switch). Allowed values: `0`, `1` |
+| wxPowerFailureNotify              | Int    | Y            | WeChat power failure alarm notification switch (Miracle IoT GSM switch). Allowed values: `0`, `1` |
+| powerConsumptionNotify            | Int    | Y            | Power consumption notification switch. Allowed values: `0`, `1` |
+| dailyKwh                          | Int    | Y            | Daily energy consumption. Unit: 0.01 kWh. `-99999` means no value |
+| monthlyKwh                        | Int    | Y            | Monthly energy consumption. Unit: 0.01 kWh. `-99999` means no value |
+| offlineNotify                     | Int    | Y            | Device offline notification switch. Allowed values: `0`, `1` |
+| cameraMotionDetectionNotify       | Int    | Y            | Camera motion detection notification switch. Allowed values: `0`, `1` |
+| cameraEventDetectionNotify        | Int    | Y            | Camera event detection notification switch. Allowed values: `0`, `1` |
+| cameraSoundDetectionNotify        | Int    | Y            | Camera sound detection notification switch. Allowed values: `0`, `1` |
+| lowBatteryNotify                  | Int    | Y            | Low battery notification switch. Allowed values: `0`, `1`    |
+| wxSubscriptionTemperatureNotify   | Int    | Y            | WeChat subscription message switch for temperature comfort status. Allowed values: `0`, `1` |
+| wxSubscriptionHumidityNotify      | Int    | Y            | WeChat subscription message switch for humidity comfort status. Allowed values: `0`, `1` |
+| cameraHumanoidDetectionNotify     | Int    | Y            | Camera human detection notification switch. Allowed values: `0`, `1` |
+| cameraShadeDetectionNotify        | Int    | Y            | Camera video obstruction detection notification switch. Allowed values: `0`, `1` |
+| waterValveExceptionNotify         | Int    | Y            | Water valve exception notification switch (currently includes leakage and water shortage; may expand in the future). Allowed values: `0`, `1` |
+| doorOnFailNotify                  | Int    | Y            | Garage door open failure notification switch. Allowed values: `0`, `1` |
+| doorOffFailNotify                 | Int    | Y            | Garage door close failure notification switch. Allowed values: `0`, `1` |
+| doorOnTimeoutNotify               | Int    | Y            | Garage door open timeout notification switch. Allowed values: `0`, `1` |
+| overHighTemperatureNotify         | Int    | Y            | High temperature alert notification switch. Allowed values: `0`, `1` |
+| overLowTemperatureNotify          | Int    | Y            | Low temperature alert notification switch. Allowed values: `0`, `1` |
+| overHighHumidityNotify            | Int    | Y            | High humidity alert notification switch. Allowed values: `0`, `1` |
+| overLowHumidityNotify             | Int    | Y            | Low humidity alert notification switch. Allowed values: `0`, `1` |
+| exceptionNotify                   | Int    | Y            | General exception notification switch (currently used for UIID 190). Allowed values: `0`, `1` |
+| pm2_5ConcentrationModerateNotify  | Int    | Y            | Notification when PM2.5 concentration reaches moderate level. Allowed values: `0`, `1` |
+| pm2_5ConcentrationUnhealthyNotify | Int    | Y            | Notification when PM2.5 concentration reaches unhealthy level. Allowed values: `0`, `1` |
+| co2ConcentrationModerateNotify    | Int    | Y            | Notification when CO2 concentration reaches moderate level. Allowed values: `0`, `1` |
+| co2ConcentrationUnhealthyNotify   | Int    | Y            | Notification when CO2 concentration reaches unhealthy level. Allowed values: `0`, `1` |
+| overThresholdNotify               | Int    | Y            | Protection threshold notification switch. Allowed values: `0`, `1` |
+| powerBillNotify                   | Int    | Y            | Electricity bill reminder notification switch. Allowed values: `0`, `1` |
+| waterShortageNotify               | Int    | Y            | Water shortage alarm notification switch. Allowed values: `0`, `1` |
+| waterLeakageNotify                | Int    | Y            | Water leakage alarm notification switch. Allowed values: `0`, `1` |
+| frostProtectionNotify             | Int    | Y            | Frost protection alarm notification switch. Allowed values: `0`, `1` |
+
+Response data parameters:
+
+| Name             | Type     | Allows empty | Description                                           |
+| :--------------- | :------- | :----------- | :---------------------------------------------------- |
+| updatedThingList | Object[] | N            | List of `thing` data corresponding to updated devices |
+
+Description of Items in updatedThingList：
+
+| Name     | Type   | Allows empty | Description                                                  |
+| :------- | :----- | :----------- | :----------------------------------------------------------- |
+| itemType | Int    | N            | Item type. <br/>`1`: Own device <br/>`2`: Device shared by others (only Wi-Fi door sensors support modification by the sharer) |
+| itemData | Object | N            | Refer to the `deviceList` item description in the **"Get All Device List"** API |
+| index    | Int    | N            | Sort order index                                             |
 
 ## Homes and Rooms
 
