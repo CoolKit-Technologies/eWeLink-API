@@ -15,7 +15,7 @@
 
 Email: bd@coolkit.cn
 
-Telephone: 0755-86967464 / 18165721994
+WeChat：MingkunZheng，yao1761808815
 
 Operating Hours: 9:30-18:30(Week days)
 
