@@ -17,125 +17,132 @@ Please wait patiently as the documents are released and updated in succession.
 
 <div class="table-center">
 
-|                                          UI                                          |                                     Description                                      | UIID |
-| :----------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: | :--: |
-|                                Single-Channel Plug                                 |                                Single-Channel Plug                                 |  1   |
-|                                 Dual-Channel Plug                                  |                                 Dual-Channel Plug                                  |  2   |
-|                                 Three-channel Plug                                 |                                 Three-channel Plug                                 |  3   |
-|                                 Four-channel Plug                                  |                                 Four-channel Plug                                  |  4   |
-|                        Power Detection Single-Channel Plug                         |                        Power Detection Single-Channel Plug                         |  5   |
-|                                Single-Channel Switch                                 |                                Single-Channel Switch                                 |  6   |
-|                                 Dual-Channel Switch                                  |                                 Dual-Channel Switch                                  |  7   |
-|                                 Three-channel Switch                                 |                                 Three-channel Switch                                 |  8   |
-|                                 Four-channel Switch                                  |                                 Four-channel Switch                                  |  9   |
-|                                Switch Retrofit Module                                |                                Switch Retrofit Module                                |  14  |
-|                              Thermostat Retrofit Parts                               |                              Thermostat Retrofit Parts                               |  15  |
-|                            Cold and Warm Dual Tone Light                             |                            Cold and Warm Dual Tone Light                             |  16  |
-|                                Three-Speed Smart Fan                                 |                                Three-Speed Smart Fan                                 |  17  |
-|                                      Sensor Hub                                      |        With temperature, humidity, brightness, noise, air quality sensor data        |  18  |
-|                                Three-Speed Humidifier                                |                                Three-Speed Humidifier                                |  19  |
-|                               RGBCW LED Bulb Light                               |                               RGBCW LED Bulb Light                              |  22  |
-|                                          -                                           |                                          -                                           |  23  |
-|                              GSM/4G Single-Channel Switch                               |                              GSM/4G Single-Channel Switch                               |  24  |
-|                                    Aroma Diffuser                                    |                                    Aroma Diffuser                                    |  25  |
-|                     GSM/4G Single-Channel Switching Packet Traffic                      |                     GSM/4G Single-Channel Switching Packet Traffic                      |  27  |
-|                                       RFBridge                                       |                        WiFi to RF Wireless Remote Control UI                         |  28  |
-|                            GSM/4G Dual-Channel Switch or Plug                            |                            GSM/4G Dual-Channel Switch or Plug                            |  29  |
-|                            GSM/4G Four-Channel Switch or Plug                            |                            GSM/4G Four-Channel Switch or Plug                            |  31  |
-|                        Power detection Plug overload alarm                         |             Power detection Plug Overload protection alarm can be set              |  32  |
-|                                 RGB Strip Controller                                 |              RGB Strip Controller based on Transponder Module Protocol               |  33  |
-|                                   Smart Fan Light                                    |           Three-Speed Fan Light - Based on Four-channel switching protocol           |  34  |
-|                                          -                                           |                                          -                                           |  35  |
-|                                 Single Dimmer Switch                                 |   Single Dimmer Switch Based on RGB Strip Controller Transmission Module Protocol    |  36  |
-|                                          -                                           |                                          -                                           |  38  |
-|                                 Single Dimmer Light                                  |                 Single dimmer light based on PSF-BLD module protocol                 |  44  |
-|                            Downlight & New Ceiling Light                             |                            Downlight & New Ceiling Light                             |  45  |
-|                       Dimmable Color Temperature Ceiling Light                       |                       Dimmable Color Temperature Ceiling Light                       |  52  |
-|                                RGBC LED Bulb Light                                  |                                RGBC LED Bulb Light Light                                |  56  |
-|                               Single-Color Bulb Light                                |                               Single-Color Bulb Light                                |  57  |
-|                                     Light Strip                                      |                                     Light Strip                                      |  59  |
-|                                     Smart Router                                     |                                     Smart Router                                     |  61  |
-|                                          -                                           |                                          -                                           |  62  |
-|                                          -                                           |                                          -                                           |  63  |
-|                                          -                                           |                                          -                                           |  65  |
-|                                    Zigbee Gateway                                    |                                    Zigbee Gateway                                    |  66  |
-|                                    -                                    |                                    -                                    |  68  |
-|                                 -                                  |                                 -                                  |  69  |
-|                            -                            |                            -                            |  76  |
-|                     Single-Channel Plug-Multi-channel version                      |                     Single-Channel Plug-Multi-channel version                      |  77  |
-|                     Single-Channel Switch-Multi-channel version                      |                     Single-Channel Switch-Multi-channel version                      |  78  |
-|                     GSM/4G Single-Channel Plug-No traffic version                     |                     GSM/4G Single-Channel Plug-No traffic version                     |  81  |
-|                      GSM/4G Dual-Channel Plug-No traffic version                      |                      GSM/4G Dual-Channel Plug-No traffic version                      |  82  |
-|                     GSM/4G Three-Channel Plug-No traffic version                      |                     GSM/4G Three-Channel Plug-No traffic version                      |  83  |
-|                      GSM/4G Four-Channel Plug-No traffic version                      |                      GSM/4G Four-Channel Plug-No traffic version                      |  84  |
-|                                          -                                           |                                          -                                           |  86  |
-|                                          -                                           |                                          -                                           |  87  |
-|                                          -                                           |                                          -                                           |  88  |
-|                                     GSM-RFBridge                                     |                                 GSM Version RFBridge                                 |  90  |
-|                                 Smart Roller Shutter                                 |                                 Smart Roller Shutter                                 |  91  |
-|                                          -                                           |                                          -                                           |  92  |
-|                                 RF Doorbell Gateway                                  |                                 RF Doorbell Gateway                                  |  98  |
-|                                   WiFi Door Sensor                                   |                                   WiFi Door Sensor                                   | 102  |
-|            Dual-Color Cold and Warm Light_Support with tuning and scenes             |            Dual-Color Cold and Warm Light_Support with tuning and scenes             | 103  |
-|                 RGBCW LED Light_Support with tuning and scenes                  |                 RGBCW LED Light_Support with tuning and scenes                  | 104  |
-|                 GSM Single-Channel Plug - Multi-channel protocols                  |      GSM Single-Channel Plug - Multi-channel protocol with traffic device use      | 107  |
-|                              eWelink WiFi to IR Gateway                              |                              eWelink WiFi to IR Gateway                              | 109  |
-|                          GSM Electricity Statistics Plug                           |                                       GSB-D67                                        | 110  |
-|                    Single-Channel Switch Microwave Radar Version                     |                    Single-Channel Switch Microwave Radar Version                     | 112  |
-|                     Dual-Channel Switch Microwave Radar Version                      |                     Dual-Channel Switch Microwave Radar Version                      | 113  |
-|                     Three-Channel Switch Microwave Radar Version                     |                     Three-Channel Switch Microwave Radar Version                     | 114  |
-|                      2.4G Single-Channel Switch Remote Control                       |                      2.4G Single-Channel Switch Remote Control                       | 118  |
-|                 Multi-Functional Dual-Channel Power Detection Switch                 |                 Multi-Functional Dual-Channel Power Detection Switch                 | 126  |
-|                                    Switch Station                                    |                                    Switch Station                                    | 128  |
-|                   Switch Station Four-Channel Switching Sub-Device                   |                   Switch Station Four-Channel Switching Sub-Device                   | 130  |
-|                                   HMI Wall Switch                                    |                                   HMI Wall Switch                                    | 133  |
-|              Dual-Color Cold and Warm Light_Support 2.4G eWeLink-Remote              |              Dual-Color Cold and Warm Light_Support 2.4G eWeLink-Remote              | 135  |
-|                   RGBCW LED Light_Support 2.4G eWeLink-Remote                   |                   RGBCW LED Light_Support 2.4G eWeLink-Remote                   | 136  |
-|                                Light Strip-Bluetooth                                 |                                Light Strip-Bluetooth                                 | 137  |
-|                  Single-Channel Plug_Support 2.4G eWeLink-Remote                   |                  Single-Channel Plug_Support 2.4G eWeLink-Remote                   | 138  |
-|                   Dual-Channel Plug_Support 2.4G eWeLink-Remote                    |                   Dual-Channel Plug_Support 2.4G eWeLink-Remote                    | 139  |
-|                   Three-Channel Plug_Support 2.4G eWeLink-Remote                   |                   Three-Channel Plug_Support 2.4G eWeLink-Remote                   | 140  |
-|                   Four-Channel Plug_Support 2.4G eWeLink-Remote                    |                   Four-Channel Plug_Support 2.4G eWeLink-Remote                    | 141  |
-|                                Midea Air Conditioner                                 |                                Midea Air Conditioner                                 | 142  |
-|             eWeLink-Remote Dual-Color Cold and Warm Light Remote Control             |             eWeLink-Remote Dual-Color Cold and Warm Light Remote Control             | 148  |
-|                                eWeLink-Remote Gateway                                |                                eWeLink-Remote Gateway                                | 149  |
-|                                 New WiFi Door Sensor                                 |                                 New WiFi Door Sensor                                 | 154  |
-|                                          -                                           |                                          -                                           | 156  |
-|                Rhythmic RGBCW LED Light_Support 2.4G eWeLink-Remote                 |                Rhythmic RGBCW LED Light_Support 2.4G eWeLink-Remote                 | 157  |
-|                                          -                                           |                                          -                                           | 158  |
-|                             Illumination Strip-Bluetooth                             |                             Illumination Strip-Bluetooth                             | 159  |
-|                  Single-Channel Switch_Support 2.4G eWeLink-Remote                   |                  Single-Channel Switch_Support 2.4G eWeLink-Remote                   | 160  |
-|                   Dual-Channel Switch_Support 2.4G eWeLink-Remote                    |                   Dual-Channel Switch_Support 2.4G eWeLink-Remote                    | 161  |
-|                   Three-Channel Switch_Support 2.4G eWeLink-Remote                   |                   Three-Channel Switch_Support 2.4G eWeLink-Remote                   | 162  |
-|                   Four-Channel Switch_Support 2.4G eWeLink-Remote                    |                   Four-Channel Switch_Support 2.4G eWeLink-Remote                    | 163  |
-|               Multi-Functional Dual-Channel Switch_Support Motor Mode                |               Multi-Functional Dual-Channel Switch_Support Motor Mode                | 165  |
-|                                ZigBee Beeping Gateway                                |                                ZigBee Beeping Gateway                                | 168  |
-|                                  2.4G AC Fan Light                                   |                                  2.4G AC Fan Light                                   | 169  |
-|                                    Camera Gateway                                    |                                    Camera Gateway                                    | 170  |
-|                              Camera Gateway Sub-Device                               |                              Camera Gateway Sub-Device                               | 171  |
-|                          Sceme Panel-eWeLink-Remote Gateway                          |                          Sceme Panel-eWeLink-Remote Gateway                          | 172  |
-|                              Illumination Strip-Sonoff                               |                              Illumination Strip-Sonoff                               | 173  |
-|                              Scene Switch (Six buttons)                              |                              Scene Switch (Six buttons)                              | 174  |
-|                                     Switch Mate                                      |                                     Switch Mate                                      | 177  |
+|                              UI                              |                         Description                          | UIID |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :--: |
+|                     Single-Channel Plug                      |                     Single-Channel Plug                      |  1   |
+|                      Dual-Channel Plug                       |                      Dual-Channel Plug                       |  2   |
+|                      Three-channel Plug                      |                      Three-channel Plug                      |  3   |
+|                      Four-channel Plug                       |                      Four-channel Plug                       |  4   |
+|             Power Detection Single-Channel Plug              |             Power Detection Single-Channel Plug              |  5   |
+|                    Single-Channel Switch                     |                    Single-Channel Switch                     |  6   |
+|                     Dual-Channel Switch                      |                     Dual-Channel Switch                      |  7   |
+|                     Three-channel Switch                     |                     Three-channel Switch                     |  8   |
+|                     Four-channel Switch                      |                     Four-channel Switch                      |  9   |
+|                    Switch Retrofit Module                    |                    Switch Retrofit Module                    |  14  |
+|                  Thermostat Retrofit Parts                   |                  Thermostat Retrofit Parts                   |  15  |
+|                Cold and Warm Dual Tone Light                 |                Cold and Warm Dual Tone Light                 |  16  |
+|                    Three-Speed Smart Fan                     |                    Three-Speed Smart Fan                     |  17  |
+|                          Sensor Hub                          | With temperature, humidity, brightness, noise, air quality sensor data |  18  |
+|                    Three-Speed Humidifier                    |                    Three-Speed Humidifier                    |  19  |
+|                     RGBCW LED Bulb Light                     |                     RGBCW LED Bulb Light                     |  22  |
+|                              -                               |                              -                               |  23  |
+|                 GSM/4G Single-Channel Switch                 |                 GSM/4G Single-Channel Switch                 |  24  |
+|                        Aroma Diffuser                        |                        Aroma Diffuser                        |  25  |
+|        GSM/4G Single-Channel Switching Packet Traffic        |        GSM/4G Single-Channel Switching Packet Traffic        |  27  |
+|                           RFBridge                           |            WiFi to RF Wireless Remote Control UI             |  28  |
+|              GSM/4G Dual-Channel Switch or Plug              |              GSM/4G Dual-Channel Switch or Plug              |  29  |
+|              GSM/4G Four-Channel Switch or Plug              |              GSM/4G Four-Channel Switch or Plug              |  31  |
+|             Power detection Plug overload alarm              |  Power detection Plug Overload protection alarm can be set   |  32  |
+|                     RGB Strip Controller                     |  RGB Strip Controller based on Transponder Module Protocol   |  33  |
+|                       Smart Fan Light                        | Three-Speed Fan Light - Based on Four-channel switching protocol |  34  |
+|                              -                               |                              -                               |  35  |
+|                     Single Dimmer Switch                     | Single Dimmer Switch Based on RGB Strip Controller Transmission Module Protocol |  36  |
+|                              -                               |                              -                               |  38  |
+|                     Single Dimmer Light                      |     Single dimmer light based on PSF-BLD module protocol     |  44  |
+|                Downlight & New Ceiling Light                 |                Downlight & New Ceiling Light                 |  45  |
+|           Dimmable Color Temperature Ceiling Light           |           Dimmable Color Temperature Ceiling Light           |  52  |
+|                     RGBC LED Bulb Light                      |                  RGBC LED Bulb Light Light                   |  56  |
+|                   Single-Color Bulb Light                    |                   Single-Color Bulb Light                    |  57  |
+|                         Light Strip                          |                         Light Strip                          |  59  |
+|                         Smart Router                         |                         Smart Router                         |  61  |
+|                              -                               |                              -                               |  62  |
+|                              -                               |                              -                               |  63  |
+|                              -                               |                              -                               |  65  |
+|                        Zigbee Gateway                        |                        Zigbee Gateway                        |  66  |
+|                              -                               |                              -                               |  68  |
+|                              -                               |                              -                               |  69  |
+|                              -                               |                              -                               |  76  |
+|          Single-Channel Plug-Multi-channel version           |          Single-Channel Plug-Multi-channel version           |  77  |
+|         Single-Channel Switch-Multi-channel version          |         Single-Channel Switch-Multi-channel version          |  78  |
+|        GSM/4G Single-Channel Plug-No traffic version         |        GSM/4G Single-Channel Plug-No traffic version         |  81  |
+|         GSM/4G Dual-Channel Plug-No traffic version          |         GSM/4G Dual-Channel Plug-No traffic version          |  82  |
+|         GSM/4G Three-Channel Plug-No traffic version         |         GSM/4G Three-Channel Plug-No traffic version         |  83  |
+|         GSM/4G Four-Channel Plug-No traffic version          |         GSM/4G Four-Channel Plug-No traffic version          |  84  |
+|                              -                               |                              -                               |  86  |
+|                              -                               |                              -                               |  87  |
+|                              -                               |                              -                               |  88  |
+|                         GSM-RFBridge                         |                     GSM Version RFBridge                     |  90  |
+|                     Smart Roller Shutter                     |                     Smart Roller Shutter                     |  91  |
+|                              -                               |                              -                               |  92  |
+|                     RF Doorbell Gateway                      |                     RF Doorbell Gateway                      |  98  |
+|                       WiFi Door Sensor                       |                       WiFi Door Sensor                       | 102  |
+| Dual-Color Cold and Warm Light_Support with tuning and scenes | Dual-Color Cold and Warm Light_Support with tuning and scenes | 103  |
+|        RGBCW LED Light_Support with tuning and scenes        |        RGBCW LED Light_Support with tuning and scenes        | 104  |
+|      GSM Single-Channel Plug - Multi-channel protocols       | GSM Single-Channel Plug - Multi-channel protocol with traffic device use | 107  |
+|                  eWelink WiFi to IR Gateway                  |                  eWelink WiFi to IR Gateway                  | 109  |
+|               GSM Electricity Statistics Plug                |                           GSB-D67                            | 110  |
+|        Single-Channel Switch Microwave Radar Version         |        Single-Channel Switch Microwave Radar Version         | 112  |
+|         Dual-Channel Switch Microwave Radar Version          |         Dual-Channel Switch Microwave Radar Version          | 113  |
+|         Three-Channel Switch Microwave Radar Version         |         Three-Channel Switch Microwave Radar Version         | 114  |
+|          2.4G Single-Channel Switch Remote Control           |          2.4G Single-Channel Switch Remote Control           | 118  |
+|     Multi-Functional Dual-Channel Power Detection Switch     |     Multi-Functional Dual-Channel Power Detection Switch     | 126  |
+|                        Switch Station                        |                        Switch Station                        | 128  |
+|       Switch Station Four-Channel Switching Sub-Device       |       Switch Station Four-Channel Switching Sub-Device       | 130  |
+|                       HMI Wall Switch                        |                       HMI Wall Switch                        | 133  |
+|  Dual-Color Cold and Warm Light_Support 2.4G eWeLink-Remote  |  Dual-Color Cold and Warm Light_Support 2.4G eWeLink-Remote  | 135  |
+|         RGBCW LED Light_Support 2.4G eWeLink-Remote          |         RGBCW LED Light_Support 2.4G eWeLink-Remote          | 136  |
+|                    Light Strip-Bluetooth                     |                    Light Strip-Bluetooth                     | 137  |
+|       Single-Channel Plug_Support 2.4G eWeLink-Remote        |       Single-Channel Plug_Support 2.4G eWeLink-Remote        | 138  |
+|        Dual-Channel Plug_Support 2.4G eWeLink-Remote         |        Dual-Channel Plug_Support 2.4G eWeLink-Remote         | 139  |
+|        Three-Channel Plug_Support 2.4G eWeLink-Remote        |        Three-Channel Plug_Support 2.4G eWeLink-Remote        | 140  |
+|        Four-Channel Plug_Support 2.4G eWeLink-Remote         |        Four-Channel Plug_Support 2.4G eWeLink-Remote         | 141  |
+|                    Midea Air Conditioner                     |                    Midea Air Conditioner                     | 142  |
+| eWeLink-Remote Dual-Color Cold and Warm Light Remote Control | eWeLink-Remote Dual-Color Cold and Warm Light Remote Control | 148  |
+|                    eWeLink-Remote Gateway                    |                    eWeLink-Remote Gateway                    | 149  |
+|                     New WiFi Door Sensor                     |                     New WiFi Door Sensor                     | 154  |
+|                              -                               |                              -                               | 156  |
+|     Rhythmic RGBCW LED Light_Support 2.4G eWeLink-Remote     |     Rhythmic RGBCW LED Light_Support 2.4G eWeLink-Remote     | 157  |
+|                              -                               |                              -                               | 158  |
+|                 Illumination Strip-Bluetooth                 |                 Illumination Strip-Bluetooth                 | 159  |
+|      Single-Channel Switch_Support 2.4G eWeLink-Remote       |      Single-Channel Switch_Support 2.4G eWeLink-Remote       | 160  |
+|       Dual-Channel Switch_Support 2.4G eWeLink-Remote        |       Dual-Channel Switch_Support 2.4G eWeLink-Remote        | 161  |
+|       Three-Channel Switch_Support 2.4G eWeLink-Remote       |       Three-Channel Switch_Support 2.4G eWeLink-Remote       | 162  |
+|       Four-Channel Switch_Support 2.4G eWeLink-Remote        |       Four-Channel Switch_Support 2.4G eWeLink-Remote        | 163  |
+|   Multi-Functional Dual-Channel Switch_Support Motor Mode    |   Multi-Functional Dual-Channel Switch_Support Motor Mode    | 165  |
+|                    ZigBee Beeping Gateway                    |                    ZigBee Beeping Gateway                    | 168  |
+|                      2.4G AC Fan Light                       |                      2.4G AC Fan Light                       | 169  |
+|                        Camera Gateway                        |                        Camera Gateway                        | 170  |
+|                  Camera Gateway Sub-Device                   |                  Camera Gateway Sub-Device                   | 171  |
+|              Sceme Panel-eWeLink-Remote Gateway              |              Sceme Panel-eWeLink-Remote Gateway              | 172  |
+|                  Illumination Strip-Sonoff                   |                  Illumination Strip-Sonoff                   | 173  |
+|                  Scene Switch (Six buttons)                  |                  Scene Switch (Six buttons)                  | 174  |
+|                         Switch Mate                          |                         Switch Mate                          | 177  |
 | Dual-Color Cold and Warm Light_Support Mechanical Switch Segmentation and Night Mode | Dual-Color Cold and Warm Light_Support Mechanical Switch Segmentation and Night Mode | 179  |
-|            Power Detection Plug Overload Alarm-Multi-Channel Protocols             |            Power Detection Plug Overload Alarm-Multi-Channel Protocols             | 182  |
-|                                Zigbee Wireless Button                                |                                Zigbee Wireless Button                                | 1000 |
-|                             Zigbee Single-Channel Plug                             |                             Zigbee Single-Channel Plug                             | 1009 |
-|                             Zigbee Single-Channel Switch                             |                             Zigbee Single-Channel Switch                             | 1256 |
-|                               Zigbee Monochrome Light                                |                               Zigbee Monochrome Light                                | 1257 |
-|                               Zigbee Dual-color Light                                |                               Zigbee Dual-color Light                                | 1258 |
-|                        Zigbee Temperature and Humidity Sensor                        |                        Zigbee Temperature and Humidity Sensor                        | 1770 |
-|                                 Zigbee Motion Sensor                                 |                                 Zigbee Motion Sensor                                 | 2026 |
-|                              Zigbee Dual-Channel Switch                              |                              Zigbee Dual-Channel Switch                              | 2256 |
-|                            Zigbee Door and Window Sensor                             |                            Zigbee Door and Window Sensor                             | 3026 |
-|                             Zigbee Three-Channel Switch                              |                             Zigbee Three-Channel Switch                              | 3256 |
-|                               Zigbee RGBCW LED Light                                |                               Zigbee RGBCW LED Light                                | 3258 |
-|                              Zigbee Water Flood Sensor                               |                              Zigbee Water Flood Sensor                               | 4026 |
-|                              Zigbee Four-Channel Switch                              |                              Zigbee Four-Channel Switch                              | 4256 |
-|                                 Zigbee Smoke Sensor                                  |                                 Zigbee Smoke Sensor                                  | 5026 |
-|                         Zigbee Human Body Sensor_Support OTA                         |                         Zigbee Human Body Sensor_Support OTA                         | 7002 |
-|                            Zigbee Door Sensor_Support OTA                            |                            Zigbee Door Sensor_Support OTA                            | 7003 |
-|                      Zigbee Single-Channel Switch ­_Support OTA                      |                    Zigbee Single-Channel Switch ­\_Support OTA                     | 7004 |
+| Power Detection Plug Overload Alarm-Multi-Channel Protocols  | Power Detection Plug Overload Alarm-Multi-Channel Protocols  | 182  |
+|               Circuit Brea Circuit Breaker ker               |                       Circuit Breaker                        | 226  |
+|      Single-Channel Power Metering Smart Socket Switch       |      Single-Channel Power Metering Smart Socket Switch       | 283  |
+|                Three-Phase Wi-Fi Energy Meter                |                Three-Phase Wi-Fi Energy Meter                | 286  |
+|             Matter Dual-Channel Metering Switch              |             Matter Dual-Channel Metering Switch              | 289  |
+|             Matter Four-Channel Metering Switch              |             Matter Four-Channel Metering Switch              | 290  |
+|   Single-Channel Bidirectional Power Metering Smart Socket   |   Single-Channel Bidirectional Power Metering Smart Socket   | 294  |
+|               Single-Phase Wi-Fi Energy Meter                |               Single-Phase Wi-Fi Energy Meter                | 295  |
+|                    Zigbee Wireless Button                    |                    Zigbee Wireless Button                    | 1000 |
+|                  Zigbee Single-Channel Plug                  |                  Zigbee Single-Channel Plug                  | 1009 |
+|                 Zigbee Single-Channel Switch                 |                 Zigbee Single-Channel Switch                 | 1256 |
+|                   Zigbee Monochrome Light                    |                   Zigbee Monochrome Light                    | 1257 |
+|                   Zigbee Dual-color Light                    |                   Zigbee Dual-color Light                    | 1258 |
+|            Zigbee Temperature and Humidity Sensor            |            Zigbee Temperature and Humidity Sensor            | 1770 |
+|                     Zigbee Motion Sensor                     |                     Zigbee Motion Sensor                     | 2026 |
+|                  Zigbee Dual-Channel Switch                  |                  Zigbee Dual-Channel Switch                  | 2256 |
+|                Zigbee Door and Window Sensor                 |                Zigbee Door and Window Sensor                 | 3026 |
+|                 Zigbee Three-Channel Switch                  |                 Zigbee Three-Channel Switch                  | 3256 |
+|                    Zigbee RGBCW LED Light                    |                    Zigbee RGBCW LED Light                    | 3258 |
+|                  Zigbee Water Flood Sensor                   |                  Zigbee Water Flood Sensor                   | 4026 |
+|                  Zigbee Four-Channel Switch                  |                  Zigbee Four-Channel Switch                  | 4256 |
+|                     Zigbee Smoke Sensor                      |                     Zigbee Smoke Sensor                      | 5026 |
+|             Zigbee Human Body Sensor_Support OTA             |             Zigbee Human Body Sensor_Support OTA             | 7002 |
+|                Zigbee Door Sensor_Support OTA                |                Zigbee Door Sensor_Support OTA                | 7003 |
+|          Zigbee Single-Channel Switch ­_Support OTA          |         Zigbee Single-Channel Switch ­\_Support OTA          | 7004 |
 
 </div>
 
@@ -289,7 +296,7 @@ The following is an example of single-channel devices:
 #### Single Timer(UTC)
 
     // Year-Month-Date T Hour:Minutes:Second.Millisecond Z
-
+    
     "at":"2020-10-15T07:05:00.279Z" // Run at 7:05 minutes and 0 seconds
 
 Example:
@@ -314,7 +321,7 @@ Example:
 #### Repeat Timer
 
     // Minute Hour Day Month Week
-
+    
     "at": "0 10 * * 0,1,2" // Time expression reference cron, representing 10:00 every Sunday, Monday and Tuesday execution
 
 Value Range
@@ -347,7 +354,7 @@ Example:
 #### Loop Timer (alternate)
 
     // Year-Month-Date T Hour:Minutes:Second.Millisecond Z Cycle Period (min),Interval Time (min)
-
+    
     "at":"2020-05-31T17:00:00.433Z 10 5", //Loop timerRunning Time, Cycle Period 10 min, Run for another 5 minutes
 
 Example:
@@ -376,7 +383,7 @@ Example:
 #### Loop Timer (repeat)
 
     // Year-Month-Date T Hour:Minute:Second.Millisecond Z Cycle Period (min)
-
+    
     "at":"2020-11-13T08:02:00.759Z 30",//Loop timerRunning Time, Repeat for 30 minutes
 
 Example:
@@ -401,7 +408,7 @@ Example:
 #### Delay(UTC)
 
     // Year-Month-Date T Hour:Minute:Second.Millisecond Z
-
+    
     "at":"2021-06-28T11:39:00.891Z" // Run at 11:39 minutes and 0 seconds. The same level parameter should be accompanied by a "period", indicating that it is actually the time after the delay.
 
 Example:
@@ -423,6 +430,63 @@ Example:
   ]
 }
 ```
+
+### Timer Limits
+
+#### Quantity Limits
+
+A device can typically have up to 20 timers configured, with a maximum of 8 timers enabled simultaneously. The actual limits may vary depending on the device model.
+
+#### Implementation Details
+
+Timers sent to a device via WebSocket or the `/v2/device/thing/status` API (HTTP method: `POST`) are stored on the device and executed locally according to their configured schedules. Once stored on the device, timers can continue to execute even when the device is disconnected from the network.
+
+Device-side timer storage capacity is limited. Most devices typically support storing up to 8 timers. If too many timers are sent to the device (e.g., more than 8), the WebSocket message may become too large, potentially causing the request to fail.
+
+#### Recommendations
+
+To avoid failures caused by exceeding the timer limit, we recommend managing timers as follows:
+
+1. **Send enabled timers only:** When updating timers via WebSocket, it is recommended to send only the timers that need to be executed by the device, i.e., timers with `enabled = 1`. Ensure that the number of timers sent does not exceed the device's supported limit.
+2. **Store disabled timers:** For timers that are disabled (`enabled = 0`), it is recommended to store the complete timer objects separately. The eWeLink app uses the device tags API `/v2/device/tags` to store these timers in the `tags.disable_timers` field so they can be restored or re-enabled later.
+3. **Re-enable timers:** When a timer needs to be re-enabled, retrieve the corresponding timer object from storage, set its `enabled` field to `1`, and send the updated complete timer list to the device via WebSocket.
+
+#### Example
+
+The following example shows how the eWeLink app stores timers that do not need to be sent to the device for execution in the `disable_timers` field of the device tags.
+
+```
+{
+  "tags": {
+    "disable_timers": [
+      {
+        "mId": "25b266c7-ff5a-56f3-ee0b-4939fa91b217",
+        "type": "once",
+        "at": "2026-10-17T16:53:00.886Z",
+        "coolkit_timer_type": "once",
+        "enabled": 0,
+        "do": {
+          "switches": [
+            {
+              "outlet": 0,
+              "switch": "on"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+```
+
+The `disable_timers` field is an array used to store timer objects that do not need to be sent to the device for execution. Each element in the array is a complete timer object. For details about individual fields, refer to the timer protocol documentation.
+
+#### Notes
+
+- `tags.disable_timers` is a custom field defined by the eWeLink app and is not a standard field required by the Open Platform. Developers can choose their own storage methods according to their business requirements.
+- For timers that no longer need to be executed by the device, such as one-time timers that have already been executed, they can be removed from the `timers` list during the next timer update. The complete timer objects can then be stored in `tags.disable_timers` for future reference or management.
+
+ 
 
 ## Specific Control Protocols
 
@@ -605,7 +669,7 @@ pulses Parameter Description:
 5.1 Single Timer(UTC)
 
     // Year-Month-Date T Hour:Minute:Second.Millisecond Z
-
+    
     "at":"2020-10-15T07:05:00.279Z" // Run at 7:05 minutes and 0 second
 
 Example:
@@ -666,7 +730,7 @@ Example:
 
 
     // Year-Month-Date T Hour:Minute:Second.Millisecond Z
-
+    
     "at":"2021-06-28T11:39:00.891Z" // Run at 11:. 39: 0 seconds, with a "period" parameter at the same level, indicates that it is actually the time after delay
 
 Example:
@@ -4110,7 +4174,3288 @@ Example: Set the light to turn off at 17:10 on May 29, 2020 with a delay of 6 mi
 
 Consistent with UIID77.
 
+### UIID 226 Circuit Breaker
 
+#### General Parameters
+
+| Parameter              | Data Type     | Required | Value Range                                                  | Description                                                  |
+| ---------------------- | ------------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| switch                 | Boolean       | Required | true, false                                                  | Indicates the device's switch state.                         |
+| uiActive               | Number        | Required | [0, 180], in seconds                                         | `uiActive` indicates the UI activation duration. When the UI activation duration is greater than 0, the device reports the current, voltage, and power to the persistent connection server. When the duration is 0 or less, the device does not report these values to the persistent connection server unless otherwise specified. |
+| totalPower             | Number        | Required |                                                              |                                                              |
+| phase_x_p              | Number        | Required |                                                              |                                                              |
+| phase_x_v              | Number        | Required |                                                              |                                                              |
+| phase_x_c              | Number        | Required |                                                              |                                                              |
+| availablePower         | Number        | Required |                                                              |                                                              |
+| batteryRecharge        | Number        | Required | [1, 60000]                                                   | Recharge the available power balance.                        |
+| ASYNC                  | Number        | Required | 102                                                          | Indicates that the server must process the operation asynchronously. |
+| zeroPower              | Boolean       | Required | true, false                                                  | Reset the remaining available power to zero.                 |
+| resetPower             | Boolean       | -        | true, false                                                  | Reset the total energy consumption to zero.                  |
+| startTime              | String        | Optional | Fixed to the time when the most recent command to start measuring energy consumption for a single session was sent. Example: `2020-12-16T03:36:16.503Z`. | Start time for measuring energy consumption for a single session.<br>Required for the start and stop measurement commands; omitted for the refresh energy-consumption command. |
+| endTime                | String        | Optional | When the server sends a command to start measuring energy consumption, this field must be an empty string (`""`). When the server sends a command to stop measuring energy consumption, this field must contain the time when the most recent stop command was sent. Example: `2020-12-16T03:36:21.395Z`. | End time for measuring energy consumption for a single session.<br>Required for the start and stop measurement commands; omitted for the refresh energy-consumption command. |
+| oneKwh                 | Enum<String>  | Required | `"start"`, `"stop"`, `"get"`                                 | Action for single-session energy measurement: `"start"` starts measurement, `"stop"` stops measurement, and `"get"` retrieves the measured energy consumption. |
+| hundredDaysKwh         | String        | Optional | Fixed value: `"get"`                                         | Requests the energy consumption history for the past 100 days. |
+| hundredDaysKwhData     | String        | Required | Each day's energy data occupies 6 bytes represented in hexadecimal: 4 bytes for the integer part (maximum 65535) and 2 bytes for the fractional part (maximum 255). The data for 100 days occupies 600 bytes in total.<br>Example: `19010119030100000000000000000...` represents `{6401.01 (190101), 6403.01 (190301), 0.00, 0.00, ...}`. The most recent day's value comes first: `{today, yesterday, the day before yesterday, ...}`.<br>Calculation: `190101` consists of `1901` and `01`. `1901` (hexadecimal) = `6401` (decimal); `01` (hexadecimal) = `(0 × 16¹ + 1 × 16⁰) / 100 = 0.01` (decimal). Therefore, the value is `6401 + 0.01 = 6401.01`. | Energy consumption history for the past 100 days, in kWh.    |
+| max_X_upper            | Number        | -        | Power: [0.1, 40000000]<br>Voltage: [0.1, 6000]<br>Current: [0.1, 100000] | Upper thresholds for power, voltage, and current.            |
+| max_X_lower            | Number        | -        | Power: [0.1, 40000000]<br>Voltage: [0.1, 6000]<br>Current: [0.1, 100000] | Lower thresholds for power, voltage, and current.            |
+| alarmReport            | Number        | -        | [1, 12]                                                      | Alarm type:<br>1. Low power<br>2. High power<br>3. Undervoltage<br>4. Overvoltage<br>5. Overcurrent<br>6. Leakage current<br>7. High temperature<br>8. Low balance<br>9. Payment overdue<br>10. Leakage protection self-test failure<br>11. Three-phase imbalance<br>12. Phase loss |
+| alarmList              | Array<Number> | -        | [1, 12]                                                      | Array of alarm types:<br>1. Low power<br>2. High power<br>3. Undervoltage<br>4. Overvoltage<br>5. Overcurrent<br>6. Leakage current<br>7. High temperature<br>8. Low balance<br>9. Payment overdue<br>10. Leakage protection self-test failure<br>11. Three-phase imbalance<br>12. Phase loss |
+| temperature            | Number        | Optional | [0, 600]                                                     | Current temperature.                                         |
+| tempateUnit            | enum<string>  | Optional | celsius                                                      | Temperature unit.                                            |
+| fahrenheit             |               |          |                                                              | Temperature units: `celsius` and `fahrenheit`.               |
+| childLock              | Boolean       | Optional | true, false                                                  | Child lock state.                                            |
+| prepaidEnale           | Boolean       | Optional | true, false                                                  | Prepaid mode.                                                |
+| prepaidLowBalanceAlert | Boolean       | Optional | true, false                                                  | Low-balance alert.                                           |
+| prepaidLowest          | Number        | Optional | [1, 40000000]                                                | Triggers an alert when the balance falls below this value.   |
+| lcpManual              | Boolean       | Optional | true                                                         | Leakage protection self-test.                                |
+| lcpAutoEnable          | Boolean       | Optional | -                                                            | Whether scheduled self-testing is enabled. Default: `false`. |
+| lcpAutoExecutionTime   | String        | Optional | -                                                            | Execution time. Default: `01 12` (DD HH).                    |
+| lcpAutoDelayTime       | Number        | Optional | [0, 60]                                                      | Delay before execution, in seconds. Default: 10.             |
+| autoOpensAfterLcp      | Boolean       | Optional | -                                                            | Whether to turn the device on automatically after the self-test. Default: `false`. |
+
+#### Control Commands
+
+1. Device switch
+
+   Example: Turn the device on.
+
+```json
+{
+  "switch": true
+}
+```
+
+2. Activate device reporting
+
+   **Scenario:** Command sent by the app.
+
+   When the app opens the device details page or when reporting is otherwise needed, it sends this command and the device starts reporting values such as current, voltage, and power.
+
+```json
+{
+  "uiActive": 60
+}
+```
+
+3. Data reported by the device (details)
+
+```json
+// Single-phase
+{
+  "totalPower":123456,
+  "phase_0_p":300,
+  "phase_0_v":110,
+  "phase_0_c":5
+}
+// Three-phase
+{
+  "totalPower":123456,
+  "phase_0_p":300,
+  "phase_0_v":110,
+  "phase_0_c":5,
+  "phase_1_p":300,
+  "phase_1_v":110,
+  "phase_1_c":5,
+  "phase_2_p":300,
+  "phase_2_v":110,
+  "phase_2_c":5
+}
+```
+
+4. Available power balance
+
+   **Scenario:** Reported by the device.
+
+   **Note:** The device should turn off when the available power balance is 0.
+
+```json
+// Available power balance reported by the device
+{
+  "availablePower": 100
+}
+
+// The device should turn off when the available power balance is 0
+{
+  "availablePower": 0,
+  "switch": false
+}
+```
+
+5. Recharge power balance
+
+   **Scenario:** Command sent by the app.
+
+```json
+{
+  "batteryRecharge": 100,
+  "ASYNC": 102,
+}
+```
+
+6. Reset available power balance
+
+   **Scenario:** Command sent by the app.
+
+```json
+{
+  "zeroPower": true,
+  "ASYNC": 102,
+}
+```
+
+7. Reset total energy consumption
+
+   **Scenario:** Command sent by the app.
+
+```json
+{
+  "resetPower": true,
+  "ASYNC": 102,
+}
+```
+
+8. Measure energy consumption for a single session
+
+   8.1 Start/stop measurement
+
+   **Scenario:** Command sent by the app.
+
+```json
+// Start measurement
+{
+  "oneKwh": "start",
+  "endTime": "",
+  "startTime": "2020-12-16T03:36:16.503Z"
+}
+
+// Stop measurement
+{
+  "oneKwh": "stop",
+  "endTime": "2020-12-16T03:36:21.395Z",
+  "startTime": "2020-12-16T03:36:16.503Z"
+}
+```
+
+   8.2 Get energy consumption for a single session
+
+   **Scenario:** Command sent by the app.
+
+```json
+{
+  "oneKwh": "get"
+}
+```
+
+   Device response:
+
+```json
+{
+  "error": 0,
+  "config": {
+    "oneKwhData": 110.32
+  }
+}
+```
+
+9. Historical energy consumption
+
+   **Scenario:** Command sent by the app.
+
+```json
+{
+  "hundredDaysKwh": "get"
+}
+```
+
+   Device response:
+
+```json
+{
+  "error": 0,
+  "config": {
+    "hundredDaysKwhData": "190101190301000000000000....."
+  }
+}
+```
+
+10. Threshold ranges reported by the device
+
+   **Scenario:** Reported by the device.
+
+```json
+{
+  "min_p_upper": 40000000, // Minimum power upper limit
+  "min_p_lower": 0.1, // Minimum power lower limit
+  "max_p_upper": 40000000, // Maximum power upper limit
+  "max_p_lower": 0.1, // Maximum power lower limit
+  "min_v_upper": 6000, // Minimum voltage upper limit
+  "min_v_lower": 0.1, // Minimum voltage lower limit
+  "max_v_upper": 6000, // Maximum voltage upper limit
+  "max_v_lower": 0.1, // Maximum voltage lower limit
+  "max_c_upper": 100000, // Maximum current upper limit
+  "max_c_lower": 0.1 // Maximum current lower limit
+}
+```
+
+11. Overload protection
+
+   **Scenario:** Command sent by the app.
+
+```json
+{
+  "overloadProtect": true
+}
+```
+
+12. Alarm reporting
+
+   **Scenario:** Reported by the device.
+
+```json
+{
+  "alarmReport": 1
+}
+```
+
+   **Field descriptions:**
+
+      1. `alarmType`: String. Required. Specifies the type of overload protection. It can be any combination of `"p"` (power protection), `"v"` (voltage protection), and `"c"` (current protection). `"t"` indicates maximum temperature (if supported), and `"l"` indicates leakage current (if supported). The value may contain one, two, or three of the supported types, depending on the settings of the other fields.
+         - If the user configures only current overload protection and leaves voltage and power protection at their default values, `alarmType` is `"c"`.
+         - If the user configures power and voltage overload protection but leaves current protection at its default value, `alarmType` is `"pv"`.
+         - If the user configures power, current, and voltage overload protection, `alarmType` is `"pcv"`.
+      2. `alarm_x_min`: Number. Minimum overload-protection threshold for power, current, or voltage (`x`).
+      3. `alarm_x_max`: Number. Maximum overload-protection threshold for power, current, or voltage (`x`).
+      4. `alarm_t_value`: Number. Temperature overload threshold.
+      5. `alarm_l_value`: Number. Leakage-current overload threshold.
+
+   **Notes:**
+
+      1. Unless both threshold limits are unset, the upper threshold for voltage, current, and power protection must be greater than the lower threshold.
+      2. By default, current, voltage, and power protection are not configured; their upper and lower thresholds are both `-1`.
+      3. Only the upper or lower threshold may be configured. Any unset threshold has a value of `-1` (the corresponding checkbox is not selected).
+      4. The threshold ranges for current, voltage, and power are as follows:
+         - Current: upper threshold range `[0.10, 15.00]`; no lower threshold.
+         - Voltage: upper threshold range `[0.10, 120.00]`; no lower threshold.
+         - Power: upper threshold range `[10.00, 1800.00]`; lower threshold range `[0.10, 1800.00]`.
+      5. The device supports up to two decimal places for all the threshold values described above.
+
+   6. Historical alarm reporting
+
+   **Scenario:** Reported by the device.
+
+```json
+{
+  "alarmList": [1, 2, 3, 4, 5, 6]
+}
+```
+
+14. Temperature reporting (optional)
+
+   **Scenario:** Reported by the device.
+
+```json
+{
+  "temperature": 40.0
+}
+```
+
+15. Switch temperature unit (optional)
+
+   **Scenario:** Command sent by the app.
+
+```json
+{
+  "tempateUnit": "celsius"
+}
+```
+
+16. Child lock settings (optional)
+
+```json
+// Enable child lock
+{
+  "childLock": true
+}
+// Disable child lock
+{
+  "childLock": false
+}
+```
+
+17. Maintenance lock (optional)
+
+```json
+// Enable maintenance lock
+{
+  "maintenanceLock": true
+}
+// Disable maintenance lock
+{
+  "maintenanceLock": false
+}
+```
+
+18. Prepaid mode settings (optional)
+
+```json
+// Enable prepaid mode and the low-balance alert
+{
+  "prepaidEnale": true,
+  "prepaidLowBalanceAlert": true,
+  "prepaidLowest": 10,
+}
+```
+
+**Notes:**
+
+When prepaid mode is enabled, the low-balance alert can be enabled or disabled independently.
+When prepaid mode is disabled, the low-balance alert must also be disabled.
+
+19. Leakage protection test (optional)
+
+   19.1 Leakage protection self-test
+
+```json
+{
+  "lcpManual": true
+}
+```
+
+   19.2 Scheduled self-test
+
+   **Scenario:** Command sent by the app.
+
+```json
+// When enabling, all fields must be sent.
+// Run the self-test at 10:00 on the first day of each month, with no delay.
+{
+  "lcpAutoEnable": true,
+  "lcpAutoExecutionTime": "01 10",
+  "lcpAutoDelayTime": 0,
+  "autoOpensAfterLcp": false
+}
+
+// Disable scheduled self-testing
+{
+  "lcpAutoEnable": false,
+}
+```
+
+### UIID 283 Single-Channel Power Metering Socket Switch
+
+#### 1. Switch Control Support
+
+**Scenario:** Device comes online.
+
+**Note:** The device only needs to report this field once each time it is added to eWeLink.
+
+```json
+{
+  "isSupportSwitchControl": true
+}
+```
+
+| Parameter              | Type    | Description                                                  |
+| ---------------------- | ------- | ------------------------------------------------------------ |
+| isSupportSwitchControl | Boolean | `true`: supports both power metering and switching (MINI-1GSP). `false`: supports power metering only (MINI-1GP). |
+
+#### 2. Power Monitoring Support
+
+**Scenario:** Device comes online.
+
+**Note:** The device only needs to report this field once each time it is added to eWeLink.
+
+```json
+{
+  "isSupportMonitor": true
+}
+```
+
+| Parameter        | Type    | Description                                                  |
+| ---------------- | ------- | ------------------------------------------------------------ |
+| isSupportMonitor | Boolean | `true`: supports power monitoring; `false`: does not support power monitoring. |
+
+**Note:** At least one of fields 1 and 2 must be `true`.
+
+- **MINI-ZB1GSP:** `isSupportSwitchControl: true` and `isSupportMonitor: true`
+- **MINI-ZB1GP:** `isSupportSwitchControl: false` and `isSupportMonitor: true`
+- **MINI-ZB1GS:** `isSupportSwitchControl: true` and `isSupportMonitor: false`
+
+New devices should report both support fields. If the device reports only one field, the app should treat the other field as `true`.
+
+#### 3. Switch Control
+
+```json
+// Example: Control multiple channels. Turn channel 1 on and turn channels 2, 3, and 4 off.
+{
+  "switches": [
+    {"switch": "on", "outlet": 0},
+    {"switch": "off", "outlet": 1},
+    {"switch": "off", "outlet": 2},
+    {"switch": "off", "outlet": 3}
+  ]
+}
+
+// Example: Control a single channel. Turn channel 2 off.
+{
+  "switches": [
+    {"switch": "off", "outlet": 1}
+  ]
+}
+```
+
+**Field descriptions**
+
+Parameter descriptions for `param`:
+
+| Parameter | Meaning                | Data Type | Value Range | Factory Default | Notes                           |
+| --------- | ---------------------- | --------- | ----------- | --------------- | ------------------------------- |
+| switches  | States of all channels | Array     |             |                 |                                 |
+| switch    | Switch state           | String    | on, off     | on              | `on` means on; `off` means off. |
+| outlet    | Channel number         | Number    | [0, 3]      |                 | Represents channels 1–4.        |
+
+#### 4. Inching
+
+```json
+// Example: Four-channel device. Enable inching for channel 1 and turn it off after 2 seconds; enable inching for channel 2 and turn it on 2 seconds after being turned off; disable inching for channels 3 and 4.
+{
+  "pulses": [
+    {"pulse": "on", "switch": "off", "width": 2000, "outlet": 0},
+    {"pulse": "on", "switch": "on", "width": 2000, "outlet": 1},
+    {"pulse": "off", "switch": "on", "width": 2000, "outlet": 2},
+    {"pulse": "off", "switch": "on", "width": 2000, "outlet": 3}
+  ]
+}
+```
+
+**Field descriptions**
+
+Parameter descriptions for `param`:
+
+| Parameter | Meaning                         | Data Type | Value Range                                                  | Factory Default | Notes                                                        |
+| --------- | ------------------------------- | --------- | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------ |
+| pulses    | Inching states for each channel | Array     |                                                              |                 |                                                              |
+| pulse     | Inching function switch         | String    | on, off                                                      | off             | `on` enables inching; `off` disables it.                     |
+| switch    | Switch state after inching ends | String    | on, off                                                      | off             | `on` means on; `off` means off. If set to `on`, the device turns on when the inching period ends, even if it was turned off during that period. |
+| width     | Inching duration                | Number    | Minimum 500; maximum depends on the product PRD or actual requirements | 500             | In milliseconds. Values must be multiples of 500 ms (0.5 seconds). **When `pulse` is `off`, the app sets this value to 0. Embedded firmware does not validate this value when `pulse` is `off`.** |
+| outlet    | Channel number                  | Number    | [0, 7]                                                       |                 | Represents channels 1–8.                                     |
+
+#### 5. Power-On Behavior
+
+```json
+{
+  "configure": [
+    {"outlet": 0, "startup": "on"},
+    {"startup": "stay", "outlet": 1},
+    {"outlet": 2, "startup": "invert"},
+    {"outlet": 3, "startup": "off", "enableDelay": 1, "width": 500}
+  ]
+}
+```
+
+**Field descriptions**
+
+Parameter descriptions for `param`:
+
+| Parameter   | Meaning                                                      | Data Type | Value Range   | Required | Factory Default | Notes                                                        |
+| ----------- | ------------------------------------------------------------ | --------- | ------------- | -------- | --------------- | ------------------------------------------------------------ |
+| configure   | Power-on behavior for each channel                           | Array     |               | Yes      |                 |                                                              |
+| outlet      | Channel number                                               | Number    | [0, 7]        | Yes      |                 | Represents channels 1–8.                                     |
+| startup     | Behavior when power is restored                              | String    | on, off, stay | Yes      | off             | `on`: turn on at power-on; `off`: turn off at power-on; `stay`: restore the state before the power outage; `invert`: invert the state (optional implementation; **new devices should use this value**); `toggle`: toggle the state (optional implementation for compatibility with older protocol implementations). |
+| enableDelay | Enable delay (optional implementation)                       | Number    | [0, 1]        | No       | 0               |                                                              |
+| width       | Delay before applying the power-on behavior (optional implementation) | Number    | [0, 3599500]  | No       | 500             | In milliseconds, from 0 to 3599.5 seconds. Values must be multiples of 500 ms (0.5 seconds). `0` means apply the behavior immediately after power is restored. |
+
+#### 6. Network Indicator LED
+
+```json
+// Turn on the network indicator LED
+{
+  "sledOnline": "on"
+}
+// Turn off the network indicator LED
+{
+  "sledOnline": "off"
+}
+```
+
+**Field descriptions**
+
+Parameter descriptions for `params`:
+
+| Field      | Meaning               | Type   | Required | Value Range | Default | Notes                                                        |
+| ---------- | --------------------- | ------ | -------- | ----------- | ------- | ------------------------------------------------------------ |
+| sledOnline | Network indicator LED | String |          | on, off     | on      | The setting takes effect only after the device connects to the server. |
+
+#### 7. Activate Reporting
+
+Set the `uiActive` duration.
+
+- This helps prevent the device from reporting data too frequently. When the client opens certain pages, it sends this field to indicate that the device can start reporting real-time data, including values that exceed its own thresholds.
+- After the configured countdown expires, the client continues sending the field according to the configured duration.
+
+**Scenario:**
+
+Persistent connection: app changes the state.
+
+**Example:**
+
+```json
+{
+  "uiActive": 60
+}
+```
+
+| Field    | Meaning                       | Data Type | Required | Value Range | Default               | Notes       |
+| -------- | ----------------------------- | --------- | -------- | ----------- | --------------------- | ----------- |
+| uiActive | Reporting activation duration | Number    | Required | [1, 3600]   | As needed, usually 60 | In seconds. |
+
+#### 8. External Switch Mode
+
+**Scenario:** App changes state or device state changes.
+
+This capability is unavailable when `isSupportSwitchControl` is `false`.
+
+```json
+// Follow mode with reverse control enabled
+{
+  "swMode": 1,
+  "swCtrlReverse": "on"
+}
+
+// Edge-triggered mode
+{
+  "swMode": 2
+}
+```
+
+| Parameter     | Data Type | Value Range                                         | Default | Notes                                                        |
+| ------------- | --------- | --------------------------------------------------- | ------- | ------------------------------------------------------------ |
+| swMode        | Number    | 0–3                                                 | 2       | `1`: follow mode; `2`: edge-triggered mode (single rocker); `3`: pulse-triggered mode (momentary switch). |
+| swCtrlReverse | String    | `"on"` enables reverse control; `"off"` disables it |         | **Required when `swMode` is 1.**                             |
+
+#### 9. Relay Separation
+
+**Scenario:** App changes state.
+
+This capability is unavailable when `isSupportSwitchControl` is `false`.
+
+```json
+// Enable relay separation
+{
+  "relaySeparation": 1
+}
+```
+
+| Parameter       | Data Type | Default | Notes                                                        |
+| --------------- | --------- | ------- | ------------------------------------------------------------ |
+| relaySeparation | Number    | 0       | `0`: disable relay separation; `1`: enable relay separation. |
+
+**Notes:**
+
+To allow offline control, relay separation is automatically disabled when the device goes offline (disconnects from the router). When the device reconnects, relay separation is automatically enabled again.
+
+#### 10. External Switch Trigger
+
+**Scenario:** Device state changes.
+
+**When relay separation is enabled and an external switch is pressed, the device reports the type of key action.**
+
+```json
+{
+  "localKeyPass": {
+    "outlet": 0,
+    "key": 0
+  }
+}
+```
+
+| **Field**    | **Meaning**                 | **Type** | **Required** | **Value Range** | **Notes**                                                    |
+| ------------ | --------------------------- | -------- | ------------ | --------------- | ------------------------------------------------------------ |
+| localKeyPass | External switch key trigger | Object   | Required     |                 |                                                              |
+| outlet       | Channel index               | Number   | Required     | [0, 3]          |                                                              |
+| key          | Key action type             | Number   | Required     | [0, 4]          | `0`: single press; `1`: double press (report according to product requirements; some devices do not support double press); `2`: long press; `3`: turn on; `4`: turn off. Report supported actions according to product requirements. |
+
+**Note:** Only the UIID 283 and UIID 7054 1GSP models currently support key values `2`, `3`, and `4`.
+
+#### 11. Report Current, Voltage, Power, and Runtime
+
+**Scenario:** Device state changes.
+
+```json
+{
+  "current": 100,
+  "voltage": 22000,
+  "power": 22000,
+  "dayKwh": 145,
+  "monthKwh": 3011,
+  "totalKwh": 1000000,
+  "reverseDayKwh": 2000,
+  "totalReverseKwh": 1000000,
+  "costDay": 4012,
+  "costMonth": 30040,
+  "runtime": 3600,
+  "totalRuntime": 360000000
+}
+```
+
+| Parameter       | Type   | Notes                                           |
+| --------------- | ------ | ----------------------------------------------- |
+| current         | Number | Actual real-time current × 100; unit: A.        |
+| voltage         | Number | Actual real-time voltage × 100; unit: V.        |
+| power           | Number | Actual real-time power × 100; unit: W.          |
+| dayKwh          | Number | Today's energy consumption × 100; unit: kWh.    |
+| monthKwh        | Number | Energy consumption this month × 100; unit: kWh. |
+| totalKwh        | Number | Total energy consumption × 100; unit: kWh.      |
+| reverseDayKwh   | Number | Today's reverse energy × 100; unit: kWh.        |
+| totalReverseKwh | Number | Total reverse energy × 100; unit: kWh.          |
+| costDay         | Number | Today's cost × 100.                             |
+| costMonth       | Number | Cost this month × 100.                          |
+| runtime         | Number | Runtime today, in seconds.                      |
+| totalRuntime    | Number | Total runtime, in seconds.                      |
+
+Reporting is supported only while `uiActive` is active.
+
+Current, voltage, and power are monitored every 2 seconds and reported to the server when any of the following conditions is met:
+
+- Current changes by ±0.03 A.
+- Voltage changes by more than ±5 V.
+- Active power changes by more than ±2 W.
+- Accumulated energy changes by more than 0.01 kWh.
+
+Other data is reported together with current, voltage, and power changes.
+
+#### 12. Electricity Tariff Settings
+
+**Scenario:** App changes state or device state changes.
+
+```json
+// When weekend rates are enabled:
+// timeOfUse defines the weekday rules.
+// timeOfUseWeek defines the weekend rules.
+{
+  "tariff": {
+    "general": {"cost": 1500},
+    "timeOfUse": [
+      {"id": 1, "cost": 1500, "start": "13:00", "stop": "23:00"},
+      {"id": 2, "cost": 1400, "start": "23:00", "stop": "03:00"}
+    ],
+    "timeOfUseWeek": [
+      {"id": 1, "cost": 1500, "start": "13:00", "stop": "23:00"},
+      {"id": 2, "cost": 1400, "start": "23:00", "stop": "03:00"}
+    ]
+  }
+}
+
+// When weekend rates are not enabled:
+// timeOfUse defines the rate rules for each day.
+{
+  "tariff": {
+    "general": {"cost": 1500},
+    "timeOfUse": [
+      {"id": 1, "cost": 1500, "start": "13:00", "stop": "23:00"},
+      {"id": 2, "cost": 1400, "start": "23:00", "stop": "03:00"}
+    ]
+  }
+}
+```
+
+**`tariff` field descriptions**
+
+| Field         | Meaning                   | Data Type     | Required | Notes                                                        |
+| ------------- | ------------------------- | ------------- | -------- | ------------------------------------------------------------ |
+| general.cost  | Standard electricity rate | Number        | Required | Actual value × 100.                                          |
+| timeOfUse     | Time-of-use rate array    | Array<Object> | Required | When weekend rates are enabled, this defines weekday rules. When weekend rates are disabled, it defines the rate rules for each day. `timeOfUseWeek` defines weekend rules. |
+| timeOfUseWeek | Time-of-use rate array    | Array<Object> | Optional | Used when weekend rates are enabled.                         |
+| id            | Index                     | Number        | Required |                                                              |
+| cost          | Cost                      | Number        | Required | Actual value × 100. Maximum configurable electricity rate: 99999.99. |
+| start         | Start time                | String        | Required |                                                              |
+| stop          | End time                  | String        | Required |                                                              |
+
+#### 13. Future Electricity Tariff Settings
+
+**Scenario:** App changes state or device state changes.
+
+```json
+// When weekend rates are enabled:
+// timeOfUse defines weekday rules.
+// timeOfUseWeek defines weekend rules.
+{
+  "tariffNew": {
+    "effectiveTime": "",
+    "general": {"cost": 1500},
+    "timeOfUse": [
+      {"id": 1, "cost": 1500, "start": "13:00", "stop": "23:00"},
+      {"id": 2, "cost": 1400, "start": "23:00", "stop": "03:00"}
+    ],
+    "timeOfUseWeek": [
+      {"id": 1, "cost": 1500, "start": "13:00", "stop": "23:00"},
+      {"id": 2, "cost": 1400, "start": "23:00", "stop": "03:00"}
+    ]
+  }
+}
+
+// When weekend rates are not enabled:
+// timeOfUse defines the rate rules for each day.
+{
+  "tariffNew": {
+    "effectiveTime": "",
+    "general": {"cost": 1500},
+    "timeOfUse": [
+      {"id": 1, "cost": 1500, "start": "13:00", "stop": "23:00"},
+      {"id": 2, "cost": 1400, "start": "23:00", "stop": "03:00"}
+    ]
+  }
+}
+```
+
+**`tariffNew` field descriptions**
+
+| Field         | Meaning                   | Data Type     | Required | Notes                                                        |
+| ------------- | ------------------------- | ------------- | -------- | ------------------------------------------------------------ |
+| general.cost  | Standard electricity rate | Number        | Required | Actual value × 100.                                          |
+| timeOfUse     | Time-of-use rate array    | Array<Object> | Required | When weekend rates are enabled, this defines weekday rules. When weekend rates are disabled, it defines the rate rules for each day. `timeOfUseWeek` defines weekend rules. |
+| timeOfUseWeek | Time-of-use rate array    | Array<Object> | Optional | Used when weekend rates are enabled.                         |
+| id            | Index                     | Number        | Required |                                                              |
+| cost          | Cost                      | Number        | Required | Actual value × 100. Maximum configurable electricity rate: 99999.99. |
+| start         | Start time                | String        | Required |                                                              |
+| stop          | End time                  | String        | Required |                                                              |
+| effectiveTime | Tariff effective time     | String        | Optional | The effective date can be set up to 30 days in the future. Use a 13-digit timestamp at midnight on the selected date. |
+
+**Examples**
+
+```json
+// The user has not configured an electricity tariff yet.
+// The app is setting the standard rate; only this needs to be sent.
+{
+  "tariff": {
+    "effectiveTime": "",
+    "general": {"cost": 1500}
+  }
+}
+
+// The user has already configured a tariff and is now setting a future effective tariff.
+// The app sends:
+{
+  "tariffNew": {
+    "effectiveTime": "1774341191249", // Future timestamp
+    "general": {"cost": 1500}
+  }
+}
+
+// When the effective time is reached, the device reports the tariff settings.
+{
+  "tariff": {
+    "effectiveTime": "1774341191249", // Effective timestamp
+    "general": {"cost": 1500}
+  },
+  "tariffNew": {}
+}
+
+// The user has already configured a tariff and is now setting a tariff effective in the past.
+// The app sends:
+{
+  "tariff": {
+    "effectiveTime": "1774341191249", // Past timestamp
+    "general": {"cost": 1500}
+  }
+}
+```
+
+#### 14. Clear Energy Data
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "totalKwh": "reset"
+}
+```
+
+| Parameter | Type   | Notes                       |
+| --------- | ------ | --------------------------- |
+| totalKwh  | String | `reset`: clear energy data. |
+
+**Note:** After the app sends this field, the device must report all related energy data once, with all values set to 0.
+
+#### 15. Billing Date Settings
+
+**Scenario:** App changes state.
+
+```json
+{
+  "billingDate": 1,
+  "NO_SEND_TO_DEVICE": "0"
+}
+```
+
+| Parameter   | Type   | Value Range | Notes                                  |
+| ----------- | ------ | ----------- | -------------------------------------- |
+| billingDate | Number | 1–28        | `1` means the first day of each month. |
+
+**Notes:**
+
+Energy data is currently aggregated by calendar month, so billing-date-related data does not need to be processed by the device.
+
+The app displays billing-date data on a separate page and uses the `custom` type when querying historical records, with `start` set to the billing date of the current month and `end` set to the billing date of the following month.
+
+#### 16. Report the Next Scheduled Action
+
+**Scenario:** Device state changes.
+
+This capability is unavailable when `isSupportSwitchControl` is `false`.
+
+```json
+{
+  "nextAction": {
+    "ts": "1234567890123",
+    "switch": "on"
+  }
+}
+```
+
+| Parameter  | Type   | Notes                           |
+| ---------- | ------ | ------------------------------- |
+| nextAction | Object |                                 |
+| ts         | String | Time of the next on/off action. |
+| switch     | String | `on`: turn on; `off`: turn off. |
+
+**Notes:**
+
+The device must report this information when timers, inching, or similar features are configured.
+
+Each time the app opens the device details page, it calculates the time difference using the current time and the next scheduled device action.
+
+#### 17. Historical Records
+
+**Scenario:** App changes state.
+
+```json
+// Retrieve hourly data for the current day (24 hours)
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "day",
+    "range": {"start": "2024-11-01", "end": "2024-11-01"}
+  }
+}
+
+// Retrieve hourly data for the current day (24 hours), including reverse energy
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "day",
+    "reverse": true,
+    "range": {"start": "2024-11-01", "end": "2024-11-01"}
+  }
+}
+
+// Retrieve daily data for one week
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "week",
+    "range": {"start": "2024-11-01", "end": "2024-11-07"}
+  }
+}
+
+// Retrieve daily data for one month
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "month",
+    "range": {"start": "2024-11-01", "end": "2024-11-31"}
+  }
+}
+
+// Retrieve monthly data for one year
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "year"
+  }
+}
+
+// Retrieve daily data for a custom time range
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "custom",
+    "range": {"start": "2024-11-01", "end": "2024-11-20"}
+  }
+}
+```
+
+**`history` field descriptions**
+
+| Parameter | Type    | Value Range                                                  | Required | Notes                                                        |
+| --------- | ------- | ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
+| type      | String  | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the currently selected chart mode. | Yes      |                                                              |
+| reverse   | Boolean |                                                              | No       | Whether to query reverse energy data.                        |
+| range     | Object  |                                                              | No       | Required when `type` is `custom`.                            |
+| start     | String  |                                                              |          | **Format:** `2024-11-01`. Add a leading zero for months and days below 10. |
+| end       | String  |                                                              |          | Same as above.                                               |
+
+Synchronous device response:
+
+```json
+// Hourly response
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "day",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "kwhs": "0001f40001f4...",
+      "costs": "1234567890..."
+    }
+  }
+}
+
+// Hourly response including reverse energy
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "day",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "kwhs": "0001f40001f4...",
+      "exportKwhs": "0001f40001f4...",
+      "costs": "1234567890..."
+    }
+  }
+}
+
+// Daily response for the month type
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "month",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "kwhs": "002ee0002ee0...",
+      "costs": "1234567890..."
+    }
+  }
+}
+
+// Monthly response for the year type
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "year",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "kwhs": "05ad2005ad20...",
+      "costs": "1234567890..."
+    }
+  }
+}
+```
+
+| Parameter  | Type   | Notes                                                        |
+| ---------- | ------ | ------------------------------------------------------------ |
+| history    | Object |                                                              |
+| type       | String | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the currently selected chart mode. |
+| end        | String | 13-digit timestamp, accurate to the hour; pad the minutes and seconds with zeros. |
+| kwhs       | String | Data points are appended in chronological order, oldest first and newest last.<br>Energy consumption: each data point uses 5 characters and represents the actual value × 100, in units of 0.01 kWh.<br>Example (maximum device load: 3840 W): hourly consumption at 5000 W × 1 h = 5 kWh; transmitted value: decimal `500` → hexadecimal `0x0001f4`. Daily: `5 × 24 = 120 kWh`; decimal `12000` → hexadecimal `002ee0`. Monthly: `120 × 31 = 3720 kWh`; decimal `372000` → hexadecimal `05ad20`. |
+| exportKwhs | String | Reverse energy. Uses the same encoding as above.             |
+| costs      | String | Each data point uses 10 characters and represents the actual cost × 100 in hexadecimal.<br>Range: decimal `0–1099511627775`; hexadecimal `0x0000000000–0xffffffffff`.<br>Maximum configurable electricity rate: `9999999` (`99999.99`). Maximum annual cost: `9999999 × 5 × 24 × 31 × 12 = 446399955360` (`0x67EF82C1A0`). |
+
+**Notes:**
+
+- During testing, reserve a firmware version on the device that can retrieve historical test data.
+- Daylight saving time: hourly data always contains 24 data points. When daylight saving time starts, the missing hour is reported as 0; when daylight saving time ends, the repeated hour's data is accumulated.
+
+#### 18. Download Historical Records
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "totalHour",
+    "reverse": true,
+    "page": 0
+  }
+}
+```
+
+| Parameter | Type    | Notes                                                        |
+| --------- | ------- | ------------------------------------------------------------ |
+| history   | Object  |                                                              |
+| type      | String  | `totalHour`: all hourly data (186 days); `totalDay`: all daily data (366 days). |
+| reverse   | Boolean | `true`: query reverse energy; `false`: do not query reverse energy. |
+| page      | Number  | Page index, starting at 0. Increment by 1 until `page` reaches `total`. |
+
+```json
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "totalHour",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "kwhs": "0001f40001f4...",
+      "exportKwhs": "0001f40001f4...",
+      "costs": "1234567890...",
+      "page": 0,
+      "total": 10
+    }
+  }
+}
+```
+
+| Parameter  | Type   | Required | Notes                                                        |
+| ---------- | ------ | -------- | ------------------------------------------------------------ |
+| history    | Object | Yes      | Data is transferred in pages of up to approximately 1 KB, or about 6 days per page. |
+| type       | String | Yes      | `totalHour`: all hourly data (186 days); `totalDay`: all daily data (366 days). |
+| end        | String | Yes      | Timestamp of the last data point on this page, on the hour; 13 digits, accurate to the hour, with minutes and seconds padded with zeros. |
+| kwhs       | String | Yes      | Data points are appended in chronological order, oldest first and newest last.<br>Each data point uses 5 characters and represents actual energy consumption × 100 (0.01 kWh).<br>Example (maximum device load: 3840 W): hourly consumption at 5000 W × 1 h = 5 kWh; decimal `500` → hexadecimal `0x0001f4`. Daily: `5 × 24 = 120 kWh`; decimal `12000` → hexadecimal `002ee0`. Monthly: `120 × 31 = 3720 kWh`; decimal `372000` → hexadecimal `05ad20`. |
+| exportKwhs | String | No       | Reverse energy; uses the same encoding as above.             |
+| costs      | String | Yes      | Each data point uses 10 characters and represents actual cost × 100 in hexadecimal.<br>Range: decimal `0–1099511627775`; hexadecimal `0x0000000000–0xffffffffff`.<br>Maximum configurable electricity rate: `9999999` (`99999.99`). Maximum annual cost: `9999999 × 5 × 24 × 31 × 12 = 446399955360` (`0x67EF82C1A0`). |
+| page       | Number | Yes      | Current page index.                                          |
+| total      | Number | Yes      | Total number of pages.                                       |
+
+#### 19. Quick Scenarios
+
+##### 19.1 Running Completion Alert and Automatic Power-Off
+
+**Scenario:** App changes state.
+
+```json
+{
+  "cycleAlert": true,
+  "cycleEndOff": true,
+  "standByPower": 3,
+  "standByDuration": 40
+}
+```
+
+| Parameter       | Type    | Value Range | Default | Notes                                                        |
+| --------------- | ------- | ----------- | ------- | ------------------------------------------------------------ |
+| cycleAlert      | Boolean |             | false   | Whether to send a push notification: `false` means no notification; `true` means send one. |
+| cycleEndOff     | Boolean |             | false   | Whether to enable automatic power-off when operation completes: `true` enables it; `false` disables it. |
+| standByPower    | Number  | [3, 60]     | 3       | Standby power, in W.                                         |
+| standByDuration | Number  | [1, 60]     | 40      | Standby duration, in minutes.                                |
+
+**Note:** When `isSupportSwitchControl` is `false`, the `cycleEndOff` field is not included in the parameters.
+
+##### 19.2 Maintenance Reminder
+
+**Scenario:** App changes state.
+
+```json
+// App sends settings
+{
+  "maintenance": {
+    "alert": true,
+    "time": 60,
+    "power": 200
+  }
+}
+// App retrieves time information
+{
+  "getMaintenceInfo": "get",
+  "NO_SAVE_DB": true
+}
+// Synchronous device response
+{
+  "error": 0,
+  "config": {
+    "maintenanceTimeInfo": {
+      "accumulateTime": 60,
+      "remainTime": 360
+    }
+  }
+}
+
+// App resets the information
+{
+  "getMaintenceInfo": "reset",
+  "NO_SAVE_DB": true
+}
+// Synchronous device response
+{
+  "error": 0,
+  "config": {
+    "maintenanceTimeInfo": {
+      "accumulateTime": 0,
+      "remainTime": 0
+    }
+  }
+}
+```
+
+`maintenance` structure:
+
+| Parameter | Type    | Value Range | Default | Notes                             |
+| --------- | ------- | ----------- | ------- | --------------------------------- |
+| alert     | Boolean |             | false   |                                   |
+| time      | Number  | [1, 600000] | 0       | Maintenance interval, in minutes. |
+| power     | Number  | [3, 2000]   | 0       | Sustained power, in W.            |
+
+| Parameter        | Type   | Notes                                                        |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| getMaintenceInfo | String | `get`: retrieve accumulated runtime and other information; `reset`: reset runtime and other information. |
+
+`maintenanceTimeInfo` structure:
+
+| Parameter      | Type   | Value Range | Default | Notes                            |
+| -------------- | ------ | ----------- | ------- | -------------------------------- |
+| accumulateTime | Number |             | 0       | Accumulated runtime, in minutes. |
+| remainTime     | Number | [1, 599940] | 0       | Remaining runtime, in minutes.   |
+
+##### 19.3 Threshold Range Reporting
+
+**Scenario:** Device comes online.
+
+```json
+{
+  "pUpRangeMin": 10000,
+  "pUpRangeMax": 10000,
+  "vUpRangeMin": 10000,
+  "vLowRangeMin": 10000,
+  "vUpRangeMax": 10000,
+  "vLowRangeMax": 10000,
+  "cUpRangeMin": 10000,
+  "cUpRangeMax": 10000
+}
+```
+
+| Field        | Meaning                                             | Type   | Default                   |
+| ------------ | --------------------------------------------------- | ------ | ------------------------- |
+| pUpRangeMin  | Minimum value for the power upper-threshold range   | Number | Actual value × 100, in W. |
+| pUpRangeMax  | Maximum value for the power upper-threshold range   | Number | Actual value × 100, in W. |
+| vUpRangeMin  | Minimum value for the voltage upper-threshold range | Number | Actual value × 100, in V. |
+| vUpRangeMax  | Maximum value for the voltage upper-threshold range | Number | Actual value × 100, in V. |
+| vLowRangeMin | Minimum value for the voltage lower-threshold range | Number | Actual value × 100, in V. |
+| vLowRangeMax | Maximum value for the voltage lower-threshold range | Number | Actual value × 100, in V. |
+| cUpRangeMin  | Minimum value for the current upper-threshold range | Number | Actual value × 100, in A. |
+| cUpRangeMax  | Maximum value for the current upper-threshold range | Number | Actual value × 100, in A. |
+
+##### 19.4 Protection Thresholds (Overload Protection)
+
+**Scenario:** App changes state.
+
+```json
+{
+  "overload_00": {
+    "maxAP": {"en": 1, "val": 10000},
+    "minV": {"en": 1, "val": 1000},
+    "maxV": {"en": 0, "val": 22000},
+    "maxC": {"en": 1, "val": 1600},
+    "voltageRecovery": true
+  }
+}
+```
+
+| Field           | Meaning                                 | Type    | Notes                                                        |
+| --------------- | --------------------------------------- | ------- | ------------------------------------------------------------ |
+| maxAP           | Maximum power                           | Object  |                                                              |
+| minV            | Minimum voltage                         | Object  |                                                              |
+| maxV            | Maximum voltage                         | Object  |                                                              |
+| maxC            | Maximum current                         | Object  |                                                              |
+| val             | Corresponding value                     | Number  | Actual value × 100.                                          |
+| en              | Enables or disables overload protection | Number  | `1`: enabled; `0`: disabled. **Maximum-current and power protection cannot be disabled.** |
+| voltageRecovery | Automatic voltage recovery              | Boolean | Optional; defaults to `false`.                               |
+
+##### 19.5 Energy Usage Duration Statistics (Energy Records)
+
+**Scenario:** App changes state or device state changes.
+
+```json
+// App sends start measurement
+{
+  "oneKwh": "start",
+  "endTime": "",
+  "startTime": "1703576400000"
+}
+
+// App sends or device reports stop measurement
+{
+  "oneKwh": "stop",
+  "endTime": "1703576400000",
+  "startTime": "1703576400000"
+}
+
+// Set automatic stop time
+{
+  "autoStop": "24:00"
+}
+
+// Get energy consumed during the current measurement period
+{
+  "oneKwh": "get",
+  "NO_SAVE_DB": true
+}
+
+// Synchronous device response
+{
+  "error": 0,
+  "config": {
+    "kwhData": "384000",
+    "exportKwhData": "384000"
+  }
+}
+
+// Retrieve historical records; the response is paginated
+{
+  "oneKwh": "getHistory",
+  "page": 0,
+  "NO_SAVE_DB": true
+}
+
+// Synchronous device response with paginated data
+{
+  "error": 0,
+  "config": {
+    "end": "1703576400000", // Timestamp of the last data point, on the hour
+    "energyHistory": "5dc005dc00...",
+    "page": 1,
+    "total": 5
+  }
+}
+```
+
+| Parameter | Type   | Value Range                                                  | Notes                                                    |
+| --------- | ------ | ------------------------------------------------------------ | -------------------------------------------------------- |
+| oneKwh    | String | `start`: start measurement; `stop`: stop measurement; `get`: retrieve single-session energy; `getHistory`: retrieve historical records. |                                                          |
+| startTime | String |                                                              | Start time (Unix timestamp in seconds).                  |
+| endTime   | String |                                                              | End time (Unix timestamp in seconds).                    |
+| autoStop  | String | 00:00–24:00                                                  | Format: hour:minute.                                     |
+| page      | Number |                                                              | Used with `oneKwh = getHistory`; page index starts at 0. |
+
+Synchronous response `config` structure when `oneKwh` is `get`:
+
+| Parameter     | Type   | Notes               |
+| ------------- | ------ | ------------------- |
+| kwhData       | String | Actual value × 100. |
+| exportKwhData | String | Actual value × 100. |
+
+Synchronous response `config` structure when `oneKwh` is `getHistory`:
+
+| Parameter     | Type   | Notes                                                        |
+| ------------- | ------ | ------------------------------------------------------------ |
+| energyHistory | String | Each data point uses 5 hexadecimal characters (2.5 bytes) and represents the actual value × 100, in units of 0.01 kWh.<br>The highest bit indicates the sign: `0b0` means positive and `0b1` means negative.<br>Example (maximum device load: 3840 W): decimal `384000`; hexadecimal `0x5DC00`; binary `0b0101 1101 1100 0000 0000`; transmitted value: `5DC00`.<br>Example (device load: -1000 W): decimal `624288`; hexadecimal `0x986A0`; binary `0b1001 1000 0110 1010 0000`; transmitted value: `986A0`. |
+| end           | String | Timestamp of the last data point on each page.               |
+| page          | Number | Page index.                                                  |
+| total         | Number | Total number of pages.                                       |
+
+#### 20. Set Thresholds Related to the Current Day/Month
+
+**Scenario:** App changes state.
+
+```json
+{
+  "threshold": {
+    "dayKwh": 100,
+    "monthKwh": 3011,
+    "reverseDayKwh": 2000,
+    "reverseMonthKwh": 1000000,
+    "costDay": 4012,
+    "costMonth": 30040
+  }
+}
+```
+
+**`threshold` structure**
+
+| Parameter       | Type   | Notes                                                    |
+| --------------- | ------ | -------------------------------------------------------- |
+| dayKwh          | Number | Today's energy-consumption threshold × 100, in kWh.      |
+| monthKwh        | Number | This month's energy-consumption threshold × 100, in kWh. |
+| reverseDayKwh   | Number | Today's reverse-energy threshold × 100, in kWh.          |
+| reverseMonthKwh | Number | This month's reverse-energy threshold × 100, in kWh.     |
+| costDay         | Number | Today's cost threshold.                                  |
+| costMonth       | Number | This month's cost threshold.                             |
+
+#### 21. Report When a Threshold Is Reached to Trigger a Push Notification
+
+**Scenario:** Device state changes.
+
+```json
+{
+  "devPushType": 0,
+  "current": 200
+}
+
+{
+  "devPushType": 1,
+  "voltageMax": 2200
+}
+
+{
+  "devPushType": 2,
+  "voltageMin": 2400
+}
+
+{
+  "devPushType": 3,
+  "power": 20000
+}
+```
+
+| Parameter        | Type   | Notes                                                        |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| devPushType      | Number | `0`: current; `1`: upper voltage limit; `2`: lower voltage limit; `3`: power; `4`: today's energy consumption; `5`: this month's energy consumption; `6`: today's cost; `7`: this month's cost; `8`: today's reverse energy; `9`: this month's reverse energy; `10`: running completion reminder; `11`: maintenance reminder. |
+| current          | Number | Unit: 0.01 A; actual value × 100.                            |
+| voltageMax       | Number | Unit: 0.01 V; actual value × 100.                            |
+| voltageMin       | Number | Unit: 0.01 V; actual value × 100.                            |
+| power            | Number | Unit: 0.01 W; actual value × 100.                            |
+| electricityDay   | Number | Unit: 0.01 kWh; actual value × 100.                          |
+| electricityMonth | Number |                                                              |
+| costDay          | Number | Actual value × 100.                                          |
+| costMonth        | Number |                                                              |
+| exportDay        | Number | Unit: 0.01 kWh; actual value × 100.                          |
+| exportMonth      | Number |                                                              |
+
+**Note:** If two or more push notifications are triggered at the same time, report them separately, with an interval of 0.5 seconds between each report.
+
+#### 22. Automatic Update
+
+```json
+// Start automatic updates and specify the time window as 02:00–04:00.
+{
+  "autoUpgrade": {
+    "enable": true,
+    "range": ["02:00", "04:00"] // App local time, 24-hour format
+  }
+}
+
+// Disable automatic updates
+{
+  "autoUpgrade": {
+    "enable": false,
+    "range": ["02:00", "04:00"] // App local time, 24-hour format
+  }
+}
+```
+
+**Field descriptions**
+
+Parameter descriptions for `params`:
+
+| Field       | Meaning          | Type          | Required | Value Range | Default | Notes                           |
+| ----------- | ---------------- | ------------- | -------- | ----------- | ------- | ------------------------------- |
+| autoUpgrade | Automatic update | Object        | Required |             |         |                                 |
+| enable      | Whether enabled  | Boolean       | Required | true, false | false   |                                 |
+| range       | Time window      | Array<String> | Required |             |         | App local time, 24-hour format. |
+
+#### 23. Restore Factory Settings
+
+**Scenario:** App changes state.
+
+```json
+{
+  "resetSetting": true,
+  "NO_SAVE_DB": true
+}
+```
+
+| Parameter    | Type    | Notes |
+| ------------ | ------- | ----- |
+| resetSetting | Boolean |       |
+
+### UIID 286 Wi-Fi Three-Phase Energy Meter
+
+#### 1. Activate Reporting
+
+Set the `uiActive` duration.
+
+- This helps prevent the device from reporting data too frequently. When the client opens certain pages, it sends this field to indicate that the device can start reporting real-time data, including values that exceed its own thresholds.
+- After the configured countdown expires, the client continues sending this field according to the configured duration.
+
+**Scenario:** App changes state over the persistent connection.
+
+```json
+{
+  "uiActive": 60
+}
+```
+
+| Field    | Meaning                       | Data Type | Required | Value Range | Default               | Notes       |
+| -------- | ----------------------------- | --------- | -------- | ----------- | --------------------- | ----------- |
+| uiActive | Reporting activation duration | Number    | Required | [1, 3600]   | As needed, usually 60 | In seconds. |
+
+#### 2. Energy Data Reporting
+
+**Scenario:** Device state changes.
+
+```json
+{
+  "phase_00": {
+    "current": 100,
+    "voltage": 22000,
+    "power": 2200000,
+    "powerFactor": 92,
+    "frequency": 5011,
+    "dayKwh": 1035000,
+    "monthKwh": 10035000,
+    "reverseDayKwh": 1035000,
+    "reverseMonthKwh": 10035000
+  },
+  "phase_01": {
+    "current": 100,
+    "voltage": 22000,
+    "power": 2200000,
+    "powerFactor": 92,
+    "frequency": 5011,
+    "dayKwh": 1035000,
+    "monthKwh": 10035000,
+    "reverseDayKwh": 1035000,
+    "reverseMonthKwh": 10035000
+  },
+  "phase_02": {
+    "current": 100,
+    "voltage": 22000,
+    "power": 2200000,
+    "powerFactor": 92,
+    "frequency": 5011,
+    "dayKwh": 1035000,
+    "monthKwh": 10035000,
+    "reverseDayKwh": 1035000,
+    "reverseMonthKwh": 10035000
+  }
+}
+
+{
+  "power": 2200000,
+  "dayKwh": 1035000, // 10.35 kW (actual value)
+  "monthKwh": 10035000, // 100.35 kW (actual value)
+  "totalKwh": 100000000, // 1000 kW (actual value)
+  "reverseDayKwh": 1035000,
+  "reverseMonthKwh": 10035000,
+  "totalReverseKwh": 100000000
+}
+```
+
+| Parameter       | Type   | Notes                                 |
+| --------------- | ------ | ------------------------------------- |
+| phase_00        | Object | Data for phase 1.                     |
+| phase_01        | Object | Data for phase 2.                     |
+| phase_02        | Object | Data for phase 3.                     |
+| current         | Number | Actual current × 1000; unit: A.       |
+| voltage         | Number | Actual voltage × 1000; unit: V.       |
+| power           | Number | Active power × 1000; unit: W.         |
+| powerFactor     | Number | Actual power factor × 1000.           |
+| frequency       | Number | Actual frequency × 1000; unit: Hz.    |
+| dayKwh          | Number | Today's energy consumption × 1000.    |
+| monthKwh        | Number | Energy consumption this month × 1000. |
+| reverseDayKwh   | Number | Today's reverse energy × 1000.        |
+| reverseMonthKwh | Number | Reverse energy this month × 1000.     |
+| power           | Number | Total power × 1000.                   |
+| dayKwh          | Number | Today's energy consumption × 1000.    |
+| monthKwh        | Number | Energy consumption this month × 1000. |
+| totalKwh        | Number | Total energy consumption × 1000.      |
+| reverseDayKwh   | Number | Today's reverse energy × 1000.        |
+| reverseMonthKwh | Number | Reverse energy this month × 1000.     |
+| totalReverseKwh | Number | Total reverse energy × 1000.          |
+
+#### 3. Clear Energy Data
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "totalKwh": "reset"
+}
+```
+
+| Parameter | Type   | Notes                       |
+| --------- | ------ | --------------------------- |
+| totalKwh  | String | `reset`: clear energy data. |
+
+**Note:** After the app sends this field, the device must report all related energy data once, with all values set to 0.
+
+#### 4. Display Settings
+
+**Scenario:** App changes state or device state changes.
+
+```json
+{
+  "screenSetting": {
+    "br": 25,
+    "standbyTime": 15
+  }
+}
+```
+
+**`screenSetting` structure**
+
+| Parameter   | Type   | Value Range      | Default | Notes       |
+| ----------- | ------ | ---------------- | ------- | ----------- |
+| br          | Number | 0–100            | 0       | Percentage. |
+| standbyTime | Number | 30, 60, 180, 300 | 60      | In seconds. |
+
+#### 5. Metering Settings
+
+**Scenario:** App changes state or device state changes.
+
+Each of the following commands can be sent separately.
+
+```json
+// Reverse-direction detection for metering
+{
+  "reverseDirection": {
+    "A": true, // Enable reverse direction for channel A
+    "B": false, // Disable reverse direction for channel B
+    "C": false // Disable reverse direction for channel C
+  }
+}
+
+// Phase-loss detection
+{
+  "lossDetection": true
+}
+
+// Phase-sequence error detection
+{
+  "seqErrorDetection": true
+}
+```
+
+| Parameter         | Type    | Default | Notes                                     |
+| ----------------- | ------- | ------- | ----------------------------------------- |
+| reverseDirection  | Object  |         | Reverse-direction detection for metering. |
+| lossDetection     | Boolean | true    | Phase-loss detection.                     |
+| seqErrorDetection | Boolean | true    | Phase-sequence error detection.           |
+
+#### 6. Automatic Update
+
+```json
+// Enable automatic updates and set the time window to 02:00–04:00.
+{
+  "autoUpgrade": {
+    "enable": true,
+    "range": ["02:00", "04:00"] // App local time, 24-hour format
+  }
+}
+
+// Disable automatic updates
+{
+  "autoUpgrade": {
+    "enable": false,
+    "range": ["02:00", "04:00"] // App local time, 24-hour format
+  }
+}
+```
+
+**Field descriptions**
+
+| Field       | Meaning          | Type          | Required | Value Range | Default | Notes                           |
+| ----------- | ---------------- | ------------- | -------- | ----------- | ------- | ------------------------------- |
+| autoUpgrade | Automatic update | Object        | Required |             |         |                                 |
+| enable      | Whether enabled  | Boolean       | Required | true, false | false   |                                 |
+| range       | Time window      | Array<String> | Required |             |         | App local time, 24-hour format. |
+
+#### 7. Factory-Reset Lock
+
+**Scenario:** App changes state or device state changes.
+
+```json
+{
+  "resetLock": true
+}
+```
+
+| Parameter | Type    | Default | Notes                                                        |
+| --------- | ------- | ------- | ------------------------------------------------------------ |
+| resetLock | Boolean | false   | `true`: enable the lock; the user cannot enter pairing mode or restore factory settings by long-pressing the button. `false`: disable the lock. |
+
+#### 8. Restore Factory Settings
+
+**Scenario:** App changes state.
+
+```json
+{
+  "resetSetting": true,
+  "NO_SAVE_DB": true
+}
+```
+
+| Parameter    | Type    | Notes |
+| ------------ | ------- | ----- |
+| resetSetting | Boolean |       |
+
+#### 9. Retrieve Historical Energy Records
+
+**Scenario:** App changes state.
+
+```json
+// Retrieve hourly data for the current day (24 hours)
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "day",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-01"}
+  }
+}
+
+// Retrieve daily data for one week
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "week",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-07"}
+  }
+}
+
+// Retrieve daily data for one month
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "month",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-31"}
+  }
+}
+
+// Retrieve monthly data for one year
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "year",
+    "page": 0
+  }
+}
+
+// Retrieve daily data for a custom time range
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "custom",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-20"}
+  }
+}
+```
+
+**`history` field descriptions**
+
+| Parameter | Type   | Value Range                                                  | Required | Notes                                                        |
+| --------- | ------ | ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
+| type      | String | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the selected chart mode. | Yes      |                                                              |
+| page      | Number |                                                              | Yes      | Page index starts at 0 and increments by 1 until it reaches `total`. |
+| range     | Object |                                                              | No       | Required when `type` is `custom`.                            |
+| start     | String |                                                              |          | **Format:** `2024-11-01`; add a leading zero for months and days below 10. |
+| end       | String |                                                              |          | Same as above.                                               |
+
+Synchronous device response:
+
+```json
+// Hourly response
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "day",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "pointSize": 4,
+      "unit": "w",
+      "page": 0,
+      "total": 10,
+      "A": {"kwhs": "138817701B58138817701B58...", "exportKwhs": "138817701B58138817701B58..."},
+      "B": {"kwhs": "138817701B58138817701B58...", "exportKwhs": "138817701B58138817701B58..."},
+      "C": {"kwhs": "138817701B58138817701B58...", "exportKwhs": "138817701B58138817701B58..."}
+    }
+  }
+}
+```
+
+| Parameter  | Type   | Notes                                                        |
+| ---------- | ------ | ------------------------------------------------------------ |
+| history    | Object |                                                              |
+| type       | String | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the selected chart mode. |
+| end        | String | 13-digit timestamp, accurate to the hour; pad minutes and seconds with zeros. |
+| page       | Number | Current page index.                                          |
+| total      | Number | Total number of pages.                                       |
+| pointSize  | Number | Number of **characters** representing one data point.        |
+| unit       | String | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| A          |        | Data for phase A.                                            |
+| B          |        | Data for phase B.                                            |
+| C          |        | Data for phase C.                                            |
+| kwhs       | String | Data points are appended in chronological order, oldest first and newest last.<br>Each data point uses `pointSize` characters.<br>When `unit` is `w`, the converted value is already the actual value and the client does not need to divide by 1000. When `unit` is `kw`, the client needs to divide the converted value by 1000; the transmitted value is the actual value × 1000.<br>Example, `pointSize = 4`, `unit = w`: values 5000, 6000, 7000, 5000, 6000, 7000 W → decimal `5000,6000,7000,5000,6000,7000` → hexadecimal `0x1388,0x1770,0x1B58,0x1388,0x1770,0x1B58` → `138817701B58138817701B58...`.<br>Example, `pointSize = 4`, `unit = kw`: values 1.2, 1.3, 1.4, 3, 5, 5 kW → decimal `1200,1300,1400,3000,5000,5000` → hexadecimal `0x04B0,0x0514,0x0578,0x0BB8,0x1388,0x1388` → `04B0051405780BB813881388...`. |
+| exportKwhs | String | **Reverse energy.** Uses the same encoding as above.         |
+
+**Daylight saving time:** Hourly data always contains 24 data points. When daylight saving time starts, the missing hour is reported as 0; when daylight saving time ends, the repeated hour's data is accumulated.
+
+#### 10. Download Historical Energy Records
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "totalHour",
+    "page": 0
+  }
+}
+```
+
+| Parameter | Type   | Notes                                                        |
+| --------- | ------ | ------------------------------------------------------------ |
+| history   | Object |                                                              |
+| type      | String | `totalHour`: all hourly data (186 days); `totalDay`: all daily data (366 days); `totalMonth`: all monthly data (60 months). |
+| page      | Number | Page index starts at 0 and increments by 1 until it reaches `total`. |
+
+Device response:
+
+```json
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "totalHour",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "kwhs": "0001f40001f4...",
+      "exportKwhs": "0001f40001f4...",
+      "page": 0,
+      "total": 10
+    }
+  }
+}
+```
+
+| Parameter  | Type   | Required | Notes                                                        |
+| ---------- | ------ | -------- | ------------------------------------------------------------ |
+| history    | Object | Yes      | Data is transferred in pages of up to approximately 1 KB, or about 6 days per page. |
+| type       | String | Yes      | `totalHour`: all hourly data (186 days); `totalDay`: all daily data (366 days). |
+| end        | String | Yes      | Timestamp of the last data point on this page, on the hour; 13 digits, accurate to the hour, with minutes and seconds padded with zeros. |
+| page       | Number | Yes      | Current page index.                                          |
+| total      | Number | Yes      | Total number of pages.                                       |
+| pointSize  | Number | Yes      | Number of **characters** representing one data point.        |
+| unit       | Number | Yes      | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| A          |        | Yes      | Data for phase A.                                            |
+| B          |        | Yes      | Data for phase B.                                            |
+| C          |        | Yes      | Data for phase C.                                            |
+| kwhs       | String | Yes      | Data points are appended in chronological order, oldest first and newest last. Each point uses `pointSize` characters. When `unit` is `w`, the converted value is already the actual value; when `unit` is `kw`, divide the converted value by 1000. The transmitted value is the actual value × 1000. Examples: `pointSize = 4`, `unit = w`, values 5000, 6000, 7000 W → `138817701B58...`; `unit = kw`, values 1.2, 1.3, 1.4, 3, 5, 5 kW → `04B0051405780BB813881388...`. |
+| exportKwhs | String | Yes      | **Reverse energy.** Uses the same encoding as above.         |
+
+#### 11. Retrieve Historical Power Records
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "powerHistory": {
+    "type": "day",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-01"}
+  }
+}
+```
+
+**`powerHistory` field descriptions**
+
+| Parameter | Type   | Value Range              | Required | Notes                                                        |
+| --------- | ------ | ------------------------ | -------- | ------------------------------------------------------------ |
+| type      | String | `day`: minute-level data | Yes      |                                                              |
+| page      | Number |                          | Yes      | Page index starts at 0 and increments by 1 until it reaches `total`. |
+| range     | Object |                          | Yes      | **`start` and `end` must be the same. The client retrieves one day's power-chart data at a time.** |
+| start     | String |                          |          | Format: `2024-11-01`; add a leading zero for months and days below 10. |
+| end       | String |                          |          | Same as above.                                               |
+
+Synchronous device response:
+
+```json
+// Hourly response
+{
+  "error": 0,
+  "config": {
+    "powerHistory": {
+      "type": "day",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "pointSize": 4,
+      "unit": "w",
+      "page": 0,
+      "total": 10,
+      "A": {"min": "138817701B58138817701B58...", "max": "138817701B58138817701B58...", "avg": "138817701B58138817701B58..."},
+      "B": {"min": "138817701B58138817701B58...", "max": "138817701B58138817701B58...", "avg": "138817701B58138817701B58..."},
+      "C": {"min": "138817701B58138817701B58...", "max": "138817701B58138817701B58...", "avg": "138817701B58138817701B58..."}
+    }
+  }
+}
+```
+
+| Parameter    | Type   | Notes                                                        |
+| ------------ | ------ | ------------------------------------------------------------ |
+| powerHistory | Object |                                                              |
+| type         | String | `day`: hourly data.                                          |
+| end          | String | 13-digit timestamp, accurate to the hour; pad minutes and seconds with zeros. |
+| page         | Number | Current page index.                                          |
+| total        | Number | Total number of pages.                                       |
+| pointSize    | Number | Number of **characters** representing one data point.        |
+| unit         | String | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| A            |        | Data for phase A.                                            |
+| B            |        | Data for phase B.                                            |
+| C            |        | Data for phase C.                                            |
+| min          | String | Data points are appended in chronological order, oldest first and newest last. Each point uses `pointSize` characters and represents minimum power. When `unit` is `w`, the converted value is the actual value; when `unit` is `kw`, divide the converted value by 1000. Negative power values are encoded using an N × 8-bit signed two's-complement representation, with the highest bit indicating the sign.<br>Example, `pointSize = 4`, `unit = w`: 5000, 6000, 7000 W → `138817701B58...`. For 1.2, 1.3, 1.4, 3, 5, 5 kW → `04B0051405780BB813881388...`.<br>Negative example: -5000 W: `5000` in binary is `0001 0011 1000 1000`; invert and add 1 → `1110 1100 0111 1000`; hexadecimal `0xEC78` = -5000. -6000 W: `6000` in binary is `0001 0111 0111 0000`; invert and add 1 → `1110 1000 1001 0000`; hexadecimal `0xE890` = -6000. |
+| max          | String | Maximum power. Uses the same encoding as above.              |
+| avg          | String | Average power. Uses the same encoding as above.              |
+
+**Daylight saving time:** Hourly data always contains 24 data points. When daylight saving time starts, the missing hour is reported as 0; when daylight saving time ends, the repeated hour's data is accumulated.
+
+#### 12. Download Historical Power Records
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "powerHistory": {
+    "type": "totalMin",
+    "page": 0
+  }
+}
+```
+
+**`powerHistory` field descriptions**
+
+| Parameter | Type   | Value Range                   | Required | Notes                                                        |
+| --------- | ------ | ----------------------------- | -------- | ------------------------------------------------------------ |
+| type      | String | `totalMin`: minute-level data | Yes      | Data for the past 60 days.                                   |
+| page      | Number |                               | Yes      | Page index starts at 0 and increments by 1 until it reaches `total`. |
+
+Synchronous device response:
+
+```json
+// Minute-level response
+{
+  "error": 0,
+  "config": {
+    "powerHistory": {
+      "type": "totalMin",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "pointSize": 4,
+      "unit": "w",
+      "page": 0,
+      "total": 10,
+      "A": {"min": "138817701B58138817701B58...", "max": "138817701B58138817701B58...", "avg": "138817701B58138817701B58..."},
+      "B": {"min": "138817701B58138817701B58...", "max": "138817701B58138817701B58...", "avg": "138817701B58138817701B58..."},
+      "C": {"min": "138817701B58138817701B58...", "max": "138817701B58138817701B58...", "avg": "138817701B58138817701B58..."}
+    }
+  }
+}
+```
+
+| Parameter    | Type   | Notes                                                        |
+| ------------ | ------ | ------------------------------------------------------------ |
+| powerHistory | Object |                                                              |
+| type         | String | `totalMin`.                                                  |
+| end          | String | 13-digit timestamp, accurate to the hour; pad minutes and seconds with zeros. |
+| page         | Number | Current page index.                                          |
+| total        | Number | Total number of pages.                                       |
+| pointSize    | Number | Number of **characters** representing one data point.        |
+| unit         | String | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| A            |        | Data for phase A.                                            |
+| B            |        | Data for phase B.                                            |
+| C            |        | Data for phase C.                                            |
+| min          | String | Data points are appended in chronological order, oldest first and newest last. Each point uses `pointSize` characters and represents minimum power. When `unit` is `w`, the converted value is the actual value; when `unit` is `kw`, divide the converted value by 1000. Negative values use an N × 8-bit signed two's-complement representation, with the highest bit indicating the sign. Positive and negative examples use the same encoding as described in section 11. |
+| max          | String | Maximum power. Uses the same encoding as above.              |
+| avg          | String | Average power. Uses the same encoding as above.              |
+
+**Daylight saving time:** Hourly data always contains 24 data points. When daylight saving time starts, the missing hour is reported as 0; when daylight saving time ends, the repeated hour's data is accumulated.
+
+#### 13. Set Thresholds Related to the Current Day/Month
+
+**Scenario:** App changes state.
+
+```json
+{
+  "threshold": {
+    "dayKwh": 100,
+    "monthKwh": 3011,
+    "reverseDayKwh": 2000,
+    "reverseMonthKwh": 1000000
+  }
+}
+```
+
+**`threshold` structure**
+
+| Parameter       | Type   | Notes                                                     |
+| --------------- | ------ | --------------------------------------------------------- |
+| dayKwh          | Number | Today's energy-consumption threshold × 1000, in kWh.      |
+| monthKwh        | Number | This month's energy-consumption threshold × 1000, in kWh. |
+| reverseDayKwh   | Number | Today's reverse-energy threshold × 1000, in kWh.          |
+| reverseMonthKwh | Number | This month's reverse-energy threshold × 1000, in kWh.     |
+
+#### 14. Dry Contact Status Reporting
+
+**Scenario:** Device state changes or server sends a command to the device.
+
+```json
+{
+  "dryContact": "on"
+}
+```
+
+| Parameter  | Type   | Notes                      |
+| ---------- | ------ | -------------------------- |
+| dryContact | String | `on`: open; `off`: closed. |
+
+#### 15. Report When a Threshold Is Reached to Trigger a Push Notification
+
+**Scenario:** Device state changes.
+
+```json
+// Today's energy consumption has reached its limit
+{
+  "devPushType": 1,
+  "electricityDay": 100000
+}
+
+// This month's energy consumption has reached its limit
+{
+  "devPushType": 2,
+  "electricityMonth": 10000000
+}
+
+// Dry contact opened
+{
+  "devPushType": 5,
+  "dryContact": "on"
+}
+
+// Dry contact closed
+{
+  "devPushType": 5,
+  "dryContact": "off"
+}
+```
+
+| Parameter        | Type   | Notes                                                        |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| devPushType      | Number | `1`: today's energy consumption; `2`: this month's energy consumption; `3`: today's reverse energy; `4`: this month's reverse energy; `5`: dry-contact state change. |
+| electricityDay   | Number | Unit: 0.01 kWh; actual value × 1000.                         |
+| electricityMonth | Number |                                                              |
+| exportDay        | Number | Unit: 0.01 kWh; actual value × 1000.                         |
+| exportMonth      | Number |                                                              |
+| dryContact       | String | `on`: open; `off`: closed.                                   |
+
+### UIID 289 Matter Dual-Channel Metering Switch
+
+**For the following protocol, current and voltage values are reported as actual values × 100, while power and energy-consumption values are reported as actual values × 1000.**
+
+#### 1. Switch Control
+
+```json
+// Example: Control multiple channels. Turn channel 1 on and turn channels 2, 3, and 4 off.
+{
+  "switches": [
+    {"switch": "on", "outlet": 0},
+    {"switch": "off", "outlet": 1},
+    {"switch": "off", "outlet": 2},
+    {"switch": "off", "outlet": 3}
+  ]
+}
+
+// Example: Control a single channel. Turn channel 2 off.
+{
+  "switches": [
+    {"switch": "off", "outlet": 1}
+  ]
+}
+```
+
+**Field descriptions**
+
+Parameter descriptions for `param`:
+
+| Parameter | Meaning                | Data Type | Value Range | Factory Default | Notes                           |
+| --------- | ---------------------- | --------- | ----------- | --------------- | ------------------------------- |
+| switches  | States of all channels | Array     |             |                 |                                 |
+| switch    | Switch state           | String    | on, off     | on              | `on` means on; `off` means off. |
+| outlet    | Channel number         | Number    | [0, 3]      |                 | Represents channels 1–4.        |
+
+#### 2. Inching
+
+```json
+// Example: Four-channel device. Enable inching for channel 1 and turn it off after 2 seconds; enable inching for channel 2 and turn it on 2 seconds after being turned off; disable inching for channels 3 and 4.
+{
+  "pulses": [
+    {"pulse": "on", "switch": "off", "width": 2000, "outlet": 0},
+    {"pulse": "on", "switch": "on", "width": 2000, "outlet": 1},
+    {"pulse": "off", "switch": "on", "width": 2000, "outlet": 2},
+    {"pulse": "off", "switch": "on", "width": 2000, "outlet": 3}
+  ]
+}
+```
+
+**Field descriptions**
+
+| Parameter | Meaning                         | Data Type | Value Range                                                  | Factory Default | Notes                                                        |
+| --------- | ------------------------------- | --------- | ------------------------------------------------------------ | --------------- | ------------------------------------------------------------ |
+| pulses    | Inching states for each channel | Array     |                                                              |                 |                                                              |
+| pulse     | Inching function switch         | String    | on, off                                                      | off             | `on` enables inching; `off` disables it.                     |
+| switch    | Switch state after inching ends | String    | on, off                                                      | off             | `on` means on; `off` means off. If set to `on`, the device turns on when the inching period ends, even if it was turned off during that period. |
+| width     | Inching duration                | Number    | Minimum 500; maximum depends on product PRD or actual requirements | 500             | In milliseconds. Values must be multiples of 500 ms (0.5 seconds). **When `pulse` is `off`, the app sets this value to 0. Firmware does not validate this value when `pulse` is `off`.** |
+| outlet    | Channel number                  | Number    | [0, 7]                                                       |                 | Represents channels 1–8.                                     |
+
+#### 3. Power-On Behavior
+
+```json
+{
+  "configure": [
+    {"outlet": 0, "startup": "on"},
+    {"startup": "stay", "outlet": 1},
+    {"outlet": 2, "startup": "invert"},
+    {"outlet": 3, "startup": "off", "enableDelay": 1, "width": 500}
+  ]
+}
+```
+
+**Field descriptions**
+
+| Parameter   | Meaning                                                      | Data Type | Value Range   | Required | Factory Default | Notes                                                        |
+| ----------- | ------------------------------------------------------------ | --------- | ------------- | -------- | --------------- | ------------------------------------------------------------ |
+| configure   | Power-on behavior for each channel                           | Array     |               | Yes      |                 |                                                              |
+| outlet      | Channel number                                               | Number    | [0, 7]        | Yes      |                 | Represents channels 1–8.                                     |
+| startup     | Behavior when power is restored                              | String    | on, off, stay | Yes      | off             | `on`: turn on at power-on; `off`: turn off at power-on; `stay`: restore the state before the power outage; `invert`: invert the state (optional implementation; **new devices should use this value**); `toggle`: toggle the state (optional implementation for compatibility with older protocol implementations). |
+| enableDelay | Enable delay (optional implementation)                       | Number    | [0, 1]        | No       | 0               |                                                              |
+| width       | Delay before applying the power-on behavior (optional implementation) | Number    | [0, 3599500]  | No       | 500             | In milliseconds, from 0 to 3599.5 seconds. Values must be multiples of 500 ms. `0` means apply the behavior immediately after power is restored. |
+
+#### 4. Network Indicator LED
+
+```json
+// Turn on the network indicator LED
+{
+  "sledOnline": "on"
+}
+// Turn off the network indicator LED
+{
+  "sledOnline": "off"
+}
+```
+
+| Field      | Meaning               | Type   | Required | Value Range | Default | Notes                                                        |
+| ---------- | --------------------- | ------ | -------- | ----------- | ------- | ------------------------------------------------------------ |
+| sledOnline | Network indicator LED | String |          | on, off     | on      | The setting takes effect only after the device connects to the server. |
+
+#### 5. Activate Reporting
+
+Set the `uiActive` duration.
+
+- This helps prevent the device from reporting data too frequently. When the client opens certain pages, it sends this field to indicate that the device can start reporting real-time data, including values that exceed its own thresholds.
+- After the configured countdown expires, the client continues sending this field according to the configured duration.
+
+**Scenario:** App changes state over the persistent connection.
+
+```json
+{
+  "uiActive": 60
+}
+```
+
+| Field    | Meaning                       | Data Type | Required | Value Range | Default               | Notes       |
+| -------- | ----------------------------- | --------- | -------- | ----------- | --------------------- | ----------- |
+| uiActive | Reporting activation duration | Number    | Required | [1, 3600]   | As needed, usually 60 | In seconds. |
+
+#### 6. External Switch Mode and Relay Separation Settings
+
+**Scenario:** App changes state, device state changes, or device comes online and reports its state.
+
+```json
+// Set channel 1 to follow mode with reverse control enabled and relay separation disabled.
+// Set channel 2 to edge-triggered mode with relay separation enabled.
+{
+  "switchModes": [
+    {"swMode": 1, "swCtrlReverse": "on", "outlet": 0, "enable": 0},
+    {"swMode": 2, "outlet": 1, "enable": 1}
+  ]
+}
+```
+
+| Field         | Meaning                                                      | Type   | Required | Value Range                                                  | Default |
+| ------------- | ------------------------------------------------------------ | ------ | -------- | ------------------------------------------------------------ | ------- |
+| switchModes   | List of external switch mode and relay separation settings   | Array  | Required |                                                              |         |
+| swMode        | **External switch mode**                                     | Number | Required | `0`: reserved/ignored by this protocol; `1`: follow mode; `2`: edge-triggered mode; `3`: pulse-triggered mode | 2       |
+| swCtrlReverse | **Reverse control for the external switch in follow mode; only applies to follow mode** | String | Optional | `on`: enable reverse control; `off`: disable reverse control |         |
+| enable        | Enable relay separation                                      | Number | Required | `0`: disable relay separation; `1`: enable relay separation  |         |
+| outlet        | Channel index                                                | Number | Required | 0, 1                                                         |         |
+
+#### 7. Clear Energy Data
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "totalKwh": "reset"
+}
+```
+
+| Parameter | Type   | Notes                       |
+| --------- | ------ | --------------------------- |
+| totalKwh  | String | `reset`: clear energy data. |
+
+**Note:** After the app sends this field, the device must report all related energy data once, with all values set to 0.
+
+#### 8. External Switch Key Trigger
+
+**When relay separation is enabled and an external switch is pressed, the device reports the type of key action.**
+
+```json
+{
+  "localKeyPass": {
+    "outlet": 0,
+    "key": 0
+  }
+}
+```
+
+| **Field**    | **Meaning**                 | **Type** | **Required** | **Value Range** | **Notes**                                                    |
+| ------------ | --------------------------- | -------- | ------------ | --------------- | ------------------------------------------------------------ |
+| localKeyPass | External switch key trigger | Object   | Required     |                 |                                                              |
+| outlet       | Channel index               | Number   | Required     | [0, 3]          |                                                              |
+| key          | Key action type             | Number   | Required     | [0, 4]          | `0`: single press; `1`: double press; `2`: long press; `3`: turn on; `4`: turn off. Report supported actions according to product requirements; some devices do not support all actions. |
+
+**Note:** Only the UIID 283 and UIID 7054 1GSP models currently support key values `2`, `3`, and `4`.
+
+#### 9. Report Current, Voltage, Power, and Runtime
+
+**Scenario:** Device state changes.
+
+```json
+{
+  "phase_00": {
+    "current": 100,
+    "voltage": 22000,
+    "power": 2200000,
+    "dayKwh": 1035000, // 10.35 kW (actual value)
+    "monthKwh": 10035000, // 100.35 kW (actual value)
+    "totalKwh": 100000000 // 1000 kW (actual value)
+  },
+  "phase_01": {
+    "current": 100,
+    "voltage": 22000,
+    "power": 2200000,
+    "dayKwh": 1035000, // 10.35 kW (actual value)
+    "monthKwh": 10035000, // 100.35 kW (actual value)
+    "totalKwh": 100000000 // 1000 kW (actual value)
+  },
+  "power": 4400000,
+  "dayKwh": 1035000,
+  "monthKwh": 10035000,
+  "reverseDayKwh": 1035000,
+  "reverseMonthKwh": 10035000
+}
+```
+
+| Parameter       | Type   | Notes                                           |
+| --------------- | ------ | ----------------------------------------------- |
+| power           | Number | Total power × 1000, in W.                       |
+| dayKwh          | Number | Today's energy consumption × 1000, in kWh.      |
+| monthKwh        | Number | This month's energy consumption × 1000, in kWh. |
+| reverseDayKwh   | Number | Today's reverse energy × 1000, in kWh.          |
+| reverseMonthKwh | Number | This month's reverse energy × 1000, in kWh.     |
+| phase_00        | Object | Data for channel 1.                             |
+| phase_01        | Object | Data for channel 2.                             |
+| current         | Number | Actual current × 100, in A.                     |
+| voltage         | Number | Actual voltage × 100, in V.                     |
+| power           | Number | Active power × 1000, in W.                      |
+| dayKwh          | Number | Today's energy consumption × 1000, in kWh.      |
+| monthKwh        | Number | This month's energy consumption × 1000, in kWh. |
+| totalKwh        | Number | Total energy consumption × 1000, in kWh.        |
+
+**Note:** Reporting is supported only while `uiActive` is active.
+
+#### 10. Quick Scenarios
+
+##### 10.1 Running Completion Alert and Automatic Power-Off
+
+**Scenario:** App changes state.
+
+```json
+// The following settings can be sent independently for each channel.
+{
+  "cycle_00": {
+    "cycleAlert": true,
+    "cycleEndOff": true,
+    "standByPower": 3,
+    "standByDuration": 40
+  },
+  "cycle_01": {
+    "cycleAlert": true,
+    "cycleEndOff": true,
+    "standByPower": 3,
+    "standByDuration": 40
+  }
+}
+```
+
+| Parameter       | Type    | Value Range | Default | Notes                                                        |
+| --------------- | ------- | ----------- | ------- | ------------------------------------------------------------ |
+| cycle_00        |         |             |         | Settings for channel 1.                                      |
+| cycle_01        |         |             |         | Settings for channel 2.                                      |
+| cycleAlert      | Boolean |             | false   | Whether to send a push notification: `false` means no notification; `true` means send one. |
+| cycleEndOff     | Boolean |             | false   | Whether to enable automatic power-off when operation completes: `true` enables it; `false` disables it. |
+| standByPower    | Boolean | [3, 60]     | 3       | Standby power, in W.                                         |
+| standByDuration | Boolean | [1, 60]     | 40      | Standby duration, in minutes.                                |
+
+##### 10.2 Maintenance Reminder
+
+**Scenario:** App changes state.
+
+```json
+// App sends settings
+{
+  "maintenance_00": {"alert": true, "time": 60, "power": 200}
+}
+// App retrieves time information
+{
+  "getMaintenceInfo": "get",
+  "outlet": 0,
+  "NO_SAVE_DB": true
+}
+// Synchronous device response
+{
+  "error": 0,
+  "config": {
+    "maintenanceTimeInfo": {"accumulateTime": 60, "remainTime": 360}
+  }
+}
+
+// App resets the information
+{
+  "getMaintenceInfo": "reset",
+  "outlet": 0,
+  "NO_SAVE_DB": true
+}
+// Synchronous device response
+{
+  "error": 0,
+  "config": {
+    "maintenanceTimeInfo": {"accumulateTime": 0, "remainTime": 0}
+  }
+}
+```
+
+| Parameter      | Type    | Value Range | Default | Notes                             |
+| -------------- | ------- | ----------- | ------- | --------------------------------- |
+| maintenance_00 | Object  |             |         | Settings for channel 1.           |
+| maintenance_01 | Object  |             |         | Settings for channel 2.           |
+| alert          | Boolean |             | false   | Maintenance reminder.             |
+| time           | Number  | [1, 600000] | 0       | Maintenance interval, in minutes. |
+| power          | Number  | [3, 2000]   | 0       | Sustained power, in W.            |
+
+| Parameter        | Type   | Notes                                                        |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| getMaintenceInfo | String | `get`: retrieve accumulated runtime and other information; `reset`: reset runtime and other information. |
+| outlet           | Number | Channel index.                                               |
+
+`maintenanceTimeInfo` structure:
+
+| Parameter      | Type   | Value Range | Default | Notes                            |
+| -------------- | ------ | ----------- | ------- | -------------------------------- |
+| accumulateTime | Number |             | 0       | Accumulated runtime, in minutes. |
+| remainTime     | Number | [1, 599940] | 0       | Remaining runtime, in minutes.   |
+
+##### 10.3 Threshold Range Reporting
+
+**Scenario:** Device comes online.
+
+```json
+{
+  "pUpRangeMin": 10000,
+  "pUpRangeMax": 10000,
+  "vUpRangeMin": 10000,
+  "vLowRangeMin": 10000,
+  "vUpRangeMax": 10000,
+  "vLowRangeMax": 10000,
+  "cUpRangeMin": 10000,
+  "cUpRangeMax": 10000,
+  "cTotalRangeMax": 10000,
+  "cTotalRangeMin": 10000,
+  "pTotalRangeMax": 10000,
+  "pTotalRangeMin": 10000
+}
+```
+
+| Field          | Meaning                                                   | Type   | Default                        |
+| -------------- | --------------------------------------------------------- | ------ | ------------------------------ |
+| pUpRangeMin    | Minimum value for the power upper-threshold range         | Number | **Actual value × 1000**, in W. |
+| pUpRangeMax    | Maximum value for the power upper-threshold range         | Number | **Actual value × 1000**, in W. |
+| vUpRangeMin    | Minimum value for the voltage upper-threshold range       | Number | **Actual value × 100**, in V.  |
+| vUpRangeMax    | Maximum value for the voltage upper-threshold range       | Number | **Actual value × 100**, in V.  |
+| vLowRangeMin   | Minimum value for the voltage lower-threshold range       | Number | **Actual value × 100**, in V.  |
+| vLowRangeMax   | Maximum value for the voltage lower-threshold range       | Number | **Actual value × 100**, in V.  |
+| cUpRangeMin    | Minimum value for the current upper-threshold range       | Number | **Actual value × 100**, in A.  |
+| cUpRangeMax    | Maximum value for the current upper-threshold range       | Number | **Actual value × 100**, in A.  |
+| cTotalRangeMax | Maximum value for the total-current upper-threshold range | Number | **Actual value × 100**, in A.  |
+| cTotalRangeMin | Minimum value for the total-current upper-threshold range | Number | **Actual value × 100**, in A.  |
+| pTotalRangeMax | Maximum value for the total-power upper-threshold range   | Number | **Actual value × 1000**, in W. |
+| pTotalRangeMin | Minimum value for the total-power upper-threshold range   | Number | **Actual value × 1000**, in W. |
+
+##### 10.4 Protection Thresholds (Overload Protection)
+
+**Scenario:** App changes state.
+
+```json
+// Each of the following features can be configured independently.
+{
+  "overloadCurrent": {
+    "totalVal": 2500,
+    "outlet_00": 1600,
+    "outlet_01": 1600,
+    "protectedSet": true
+  },
+  "overloadPower": {
+    "totalVal": 768000,
+    "outlet_00": 384000,
+    "outlet_01": 384000,
+    "protectedSet": true
+  },
+  "overloadVoltage": {
+    "maxEnable": true,
+    "max": 27700,
+    "minEnable": true,
+    "min": 16500,
+    "voltageRecovery": true
+  }
+}
+```
+
+| Parameter       | Type    | Notes                                                        |
+| --------------- | ------- | ------------------------------------------------------------ |
+| overloadCurrent | Object  | Current protection settings.                                 |
+| totalVal        | Number  | Maximum total current, **actual value × 100**.               |
+| outlet_00       | Number  | Maximum current for channel 1, **actual value × 100**.       |
+| outlet_01       | Number  | Maximum current for channel 2, **actual value × 100**.       |
+| protectedSet    | Boolean | **Default: false.** `true`: the protection state can only be cleared using the local button. `false`: after protection is triggered, it can be cleared through remote operations. |
+| overloadPower   | Object  | Power protection settings.                                   |
+| totalVal        | Number  | Maximum total power, **actual value × 1000**.                |
+| outlet_00       | Number  | Maximum power for channel 1, **actual value × 1000**.        |
+| outlet_01       | Number  | Maximum power for channel 2, **actual value × 1000**.        |
+| protectedSet    | Boolean | **Default: false.** `true`: the protection state can only be cleared using the local button. `false`: after protection is triggered, it can be cleared through remote operations. |
+| overloadVoltage | Object  | Voltage protection settings.                                 |
+| maxEnable       | Boolean | Whether maximum-voltage protection is enabled: `true` enables it; `false` disables it. |
+| max             | Number  | Maximum voltage, **actual value × 100**.                     |
+| minEnable       | Boolean | Whether minimum-voltage protection is enabled.               |
+| min             | Number  | Minimum voltage, **actual value × 100**.                     |
+| voltageRecovery | Boolean | Automatic voltage recovery. **Default: false.**              |
+
+##### 10.5 Energy Usage Duration Statistics (Energy Records)
+
+**Scenario:** App changes state or device state changes.
+
+```json
+// App sends start measurement
+{
+  "oneKwh_00": {"type": "start", "endTime": "", "startTime": "1703576400000"}
+}
+
+// App sends or device reports stop measurement
+{
+  "oneKwh_00": {"type": "stop", "endTime": "1703576400000", "startTime": "1703576400000"}
+}
+
+// Set automatic stop time
+{
+  "autoStop_00": "24:00"
+}
+
+// Get energy used during the current measurement period
+{
+  "oneKwh": "get",
+  "outlet": 0,
+  "NO_SAVE_DB": true
+}
+
+// Synchronous device response
+{
+  "error": 0,
+  "config": {"kwhData": "384000", "exportKwhData": "384000"}
+}
+
+// Retrieve historical records (paginated response required)
+{
+  "oneKwh": "getHistory",
+  "outlet": 0,
+  "page": 0,
+  "NO_SAVE_DB": true
+}
+
+// Synchronous device response with paginated data
+{
+  "error": 0,
+  "config": {
+    "end": "1703576400000", // Timestamp of the last data point, on the hour
+    "energyHistory": "5dc005dc00...",
+    "page": 1,
+    "total": 5
+  }
+}
+```
+
+| Parameter              | Type   | Value Range                                                  | Notes                                                    |
+| ---------------------- | ------ | ------------------------------------------------------------ | -------------------------------------------------------- |
+| oneKwh_00              | Object |                                                              | Data for channel 1.                                      |
+| oneKwh_01              | Object |                                                              | Data for channel 2.                                      |
+| type                   | String | `start`: start measurement; `stop`: stop measurement.        |                                                          |
+| startTime              | String |                                                              | Start time (Unix timestamp in seconds).                  |
+| endTime                | String |                                                              | End time (Unix timestamp in seconds).                    |
+| autoStop_00autoStop_01 | String | 00:00–24:00                                                  | Format: hour:minute.                                     |
+| oneKwh                 | String | `get`: retrieve single-session energy; `getHistory`: retrieve historical records. |                                                          |
+| outlet                 | Number | 0, 1                                                         | `0`: channel 1; `1`: channel 2.                          |
+| page                   | Number |                                                              | Used with `oneKwh = getHistory`; page index starts at 0. |
+
+Synchronous response `config` structure when `oneKwh` is `get`:
+
+| Parameter     | Type   | Notes               |
+| ------------- | ------ | ------------------- |
+| kwhData       | String | Actual value × 100. |
+| exportKwhData | String | Actual value × 100. |
+
+Synchronous response `config` structure when `oneKwh` is `getHistory`:
+
+| Parameter     | Type   | Notes                                                        |
+| ------------- | ------ | ------------------------------------------------------------ |
+| energyHistory | String | Each data point uses 6 hexadecimal characters (3 bytes) and represents the actual value × 1000, in units of 0.001 kWh. The highest bit indicates the sign: `0b0` means positive and `0b1` means negative.<br>Example (maximum load per channel: 3840 W): decimal `3840000`; hexadecimal `0x3A9800`; binary `0b0011 1010 1001 1000 0000 0000`; transmitted value: `3A9800`.<br>Example (device load: -100 W): decimal `-100000`; hexadecimal `0x8186A0`; binary `0b1000 0001 1000 0110 1010 0000`; transmitted value: `8186A0`. |
+| end           | String | Timestamp of the last data point on each page.               |
+| page          | Number | Page index.                                                  |
+| total         | Number | Total number of pages.                                       |
+
+#### 11. Historical Records
+
+**Scenario:** App changes state.
+
+```json
+// Retrieve hourly data for the current day (24 hours)
+{
+  "NO_SAVE_DB": true,
+  "history": {"type": "day", "page": 0, "range": {"start": "2024-11-01", "end": "2024-11-01"}}
+}
+
+// Retrieve daily data for one week
+{
+  "NO_SAVE_DB": true,
+  "history": {"type": "week", "page": 0, "range": {"start": "2024-11-01", "end": "2024-11-07"}}
+}
+
+// Retrieve daily data for one month
+{
+  "NO_SAVE_DB": true,
+  "history": {"type": "month", "page": 0, "range": {"start": "2024-11-01", "end": "2024-11-31"}}
+}
+
+// Retrieve monthly data for one year
+{
+  "NO_SAVE_DB": true,
+  "history": {"type": "year", "page": 0}
+}
+
+// Retrieve daily data for a custom time range
+{
+  "NO_SAVE_DB": true,
+  "history": {"type": "custom", "page": 0, "range": {"start": "2024-11-01", "end": "2024-11-20"}}
+}
+```
+
+**`history` field descriptions**
+
+| Parameter | Type   | Value Range                                                  | Required | Notes                                                        |
+| --------- | ------ | ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
+| type      | String | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the selected chart mode. | Yes      |                                                              |
+| page      | Number |                                                              | Yes      | Page index starts at 0 and increments by 1 until it reaches `total`. |
+| range     | Object |                                                              | No       | Required when `type` is `custom`.                            |
+| start     | String |                                                              |          | **Format:** `2024-11-01`; add a leading zero for months and days below 10. |
+| end       | String |                                                              |          | Same as above.                                               |
+
+Synchronous device response:
+
+```json
+// Hourly response
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "day",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "pointSize": 4,
+      "unit": "w",
+      "page": 0,
+      "total": 10,
+      "channel_00": {"kwhs": "138817701B58138817701B58...", "exportKwhs": "138817701B58138817701B58..."},
+      "channel_01": {"kwhs": "138817701B58138817701B58...", "exportKwhs": "138817701B58138817701B58..."}
+    }
+  }
+}
+```
+
+| Parameter  | Type   | Notes                                                        |
+| ---------- | ------ | ------------------------------------------------------------ |
+| history    | Object |                                                              |
+| type       | String | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the selected chart mode. |
+| end        | String | 13-digit timestamp, accurate to the hour; pad minutes and seconds with zeros. |
+| page       | Number | Current page index.                                          |
+| total      | Number | Total number of pages (the index of the last page).          |
+| pointSize  | Number | Number of bytes representing one data point (bytes occupied by each data point after Base64 decoding). |
+| unit       | String | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| channel_00 |        | Data for channel 1.                                          |
+| channel_01 |        | Data for channel 2.                                          |
+| kwhs       | String | Data points are appended in chronological order, oldest first and newest last. The field is Base64-encoded. The client must decode the entire field from Base64 first, then split it into data points using `pointSize` bytes; do not split based on the number of characters in the Base64 string. When `unit` is `w`, the decoded value is the actual value; when `unit` is `kw`, divide the decoded value by 1000. The transmitted value is the actual value × 1000.<br>Example: `pointSize = 2`, `unit = w`; energy values 5000, 6000, 7000, 5000, 6000, 7000 Wh → hexadecimal `0x1388, 0x1770, 0x1B58, 0x1388, 0x1770, 0x1B58`; raw bytes `13 88 17 70 1B 58 13 88 17 70 1B 58`; Base64 `E4gXcBtYE4gXcBtY`; after decoding and splitting: `13 88 | 17 70 | 1B 58 | 13 88 | 17 70 | 1B 58`; parsed values: `5000, 6000, 7000, 5000, 6000, 7000`.<br>Compatibility example: `pointSize = 3`, `unit = kw`; values 1.2, 1.3, 1.4, 3, 5, 5 kW are transmitted as `1200, 1300, 1400, 3000, 5000, 5000`; hexadecimal values `0x0004B0, 0x000514, 0x000578, 0x000BB8, 0x001388, 0x001388`; raw bytes `00 04 B0 00 05 14 00 05 78 00 0B B8 00 13 88 00 13 88`; Base64 `AASwAAUUAAV4AAu4ABOIABOI`. After decoding and splitting into 3-byte groups, parse each as an unsigned big-endian 24-bit integer, then divide by 1000 to obtain the kWh values. |
+| exportKwhs | String | Reverse energy. Uses the same encoding as above.             |
+
+**Daylight saving time:** Hourly data always contains 24 data points. When daylight saving time starts, the missing hour is reported as 0; when daylight saving time ends, the repeated hour's data is accumulated.
+
+#### 12. Download Historical Records
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "history": {"type": "totalHour", "page": 0}
+}
+```
+
+| Parameter | Type   | Notes                                                        |
+| --------- | ------ | ------------------------------------------------------------ |
+| history   | Object |                                                              |
+| type      | String | `totalHour`: all hourly data (186 days); `totalDay`: all daily data (366 days). |
+| page      | Number | Page index starts at 0 and increments by 1 until it reaches `total`. |
+
+Device response:
+
+```json
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "totalHour",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "kwhs": "0001f40001f4...",
+      "exportKwhs": "0001f40001f4...",
+      "page": 0,
+      "total": 10,
+      "channel_00": {"kwhs": "...", "exportKwhs": "...."},
+      "channel_01": {"kwhs": "...", "exportKwhs": "...."}
+    }
+  }
+}
+```
+
+| Parameter  | Type   | Required | Notes                                                        |
+| ---------- | ------ | -------- | ------------------------------------------------------------ |
+| history    | Object | Yes      | Data is transferred in pages of up to approximately 1 KB, or about 6 days per page. |
+| type       | String | Yes      | `totalHour`: all hourly data (186 days); `totalDay`: all daily data (366 days). |
+| end        | String | Yes      | Timestamp of the last data point on this page, on the hour; 13 digits, accurate to the hour, with minutes and seconds padded with zeros. |
+| page       | Number | Yes      | Current page index.                                          |
+| total      | Number | Yes      | Total number of pages (the index of the last page).          |
+| pointSize  | Number | Yes      | Number of **characters** representing one data point.        |
+| unit       | Number | Yes      | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| channel_00 |        | Yes      | Data for channel 1.                                          |
+| channel_01 |        | Yes      | Data for channel 2.                                          |
+| kwhs       | String | Yes      | Data points are appended in chronological order, oldest first and newest last. Each point uses `pointSize` characters. When `unit` is `w`, the converted value is the actual value; when `unit` is `kw`, divide the converted value by 1000. The transmitted value is the actual value × 1000. Examples: `pointSize = 4`, `unit = w`, values 5000, 6000, 7000 W → `138817701B58...`; `unit = kw`, values 1.2, 1.3, 1.4, 3, 5, 5 kW → `04B0051405780BB813881388...`. |
+| exportKwhs | String | Yes      | Reverse energy; uses the same encoding as above.             |
+
+#### 13. Set Thresholds Related to the Current Day/Month
+
+**Note:** The following protocol must be sent together. For three-channel devices, extend it with `threshold_02`.
+
+**Scenario:** App changes state.
+
+```json
+{
+  "threshold_00": {"dayKwh": 100, "monthKwh": 3011, "reverseDayKwh": 2000, "reverseMonthKwh": 1000000},
+  "threshold_01": {"dayKwh": 100, "monthKwh": 3011, "reverseDayKwh": 2000, "reverseMonthKwh": 1000000}
+}
+```
+
+**`threshold_0x` structure** (`x` can be `0` or `1`)
+
+| Parameter       | Type   | Notes                                                     |
+| --------------- | ------ | --------------------------------------------------------- |
+| dayKwh          | Number | Today's energy-consumption threshold × 1000, in kWh.      |
+| monthKwh        | Number | This month's energy-consumption threshold × 1000, in kWh. |
+| reverseDayKwh   | Number | Today's reverse-energy threshold × 1000, in kWh.          |
+| reverseMonthKwh | Number | This month's reverse-energy threshold × 1000, in kWh.     |
+
+#### 14. Dry Contact Status Reporting
+
+**Scenario:** Device state changes or the server sends a command to the device.
+
+```json
+{
+  "dryContact": "on"
+}
+```
+
+| Parameter  | Type   | Notes                      |
+| ---------- | ------ | -------------------------- |
+| dryContact | String | `on`: open; `off`: closed. |
+
+#### 15. Report When a Threshold Is Reached to Trigger a Push Notification
+
+**Scenario:** Device state changes.
+
+```json
+{
+  "devPushType": 0,
+  "current": 200
+}
+
+{
+  "devPushType": 1,
+  "voltageMax": 2200
+}
+
+{
+  "devPushType": 2,
+  "voltageMin": 2400
+}
+
+{
+  "devPushType": 3,
+  "power": 20000
+}
+```
+
+| Parameter        | Type   | Notes                                                        |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| devPushType      | Number | `0`: current; `1`: upper voltage limit; `2`: lower voltage limit; `3`: power; `4`: today's energy consumption; `5`: this month's energy consumption; `6`: today's reverse energy; `7`: this month's reverse energy; `8`: running completion reminder; `9`: maintenance reminder. |
+| outlet           | Number | `0`: channel 1; `1`: channel 2.                              |
+| current          | Number | Unit: 0.01 A; actual value × 100.                            |
+| voltageMax       | Number | Unit: 0.01 V; actual value × 100.                            |
+| voltageMin       | Number | Unit: 0.01 V; actual value × 100.                            |
+| power            | Number | Unit: 0.01 W; actual value × 1000.                           |
+| electricityDay   | Number | Unit: 0.001 kWh; actual value × 1000.                        |
+| electricityMonth | Number |                                                              |
+| exportDay        | Number | Unit: 0.001 kWh; actual value × 1000.                        |
+| exportMonth      | Number |                                                              |
+
+#### 16. Automatic Update
+
+```json
+// Enable automatic updates and set the time window to 02:00–04:00.
+{
+  "autoUpgrade": {
+    "enable": true,
+    "range": ["02:00", "04:00"] // App local time, 24-hour format
+  }
+}
+
+// Disable automatic updates
+{
+  "autoUpgrade": {
+    "enable": false,
+    "range": ["02:00", "04:00"] // App local time, 24-hour format
+  }
+}
+```
+
+| Field       | Meaning          | Type          | Required | Value Range | Default | Notes                           |
+| ----------- | ---------------- | ------------- | -------- | ----------- | ------- | ------------------------------- |
+| autoUpgrade | Automatic update | Object        | Required |             |         |                                 |
+| enable      | Whether enabled  | Boolean       | Required | true, false | false   |                                 |
+| range       | Time window      | Array<String> | Required |             |         | App local time, 24-hour format. |
+
+#### 17. Factory-Reset Lock
+
+**Scenario:** App changes state or device state changes.
+
+```json
+{
+  "resetLock": true
+}
+```
+
+| Parameter | Type    | Default | Notes                                                        |
+| --------- | ------- | ------- | ------------------------------------------------------------ |
+| resetLock | Boolean | false   | `true`: enable the lock; the user cannot enter pairing mode or restore factory settings by long-pressing the button. `false`: disable the lock. |
+
+#### 18. Restore Factory Settings
+
+**Scenario:** App changes state.
+
+```json
+{
+  "resetSetting": true,
+  "NO_SAVE_DB": true
+}
+```
+
+| Parameter    | Type    | Notes |
+| ------------ | ------- | ----- |
+| resetSetting | Boolean |       |
+
+### UIID 290 Matter Four-Channel Metering Switch
+
+The protocol is the same as UIID 289.
+
+### UIID 294 Single-Channel Bidirectional Metering Smart Socket
+
+The protocol is the same as UIID 283, except that the following three features from UIID 283 are not supported:
+
+- 8. External switch mode
+- 9. Relay separation
+- 10. External switch trigger
+
+### UIID 295 Wi-Fi Single-Phase Energy Meter
+
+#### 1. Activate Reporting
+
+Set the `uiActive` duration.
+
+- This helps prevent the device from reporting data too frequently. When the client opens certain pages, it sends this field to indicate that the device can start reporting real-time data, including values that exceed its own thresholds.
+- After the configured countdown expires, the client continues sending this field according to the configured duration.
+
+**Scenario:** App changes state over the persistent connection.
+
+```json
+{
+  "uiActive": 60
+}
+```
+
+| Field    | Meaning                       | Data Type | Required | Value Range | Default               | Notes       |
+| -------- | ----------------------------- | --------- | -------- | ----------- | --------------------- | ----------- |
+| uiActive | Reporting activation duration | Number    | Required | [1, 3600]   | As needed, usually 60 | In seconds. |
+
+#### 2. Energy Data Reporting
+
+**Scenario:** Device state changes.
+
+```json
+{
+  "phase_00": {
+    "current": 100,
+    "power": 2200000,
+    "powerFactor": 92,
+    "dayKwh": 1035000,
+    "monthKwh": 10035000,
+    "totalKwh": 1003500000,
+    "reverseDayKwh": 1035000,
+    "reverseMonthKwh": 10035000
+  },
+  "phase_01": {
+    "current": 100,
+    "power": 2200000,
+    "powerFactor": 92,
+    "dayKwh": 1035000,
+    "monthKwh": 10035000,
+    "totalKwh": 1003500000,
+    "reverseDayKwh": 1035000,
+    "reverseMonthKwh": 10035000
+  },
+  "phase_02": {
+    "current": 100,
+    "power": 2200000,
+    "powerFactor": 92,
+    "dayKwh": 1035000,
+    "monthKwh": 10035000,
+    "totalKwh": 1003500000,
+    "reverseDayKwh": 1035000,
+    "reverseMonthKwh": 10035000
+  }
+}
+
+{
+  "voltage": 22000,
+  "frequency": 5011,
+  "power": 2200000,
+  "dayKwh": 1035000, // 10.35 kW (actual value)
+  "monthKwh": 10035000, // 100.35 kW (actual value)
+  "totalKwh": 100000000, // 1000 kW (actual value)
+  "reverseDayKwh": 1035000,
+  "reverseMonthKwh": 10035000,
+  "totalReverseKwh": 100000000
+}
+```
+
+| Parameter       | Type   | Notes                                   |
+| --------------- | ------ | --------------------------------------- |
+| phase_00        | Object | Data for phase 1.                       |
+| phase_01        | Object | Data for phase 2.                       |
+| phase_02        | Object | Data for phase 3.                       |
+| current         | Number | Actual current × 1000, in A.            |
+| power           | Number | Active power × 1000, in W.              |
+| powerFactor     | Number | Actual power factor × 1000.             |
+| dayKwh          | Number | Today's energy consumption × 1000.      |
+| monthKwh        | Number | This month's energy consumption × 1000. |
+| reverseDayKwh   | Number | Today's reverse energy × 1000.          |
+| reverseMonthKwh | Number | Reverse energy this month × 1000.       |
+| voltage         | Number | Actual voltage × 1000, in V.            |
+| frequency       | Number | Actual frequency × 1000, in Hz.         |
+| power           | Number | Total power × 1000.                     |
+| dayKwh          | Number | Today's energy consumption × 1000.      |
+| monthKwh        | Number | This month's energy consumption × 1000. |
+| totalKwh        | Number | Total energy consumption × 1000.        |
+| reverseDayKwh   | Number | Today's reverse energy × 1000.          |
+| reverseMonthKwh | Number | Reverse energy this month × 1000.       |
+| totalReverseKwh | Number | Total reverse energy × 1000.            |
+
+#### 3. Clear Energy Data
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "totalKwh": "reset"
+}
+```
+
+| Parameter | Type   | Notes                       |
+| --------- | ------ | --------------------------- |
+| totalKwh  | String | `reset`: clear energy data. |
+
+**Note:** After the app sends this field, the device must report all related energy data once, with all values set to 0.
+
+#### 4. Display Settings
+
+**Scenario:** App changes state or device state changes.
+
+```json
+{
+  "screenSetting": {
+    "br": 25,
+    "standbyTime": 15
+  }
+}
+```
+
+**`screenSetting` structure**
+
+| Parameter   | Type   | Value Range      | Default | Notes       |
+| ----------- | ------ | ---------------- | ------- | ----------- |
+| br          | Number | 0–100            | 0       | Percentage. |
+| standbyTime | Number | 30, 60, 180, 300 | 60      | In seconds. |
+
+#### 5. Metering Settings
+
+**Scenario:** App changes state or device state changes.
+
+```json
+// Reverse-direction detection for metering
+{
+  "reverseDirection": {
+    "A": true, // Enable reverse direction for channel A
+    "B": false, // Disable reverse direction for channel B
+    "C": false // Disable reverse direction for channel C
+  }
+}
+```
+
+| Parameter        | Type    | Default | Notes                                     |
+| ---------------- | ------- | ------- | ----------------------------------------- |
+| reverseDirection | Object  |         | Reverse-direction detection for metering. |
+| A                | Boolean | false   | Reverse-direction setting for channel 1.  |
+| B                | Boolean | false   | Reverse-direction setting for channel 2.  |
+| C                | Boolean | false   | Reverse-direction setting for channel 3.  |
+
+#### 6. Factory-Reset Lock
+
+**Scenario:** App changes state or device state changes.
+
+```json
+{
+  "resetLock": true
+}
+```
+
+| Parameter | Type    | Default | Notes                                                        |
+| --------- | ------- | ------- | ------------------------------------------------------------ |
+| resetLock | Boolean | false   | `true`: enable the lock; the user cannot enter pairing mode or restore factory settings by long-pressing the button. `false`: disable the lock. |
+
+#### 7. Restore Factory Settings
+
+**Scenario:** App changes state.
+
+```json
+{
+  "resetSetting": true,
+  "NO_SAVE_DB": true
+}
+```
+
+| Parameter    | Type    | Notes |
+| ------------ | ------- | ----- |
+| resetSetting | Boolean |       |
+
+#### 8. Automatic Update
+
+```json
+// Enable automatic updates and set the time window to 02:00–04:00.
+{
+  "autoUpgrade": {
+    "enable": true,
+    "range": ["02:00", "04:00"] // App local time, 24-hour format
+  }
+}
+
+// Disable automatic updates
+{
+  "autoUpgrade": {
+    "enable": false,
+    "range": ["02:00", "04:00"] // App local time, 24-hour format
+  }
+}
+```
+
+**Field descriptions**
+
+| Field       | Meaning          | Type          | Required | Value Range | Default | Notes                           |
+| ----------- | ---------------- | ------------- | -------- | ----------- | ------- | ------------------------------- |
+| autoUpgrade | Automatic update | Object        | Required |             |         |                                 |
+| enable      | Whether enabled  | Boolean       | Required | true, false | false   |                                 |
+| range       | Time window      | Array<String> | Required |             |         | App local time, 24-hour format. |
+
+#### 9. Retrieve Historical Energy Records
+
+**Scenario:** App changes state.
+
+```json
+// Retrieve hourly data for the current day (24 hours)
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "day",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-01"}
+  }
+}
+
+// Retrieve daily data for one week
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "week",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-07"}
+  }
+}
+
+// Retrieve daily data for one month
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "month",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-31"}
+  }
+}
+
+// Retrieve monthly data for one year
+{
+  "NO_SAVE_DB": true,
+  "history": {"type": "year", "page": 0}
+}
+
+// Retrieve daily data for a custom time range
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "custom",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-20"}
+  }
+}
+```
+
+**`history` field descriptions**
+
+| Parameter | Type   | Value Range                                                  | Required | Notes                                                        |
+| --------- | ------ | ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
+| type      | String | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the selected chart mode. | Yes      |                                                              |
+| page      | Number |                                                              | Yes      | Page index starts at 0 and increments by 1 until it reaches `total`. |
+| range     | Object |                                                              | No       | Required when `type` is `custom`.                            |
+| start     | String |                                                              |          | **Format:** `2024-11-01`; add a leading zero for months and days below 10. |
+| end       | String |                                                              |          | Same as above.                                               |
+
+Synchronous device response:
+
+```json
+// Hourly response
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "day",
+      "end": "1730502000000",
+      "pointSize": 2,
+      "unit": "w",
+      "page": 0,
+      "total": 1,
+      "A": {
+        "kwhs": "E4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtY",
+        "exportKwhs": "E4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtY"
+      },
+      "B": {
+        "kwhs": "E4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtY",
+        "exportKwhs": "E4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtY"
+      },
+      "C": {
+        "kwhs": "E4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtY",
+        "exportKwhs": "E4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtYE4gXcBtY"
+      }
+    }
+  }
+}
+```
+
+| Parameter  | Type   | Notes                                                        |
+| ---------- | ------ | ------------------------------------------------------------ |
+| history    | Object |                                                              |
+| type       | String | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the selected chart mode. |
+| end        | String | 13-digit timestamp, accurate to the hour; pad minutes and seconds with zeros. |
+| page       | Number | Current page index.                                          |
+| total      | Number | Total number of pages.                                       |
+| pointSize  | Number | Number of bytes representing one data point (bytes occupied by each data point after Base64 decoding). |
+| unit       | String | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| A          |        | Data for phase A.                                            |
+| B          |        | Data for phase B.                                            |
+| C          |        | Data for phase C.                                            |
+| kwhs       | String | Data points are appended in chronological order, oldest first and newest last. The field is Base64-encoded. The client must decode the entire field from Base64 first, then split it into data points using `pointSize` bytes; do not split based on the number of characters in the Base64 string. When `unit` is `w`, the decoded value is the actual value; when `unit` is `kw`, divide the decoded value by 1000. The transmitted value is the actual value × 1000.<br>Example: `pointSize = 2`, `unit = w`; energy values 5000, 6000, 7000, 5000, 6000, 7000 Wh → hexadecimal `0x1388, 0x1770, 0x1B58, 0x1388, 0x1770, 0x1B58`; raw bytes `13 88 17 70 1B 58 13 88 17 70 1B 58`; Base64 `E4gXcBtYE4gXcBtY`; after decoding and splitting: `13 88 | 17 70 | 1B 58 | 13 88 | 17 70 | 1B 58`; parsed values: `5000, 6000, 7000, 5000, 6000, 7000`.<br>Compatibility example: `pointSize = 3`, `unit = kw`; values 1.2, 1.3, 1.4, 3, 5, 5 kW are transmitted as `1200, 1300, 1400, 3000, 5000, 5000`; hexadecimal values `0x0004B0, 0x000514, 0x000578, 0x000BB8, 0x001388, 0x001388`; raw bytes `00 04 B0 00 05 14 00 05 78 00 0B B8 00 13 88 00 13 88`; Base64 `AASwAAUUAAV4AAu4ABOIABOI`. After decoding and splitting into 3-byte groups, parse each as an unsigned big-endian 24-bit integer, then divide by 1000 to obtain the kWh values. |
+| exportKwhs | String | Reverse energy. Uses the same encoding as above.             |
+
+**Daylight saving time:** Hourly data always contains 24 data points. When daylight saving time starts, the missing hour is reported as 0; when daylight saving time ends, the repeated hour's data is accumulated.
+
+#### 10. Download Historical Energy Records
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "history": {
+    "type": "totalHour",
+    "page": 0
+  }
+}
+```
+
+| Parameter | Type   | Notes                                                        |
+| --------- | ------ | ------------------------------------------------------------ |
+| history   | Object |                                                              |
+| type      | String | `totalHour`: all hourly data (186 days); `totalDay`: all daily data (366 days); `totalMonth`: all monthly data (60 months). |
+| page      | Number | Page index starts at 0 and increments by 1 until it reaches `total`. |
+
+Device response:
+
+```json
+{
+  "error": 0,
+  "config": {
+    "history": {
+      "type": "totalHour",
+      "end": "1703576400000", // Timestamp of the last data point, on the hour
+      "kwhs": "0001f40001f4...",
+      "exportKwhs": "0001f40001f4...",
+      "page": 0,
+      "total": 10
+    }
+  }
+}
+```
+
+| Parameter  | Type   | Notes                                                        |
+| ---------- | ------ | ------------------------------------------------------------ |
+| history    | Object |                                                              |
+| type       | String | `day`: hourly data; `week`: daily data; `month`: daily data; `year`: monthly data for the past 12 months; `custom`: custom time range, with granularity determined by the selected chart mode. |
+| end        | String | 13-digit timestamp, accurate to the hour; pad minutes and seconds with zeros. |
+| page       | Number | Current page index.                                          |
+| total      | Number | Total number of pages.                                       |
+| pointSize  | Number | Number of bytes representing one data point after Base64 decoding. |
+| unit       | String | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| A          |        | Data for phase A.                                            |
+| B          |        | Data for phase B.                                            |
+| C          |        | Data for phase C.                                            |
+| kwhs       | String | Data points are appended in chronological order, oldest first and newest last. The field is Base64-encoded. Decode the entire field before splitting it into data points using `pointSize` bytes; do not split the Base64 string by character count. When `unit` is `w`, the decoded value is the actual value; when `unit` is `kw`, divide the decoded value by 1000. The transmitted value is the actual value × 1000. See section 9 for encoding examples. |
+| exportKwhs | String | Reverse energy. Uses the same encoding as above.             |
+
+#### 11. Retrieve Historical Power Records
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "powerHistory": {
+    "type": "day",
+    "page": 0,
+    "range": {"start": "2024-11-01", "end": "2024-11-01"}
+  }
+}
+```
+
+**`powerHistory` field descriptions**
+
+| Parameter | Type   | Value Range              | Required | Notes                                                        |
+| --------- | ------ | ------------------------ | -------- | ------------------------------------------------------------ |
+| type      | String | `day`: minute-level data | Yes      |                                                              |
+| page      | Number |                          | Yes      | Page index starts at 0 and increments by 1 until it reaches `total`. |
+| range     | Object |                          | Yes      | **`start` and `end` must be the same. The client retrieves one day's power-chart data at a time.** |
+| start     | String |                          |          | Format: `2024-11-01`; add a leading zero for months and days below 10. |
+| end       | String |                          |          | Same as above.                                               |
+
+Synchronous device response:
+
+```json
+// Minute-level response
+{
+  "error": 0,
+  "config": {
+    "powerHistory": {
+      "type": "day",
+      "end": "1703576400000",
+      "pointSize": 2,
+      "unit": "w",
+      "page": 0,
+      "total": 5,
+      "A": {"min": "AcICJgKK...", "max": "AfQCWAK8...", "avg": "AdsCPwKj..."},
+      "B": {"min": "AcICJgKK...", "max": "AfQCWAK8...", "avg": "AdsCPwKj..."},
+      "C": {"min": "AcICJgKK...", "max": "AfQCWAK8...", "avg": "AdsCPwKj..."}
+    }
+  }
+}
+```
+
+| Parameter    | Type   | Notes                                                        |
+| ------------ | ------ | ------------------------------------------------------------ |
+| powerHistory | Object |                                                              |
+| type         | String | `day`: hourly data.                                          |
+| end          | String | 13-digit timestamp, accurate to the hour; pad minutes and seconds with zeros. |
+| page         | Number | Current page index.                                          |
+| total        | Number | Total number of pages.                                       |
+| pointSize    | Number | Number of bytes representing one data point after Base64 decoding. |
+| unit         | String | Data unit: `w` (watts) or `kw` (kilowatts).                  |
+| A            |        | Data for phase A.                                            |
+| B            |        | Data for phase B.                                            |
+| C            |        | Data for phase C.                                            |
+| min          | String | Data points are appended in chronological order, oldest first and newest last. The field is Base64-encoded; decode the entire field before splitting it into data points using `pointSize` bytes. For power history, `pointSize` is fixed at 2. Parse each data point as a big-endian signed 16-bit integer (`int16`), range `-32768` to `32767`; negative numbers use two's-complement representation. When `unit` is `w`, the parsed value is in watts and does not need to be divided by 1000. When `unit` is `kw`, divide the parsed value by 1000 to obtain kW.<br>Example (`pointSize = 2`, `unit = w`): 500, 600, 700, 500, 600, 700 W → hexadecimal `0x01F4, 0x0258, 0x02BC, 0x01F4, 0x0258, 0x02BC`; raw bytes `01 F4 02 58 02 BC 01 F4 02 58 02 BC`; Base64 `AfQCWAK8AfQCWAK8`. After decoding and splitting: `01 F4 | 02 58 | 02 BC | 01 F4 | 02 58 | 02 BC`, parsed values `500, 600, 700, 500, 600, 700 W`.<br>Negative example: -500 W and -600 W → hexadecimal `0xFE0C`, `0xFDA8`; raw bytes `FE 0C FD A8`; Base64 `/gz9qA==`. After decoding and splitting: `FE 0C | FD A8`; signed 16-bit values: `-500, -600 W`. |
+| max          | String | Maximum power. Uses the same encoding as above.              |
+| avg          | String | Average power. Uses the same encoding as above.              |
+
+**Daylight saving time:** Hourly data always contains 24 data points. When daylight saving time starts, the missing hour is reported as 0; when daylight saving time ends, the repeated hour's data is accumulated.
+
+#### 12. Download Historical Power Records
+
+**Scenario:** App changes state.
+
+```json
+{
+  "NO_SAVE_DB": true,
+  "powerHistory": {
+    "type": "totalMin",
+    "page": 0
+  }
+}
+```
+
+**`powerHistory` field descriptions**
+
+| Parameter | Type   | Value Range                   | Required | Notes                                                        |
+| --------- | ------ | ----------------------------- | -------- | ------------------------------------------------------------ |
+| type      | String | `totalMin`: minute-level data | Yes      | Data for the past 60 days.                                   |
+| page      | Number |                               | Yes      | Page index starts at 0 and increments by 1 until it reaches `total`. |
+
+Synchronous device response:
+
+```json
+// Minute-level response
+{
+  "error": 0,
+  "config": {
+    "powerHistory": {
+      "type": "totalMin",
+      "end": "1703576400000",
+      "pointSize": 2,
+      "unit": "w",
+      "page": 0,
+      "total": 270,
+      "A": {"min": "AcICJgKK...", "max": "AfQCWAK8...", "avg": "AdsCPwKj..."},
+      "B": {"min": "AcICJgKK...", "max": "AfQCWAK8...", "avg": "AdsCPwKj..."},
+      "C": {"min": "AcICJgKK...", "max": "AfQCWAK8...", "avg": "AdsCPwKj..."}
+    }
+  }
+}
+```
+
+The response fields use the same structure and encoding rules as section 11. The `type` value is `totalMin`; the data covers the most recent 60 days.
+
+#### 13. Set Thresholds Related to the Current Day/Month
+
+**Note:** For three-channel devices, extend the protocol with `threshold_02`.
+
+**Scenario:** App changes state. The following fields must be sent together.
+
+```json
+{
+  "threshold_00": {"dayKwh": 100, "monthKwh": 3011, "reverseDayKwh": 2000, "reverseMonthKwh": 1000000},
+  "threshold_01": {"dayKwh": 100, "monthKwh": 3011, "reverseDayKwh": 2000, "reverseMonthKwh": 1000000}
+}
+```
+
+**`threshold_0x` structure** (`x` can be `0` or `1`)
+
+| Parameter       | Type   | Notes                                                     |
+| --------------- | ------ | --------------------------------------------------------- |
+| dayKwh          | Number | Today's energy-consumption threshold × 1000, in kWh.      |
+| monthKwh        | Number | This month's energy-consumption threshold × 1000, in kWh. |
+| reverseDayKwh   | Number | Today's reverse-energy threshold × 1000, in kWh.          |
+| reverseMonthKwh | Number | This month's reverse-energy threshold × 1000, in kWh.     |
+
+#### 14. Dry Contact Status Reporting
+
+**Scenario:** Device state changes or the server sends a command to the device.
+
+```json
+{
+  "dryContact": "on"
+}
+```
+
+| Parameter  | Type   | Notes                      |
+| ---------- | ------ | -------------------------- |
+| dryContact | String | `on`: open; `off`: closed. |
+
+#### 15. Report When a Threshold Is Reached to Trigger a Push Notification
+
+**Scenario:** Device state changes.
+
+```json
+// Today's energy consumption has reached its limit
+{
+  "devPushType": 1,
+  "electricityDay": 100000
+}
+
+// This month's energy consumption has reached its limit
+{
+  "devPushType": 2,
+  "electricityMonth": 10000000
+}
+
+// Dry contact opened
+{
+  "devPushType": 5,
+  "dryContact": "on"
+}
+
+// Dry contact closed
+{
+  "devPushType": 5,
+  "dryContact": "off"
+}
+```
+
+| Parameter        | Type   | Notes                                                        |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| devPushType      | Number | `1`: today's energy consumption; `2`: this month's energy consumption; `3`: today's reverse energy; `4`: this month's reverse energy; `5`: dry-contact state change. |
+| outlet           | Number | Channel index, 0–2.                                          |
+| electricityDay   | Number | Unit: 0.01 kWh; actual value × 1000.                         |
+| electricityMonth | Number |                                                              |
+| exportDay        | Number | Unit: 0.01 kWh; actual value × 1000.                         |
+| exportMonth      | Number |                                                              |
+| dryContact       | String | `on`: open; `off`: closed.                                   |
 
 
 

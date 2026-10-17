@@ -2,7 +2,8 @@
 
 | Time                  | Change log                                                                                                                                                                                                                                                                                                                                                         | Author |
 | :-------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- |
-| February 14, 2026 | Add [/v2/device/settings] interface | Carl |
+| October 18, 2026: | Added the timer limits and supplemented the protocol documentation for UIIDs 226, 283, 286, 289, 290, 294 and 295. | George |
+| February 14, 2026 | Add [/v2/device/settings] interface | George |
 | January 4, 2026 | Update description of enterprise interface fee charges| Carl   |
 | April 17, 2024        | Add a parsing code example for UIID5 total electricity consumption and a call example in the interface document                                                                                                                                                                                                                                                    | Carl   |
 | April 6, 2023         | Delete POST@/v2/device/group/add、POST@/v2/device/group/delete API，Please use the POST@/v2/device/group/update API                                                                                                                                                                                                                                                | Carl   |
